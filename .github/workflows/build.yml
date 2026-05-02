@@ -55,11 +55,20 @@ jobs:
           java-version: '17'
       - name: build android
         run: |
-          mkdir dist
+          mkdir -p dist
           # Copy all static assets to dist for Capacitor
           cp -r assets bsod.html css draco favicon.ico fonts global.css icon-192.png img index.html js media pdfjs service-worker.js shim.js solitaire workbox-sw.js dist/
-          npx cap add android
-          npx capacitor-assets generate --android
+          
+          # Prepare assets for Capacitor - Ensure directory exists and has all required source files
+          mkdir -p resources
+          cp icon-192.png resources/icon.png
+          cp icon-192.png resources/icon-only.png
+          cp icon-192.png resources/icon-foreground.png
+          cp icon-192.png resources/splash.png
+          cp icon-192.png resources/splash-dark.png
+          
+          npx cap add android || true
+          npx @capacitor/assets generate --android
           npx cap copy android
           cd android && ./gradlew assembleDebug
           cp app/build/outputs/apk/debug/app-debug.apk ../Win7Simu_Offline.apk

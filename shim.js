@@ -200,4 +200,49 @@
             } catch(e) {}
         }
     } catch(e) {}
+
+    // 9. Hide Watermarks and Sponsorship UI via CSS
+    const injectStyles = () => {
+        const style = document.createElement('style');
+        style.textContent = `
+            .desktop__watermark, 
+            .sponsor-ads, 
+            .pricing-panel, 
+            .purchase-sub,
+            .drawer:has(.pricing-panel),
+            [data-test-main-screen] > .sponsor-ads { 
+                display: none !important; 
+                visibility: hidden !important;
+                pointer-events: none !important;
+            }
+            #main, #desktop, .desktop__wrapper { 
+                height: 100dvh !important; 
+                width: 100vw !important; 
+                overflow: hidden !important; 
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+            }
+            body, html { 
+                overflow: hidden !important; 
+                overscroll-behavior: none !important;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+            }
+        `;
+        document.head.appendChild(style);
+    };
+
+    if (document.head) injectStyles();
+    else document.addEventListener('DOMContentLoaded', injectStyles);
+
+    // 10. Intercept Global Event Bus for sponsorship panels
+    const originalEmit = window.Vue && window.Vue.prototype && window.Vue.prototype.$emit;
+    if (originalEmit) {
+        window.Vue.prototype.$emit = function(event, ...args) {
+            if (event === 'showPricing' || event === 'showAds') return;
+            return originalEmit.apply(this, [event, ...args]);
+        };
+    }
 })();
