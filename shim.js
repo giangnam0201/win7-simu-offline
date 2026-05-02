@@ -118,6 +118,9 @@
         let finalUrl = url;
         if (urlStr.startsWith('/') && !urlStr.startsWith('//')) {
             finalUrl = base + urlStr.substring(1);
+        } else if (urlStr.startsWith(window.location.origin + '/') && !urlStr.startsWith(base)) {
+            // Fix absolute URLs pointing to domain root instead of repo root
+            finalUrl = base + urlStr.substring(window.location.origin.length + 1);
         } else if (urlStr.startsWith('file:///C:/draco/')) {
             // Fix hardcoded draco root paths
             finalUrl = base + 'draco/' + urlStr.substring(17);
@@ -135,6 +138,8 @@
         if (typeof url === 'string') {
             if (url.startsWith('/') && !url.startsWith('//')) {
                 finalUrl = base + url.substring(1);
+            } else if (url.startsWith(window.location.origin + '/') && !url.startsWith(base)) {
+                finalUrl = base + url.substring(window.location.origin.length + 1);
             } else if (url.startsWith('file:///C:/draco/')) {
                 finalUrl = base + 'draco/' + url.substring(17);
             } else if (url.endsWith('297f276f116cda1ea6303d70fda91f2c.glb')) {
