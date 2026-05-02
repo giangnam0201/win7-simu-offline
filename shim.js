@@ -215,7 +215,7 @@
                 visibility: hidden !important;
                 pointer-events: none !important;
             }
-            #main, #desktop, .desktop__wrapper { 
+            [data-test-main-screen], #desktop, .desktop__wrapper { 
                 height: 100dvh !important; 
                 width: 100vw !important; 
                 overflow: hidden !important; 
