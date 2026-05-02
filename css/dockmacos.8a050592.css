@@ -1,0 +1,133 @@
+[dir] .is-macos .dock__list {
+    background: #0f0f0f;
+    border: 1px solid hsla(0, 0%, 100%, .6);
+    box-shadow: 0 0 0 1px #0f0f0f
+}
+
+[dir] .is-macos .dock__divider {
+    background: hsla(0, 0%, 100%, .2666666667)
+}
+
+.is-macos .dock__item-button:active {
+    filter: brightness(.4)
+}
+
+.is-macos .dock__item-button:hover+.dock__item-tooltip {
+    display: block
+}
+
+.is-macos .dock__item-button.is-active:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 4px;
+    height: 4px
+}
+
+[dir] .is-macos .dock__item-button.is-active:after {
+    background: hsla(0, 0%, 100%, .6);
+    border-radius: 99px
+}
+
+[dir=ltr] .is-macos .dock__item-button.is-active:after {
+    left: calc(50% - 2px)
+}
+
+[dir=rtl] .is-macos .dock__item-button.is-active:after {
+    right: calc(50% - 2px)
+}
+
+.is-macos .dock__item-icon {
+    width: 48px;
+    height: 48px;
+    display: block
+}
+
+[dir] .is-macos .dock__item-tooltip {
+    background: #2d2d2d;
+    border: 1px solid hsla(0, 0%, 100%, .6);
+    box-shadow: 0 0 0 1px #0f0f0f
+}
+
+[dir=ltr] .is-macos .dock__item-tooltip {
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+[dir=rtl] .is-macos .dock__item-tooltip {
+    right: 50%;
+    transform: translateX(50%)
+}
+
+.is-macos .dock__item-tooltip:after {
+    width: 17px;
+    height: 12px;
+    position: absolute;
+    top: 100%;
+    content: ""
+}
+
+[dir] .is-macos .dock__item-tooltip:after {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='17' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23c)'%3E%3Cpath d='M18.293-.5L8.5 9.293-1.293-.5h19.586z' stroke='%230F0F0F'/%3E%3Cpath d='M17.293-.5L8.5 8.293-.293-.5h17.586z' fill='%232D2D2D' stroke='%23ADADAD'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='c'%3E%3Cpath d='M0 0h17v12H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+}
+
+[dir=ltr] .is-macos .dock__item-tooltip:after {
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+[dir=rtl] .is-macos .dock__item-tooltip:after {
+    right: 50%;
+    transform: translateX(50%)
+}
+
+.dock__wrapper.is-ubuntu {
+    width: var(--dock-width);
+    height: calc(100vh - var(--taskbar-height))
+}
+
+.is-ubuntu .dock__list {
+    gap: 3px
+}
+
+.is-ubuntu .dock__item.has-separator:before {
+    content: "";
+    width: 100%;
+    height: 1px
+}
+
+[dir] .is-ubuntu .dock__item.has-separator:before {
+    background: hsla(0, 0%, 100%, .3333333333);
+    margin: 4px 0
+}
+
+[dir] .is-ubuntu .dock__item-button.is-active {
+    background-color: hsla(0, 0%, 100%, .2)
+}
+
+.is-ubuntu .dock__item-button.is-active:after {
+    position: absolute;
+    top: calc(50% - 3px);
+    width: 6px;
+    height: 6px;
+    content: ""
+}
+
+[dir] .is-ubuntu .dock__item-button.is-active:after {
+    background-color: var(--theme-color);
+    border-radius: 99px
+}
+
+[dir=ltr] .is-ubuntu .dock__item-button.is-active:after {
+    left: 0
+}
+
+[dir=rtl] .is-ubuntu .dock__item-button.is-active:after {
+    right: 0
+}
+
+.is-ubuntu .dock__item-icon {
+    width: 36px;
+    height: 36px;
+    display: block
+}

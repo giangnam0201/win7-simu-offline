@@ -1,0 +1,22 @@
+.collapse-title:after {
+    content: "";
+    width: 100%;
+    flex: 1
+}
+
+[dir] .collapse-title:after {
+    border-top: 1px solid rgba(0, 0, 0, .2)
+}
+
+.ad__container--google.is-horizontal {
+    height: 100px
+}
+
+.ad__container--google.is-auto {
+    height: 280px
+}
+
+.ad__container--google ins {
+    width: inherit;
+    max-width: inherit
+}

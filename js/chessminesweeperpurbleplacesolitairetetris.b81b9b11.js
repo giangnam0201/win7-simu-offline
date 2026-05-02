@@ -1,0 +1,930 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([
+    ["chess~minesweeper~purbleplace~solitaire~tetris", "hotkey"], {
+        "0d94": function(e, t, n) {
+            "use strict";
+            var o = function() {
+                    var e = this,
+                        t = e.$createElement,
+                        n = e._self._c || t;
+                    return n("winui-menu", {
+                        directives: [{
+                            name: "clickout",
+                            rawName: "v-clickout",
+                            value: function(t) {
+                                return e.$emit("outclick", t)
+                            },
+                            expression: "(e) => $emit('outclick', e)"
+                        }]
+                    }, [e._l(e.items, (function(t, o) {
+                        return [t.hidden ? e._e() : n("winui-menuitem", {
+                            key: o,
+                            attrs: {
+                                "aria-disabled": t.disabled,
+                                "data-test-menu-item": t.test
+                            }
+                        }, [t.icon ? n("base-icon", {
+                            attrs: {
+                                id: t.icon,
+                                icon: e.icon[t.icon]
+                            }
+                        }) : e._e(), t.children && t.children.length ? [n("button", [e._v(e._s(t.label))]), n("winui-menu", {
+                            style: e.subStyle,
+                            attrs: {
+                                "data-test-menu": t.test
+                            }
+                        }, [e._l(t.children, (function(t, o) {
+                            return [t.hidden ? e._e() : n("winui-menuitem", {
+                                key: o,
+                                attrs: {
+                                    "aria-disabled": t.disabled,
+                                    "data-test-menu-item": t.test
+                                }
+                            }, [t.option ? [n("input", e._b({}, "input", t.option, !1)), n("label", {
+                                attrs: {
+                                    for: t.option.id
+                                },
+                                on: {
+                                    click: function(n) {
+                                        return n.stopPropagation(), e.safeClick(n, t.click)
+                                    }
+                                }
+                            }, [e._v(e._s(t.label))])] : [t.icon ? n("base-icon", {
+                                attrs: {
+                                    id: t.icon,
+                                    icon: e.icon[t.icon]
+                                }
+                            }) : e._e(), n("button", {
+                                attrs: {
+                                    disabled: t.disabled
+                                },
+                                on: {
+                                    click: function(n) {
+                                        return n.stopPropagation(), e.safeClick(n, t.click)
+                                    }
+                                }
+                            }, [t.bold ? n("b", [e._v(e._s(t.label))]) : [e._v(e._s(t.label))], t.shortcut ? n("span", [e._v(e._s(t.shortcut))]) : e._e()], 2)]], 2), t.hasDivider && !t.hidden ? n("hr", {
+                                key: "hr" + o
+                            }) : e._e()]
+                        }))], 2)] : t.option ? [n("input", e._b({}, "input", t.option, !1)), n("label", {
+                            attrs: {
+                                for: t.option.id
+                            },
+                            on: {
+                                click: function(n) {
+                                    return n.stopPropagation(), e.safeClick(n, t.click)
+                                }
+                            }
+                        }, [e._v(e._s(t.label))])] : n("button", {
+                            attrs: {
+                                disabled: t.disabled
+                            },
+                            on: {
+                                click: function(n) {
+                                    return n.stopPropagation(), e.safeClick(n, t.click)
+                                }
+                            }
+                        }, [t.bold ? n("b", [e._v(e._s(t.label))]) : [e._v(e._s(t.label))], t.shortcut ? n("span", [e._v(e._s(t.shortcut))]) : e._e()], 2)], 2), t.hasDivider && !t.hidden ? n("hr", {
+                            key: "hr" + o
+                        }) : e._e()]
+                    }))], 2)
+                },
+                i = [],
+                s = n("58cd"),
+                a = n("2f62"),
+                c = {
+                    props: {
+                        items: Array,
+                        subStyle: Object,
+                        asDecorator: Boolean
+                    },
+                    computed: { ...Object(a["d"])(["themeData", "themeAssets"]),
+                        icon() {
+                            return this.asDecorator ? this.themeAssets.base.icon : this.themeData.icon
+                        }
+                    },
+                    methods: {
+                        safeClick(e, t) {
+                            t && t(e)
+                        }
+                    },
+                    components: {
+                        BaseIcon: s["a"]
+                    }
+                },
+                r = c,
+                l = n("2877"),
+                u = Object(l["a"])(r, o, i, !1, null, null, null);
+            t["a"] = u.exports
+        },
+        "0f9f": function(e, t, n) {},
+        1521: function(e, t, n) {
+            "use strict";
+            var o = function() {
+                    var e = this,
+                        t = e.$createElement,
+                        n = e._self._c || t;
+                    return n("div", {
+                        class: ["relative flex bg-white h-full overflow-auto window__body", {
+                            "p-2.5 flex-col": "panel" !== e.layout
+                        }, "default" === e.layout ? "" : "is-" + e.layout],
+                        on: {
+                            mousemove: function(t) {
+                                return e.$emit("mousemove")
+                            },
+                            click: function(t) {
+                                return e.$emit("click")
+                            }
+                        }
+                    }, [e._t("default")], 2)
+                },
+                i = [],
+                s = {
+                    props: {
+                        layout: {
+                            type: String,
+                            default: "default",
+                            validator: e => ["message", "dialog", "settings", "panel", "default"].includes(e)
+                        }
+                    }
+                },
+                a = s,
+                c = n("2877"),
+                r = Object(c["a"])(a, o, i, !1, null, null, null);
+            t["a"] = r.exports
+        },
+        2877: function(e, t, n) {
+            "use strict";
+
+            function o(e, t, n, o, i, s, a, c) {
+                var r, l = "function" === typeof e ? e.options : e;
+                if (t && (l.render = t, l.staticRenderFns = n, l._compiled = !0), o && (l.functional = !0), s && (l._scopeId = "data-v-" + s), a ? (r = function(e) {
+                        e = e || this.$vnode && this.$vnode.ssrContext || this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext, e || "undefined" === typeof __VUE_SSR_CONTEXT__ || (e = __VUE_SSR_CONTEXT__), i && i.call(this, e), e && e._registeredComponents && e._registeredComponents.add(a)
+                    }, l._ssrRegister = r) : i && (r = c ? function() {
+                        i.call(this, (l.functional ? this.parent : this).$root.$options.shadowRoot)
+                    } : i), r)
+                    if (l.functional) {
+                        l._injectStyles = r;
+                        var u = l.render;
+                        l.render = function(e, t) {
+                            return r.call(t), u(e, t)
+                        }
+                    } else {
+                        var d = l.beforeCreate;
+                        l.beforeCreate = d ? [].concat(d, r) : [r]
+                    }
+                return {
+                    exports: e,
+                    options: l
+                }
+            }
+            n.d(t, "a", (function() {
+                return o
+            }))
+        },
+        "2ea7": function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, "toCodemirrorKey", (function() {
+                return D
+            }));
+            const o = "undefined" !== typeof navigator && navigator.userAgent.toLowerCase().indexOf("firefox") > 0;
+
+            function i(e, t, n, o) {
+                e.addEventListener ? e.addEventListener(t, n, o) : e.attachEvent && e.attachEvent("on".concat(t), () => {
+                    n(window.event)
+                })
+            }
+
+            function s(e, t) {
+                const n = t.slice(0, t.length - 1);
+                for (let o = 0; o < n.length; o++) n[o] = e[n[o].toLowerCase()];
+                return n
+            }
+
+            function a(e) {
+                "string" !== typeof e && (e = ""), e = e.replace(/\s/g, "");
+                const t = e.split(",");
+                let n = t.lastIndexOf("");
+                for (; n >= 0;) t[n - 1] += ",", t.splice(n, 1), n = t.lastIndexOf("");
+                return t
+            }
+
+            function c(e, t) {
+                const n = e.length >= t.length ? e : t,
+                    o = e.length >= t.length ? t : e;
+                let i = !0;
+                for (let s = 0; s < n.length; s++) - 1 === o.indexOf(n[s]) && (i = !1);
+                return i
+            }
+            const r = {
+                    backspace: 8,
+                    "⌫": 8,
+                    tab: 9,
+                    clear: 12,
+                    enter: 13,
+                    "↩": 13,
+                    return: 13,
+                    esc: 27,
+                    escape: 27,
+                    space: 32,
+                    left: 37,
+                    up: 38,
+                    right: 39,
+                    down: 40,
+                    del: 46,
+                    delete: 46,
+                    ins: 45,
+                    insert: 45,
+                    home: 36,
+                    end: 35,
+                    pageup: 33,
+                    pagedown: 34,
+                    capslock: 20,
+                    num_0: 96,
+                    num_1: 97,
+                    num_2: 98,
+                    num_3: 99,
+                    num_4: 100,
+                    num_5: 101,
+                    num_6: 102,
+                    num_7: 103,
+                    num_8: 104,
+                    num_9: 105,
+                    num_multiply: 106,
+                    num_add: 107,
+                    num_enter: 108,
+                    num_subtract: 109,
+                    num_decimal: 110,
+                    num_divide: 111,
+                    "⇪": 20,
+                    ",": 188,
+                    ".": 190,
+                    "/": 191,
+                    "`": 192,
+                    "-": o ? 173 : 189,
+                    "=": o ? 61 : 187,
+                    ";": o ? 59 : 186,
+                    "'": 222,
+                    "[": 219,
+                    "]": 221,
+                    "\\": 220
+                },
+                l = {
+                    "⇧": 16,
+                    shift: 16,
+                    "⌥": 18,
+                    alt: 18,
+                    option: 18,
+                    "⌃": 17,
+                    ctrl: 17,
+                    control: 17,
+                    "⌘": 91,
+                    cmd: 91,
+                    command: 91
+                },
+                u = {
+                    16: "shiftKey",
+                    18: "altKey",
+                    17: "ctrlKey",
+                    91: "metaKey",
+                    shiftKey: 16,
+                    ctrlKey: 17,
+                    altKey: 18,
+                    metaKey: 91
+                },
+                d = {
+                    16: !1,
+                    18: !1,
+                    17: !1,
+                    91: !1
+                },
+                f = {};
+            for (let I = 1; I < 20; I++) r["f".concat(I)] = 111 + I;
+            let p = [],
+                h = !1,
+                m = "all";
+            const b = [],
+                y = e => r[e.toLowerCase()] || l[e.toLowerCase()] || e.toUpperCase().charCodeAt(0),
+                w = e => Object.keys(r).find(t => r[t] === e),
+                _ = e => Object.keys(l).find(t => l[t] === e);
+
+            function g(e) {
+                m = e || "all"
+            }
+
+            function k() {
+                return m || "all"
+            }
+
+            function v() {
+                return p.slice(0)
+            }
+
+            function C() {
+                return p.map(e => w(e) || _(e) || String.fromCharCode(e))
+            }
+
+            function S() {
+                const e = [];
+                return Object.keys(f).forEach(t => {
+                    f[t].forEach(t => {
+                        let {
+                            key: n,
+                            scope: o,
+                            mods: i,
+                            shortcut: s
+                        } = t;
+                        e.push({
+                            scope: o,
+                            shortcut: s,
+                            mods: i,
+                            keys: n.split("+").map(e => y(e))
+                        })
+                    })
+                }), e
+            }
+
+            function O(e) {
+                const t = e.target || e.srcElement,
+                    {
+                        tagName: n
+                    } = t;
+                let o = !0;
+                return !t.isContentEditable && ("INPUT" !== n && "TEXTAREA" !== n && "SELECT" !== n || t.readOnly) || (o = !1), o
+            }
+
+            function x(e) {
+                return "string" === typeof e && (e = y(e)), -1 !== p.indexOf(e)
+            }
+
+            function E(e, t) {
+                let n, o;
+                e || (e = k());
+                for (const i in f)
+                    if (Object.prototype.hasOwnProperty.call(f, i))
+                        for (n = f[i], o = 0; o < n.length;) n[o].scope === e ? n.splice(o, 1) : o++;
+                k() === e && g(t || "all")
+            }
+
+            function j(e) {
+                let t = e.keyCode || e.which || e.charCode;
+                const n = p.indexOf(t);
+                if (n >= 0 && p.splice(n, 1), e.key && "meta" === e.key.toLowerCase() && p.splice(0, p.length), 93 !== t && 224 !== t || (t = 91), t in d) {
+                    d[t] = !1;
+                    for (const e in l) l[e] === t && (B[e] = !1)
+                }
+            }
+
+            function K(e) {
+                if ("undefined" === typeof e) Object.keys(f).forEach(e => delete f[e]);
+                else if (Array.isArray(e)) e.forEach(e => {
+                    e.key && P(e)
+                });
+                else if ("object" === typeof e) e.key && P(e);
+                else if ("string" === typeof e) {
+                    for (var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), o = 1; o < t; o++) n[o - 1] = arguments[o];
+                    let [i, s] = n;
+                    "function" === typeof i && (s = i, i = ""), P({
+                        key: e,
+                        scope: i,
+                        method: s,
+                        splitKey: "+"
+                    })
+                }
+            }
+            const P = e => {
+                let {
+                    key: t,
+                    scope: n,
+                    method: o,
+                    splitKey: i = "+"
+                } = e;
+                const r = a(t);
+                r.forEach(e => {
+                    const t = e.split(i),
+                        a = t.length,
+                        r = t[a - 1],
+                        u = "*" === r ? "*" : y(r);
+                    if (!f[u]) return;
+                    n || (n = k());
+                    const d = a > 1 ? s(l, t) : [];
+                    f[u] = f[u].filter(e => {
+                        const t = !o || e.method === o;
+                        return !(t && e.scope === n && c(e.mods, d))
+                    })
+                })
+            };
+
+            function $(e, t, n, o) {
+                if (t.element !== o) return;
+                let i;
+                if (t.scope === n || "all" === t.scope) {
+                    i = t.mods.length > 0;
+                    for (const e in d) Object.prototype.hasOwnProperty.call(d, e) && (!d[e] && t.mods.indexOf(+e) > -1 || d[e] && -1 === t.mods.indexOf(+e)) && (i = !1);
+                    (0 !== t.mods.length || d[16] || d[18] || d[17] || d[91]) && !i && "*" !== t.shortcut || (t.keys = [], t.keys = t.keys.concat(p), !1 === t.method(e, t) && (e.preventDefault ? e.preventDefault() : e.returnValue = !1, e.stopPropagation && e.stopPropagation(), e.cancelBubble && (e.cancelBubble = !0)))
+                }
+            }
+
+            function T(e, t) {
+                const n = f["*"];
+                let o = e.keyCode || e.which || e.charCode;
+                if (!B.filter.call(this, e)) return;
+                if (93 !== o && 224 !== o || (o = 91), -1 === p.indexOf(o) && 229 !== o && p.push(o), ["ctrlKey", "altKey", "shiftKey", "metaKey"].forEach(t => {
+                        const n = u[t];
+                        e[t] && -1 === p.indexOf(n) ? p.push(n) : !e[t] && p.indexOf(n) > -1 ? p.splice(p.indexOf(n), 1) : "metaKey" === t && e[t] && 3 === p.length && (e.ctrlKey || e.shiftKey || e.altKey || (p = p.slice(p.indexOf(n))))
+                    }), o in d) {
+                    d[o] = !0;
+                    for (const e in l) l[e] === o && (B[e] = !0);
+                    if (!n) return
+                }
+                for (const s in d) Object.prototype.hasOwnProperty.call(d, s) && (d[s] = e[u[s]]);
+                e.getModifierState && (!e.altKey || e.ctrlKey) && e.getModifierState("AltGraph") && (-1 === p.indexOf(17) && p.push(17), -1 === p.indexOf(18) && p.push(18), d[17] = !0, d[18] = !0);
+                const i = k();
+                if (n)
+                    for (let s = 0; s < n.length; s++) n[s].scope === i && ("keydown" === e.type && n[s].keydown || "keyup" === e.type && n[s].keyup) && $(e, n[s], i, t);
+                if (o in f)
+                    for (let s = 0; s < f[o].length; s++)
+                        if (("keydown" === e.type && f[o][s].keydown || "keyup" === e.type && f[o][s].keyup) && f[o][s].key) {
+                            const n = f[o][s],
+                                {
+                                    splitKey: a
+                                } = n,
+                                c = n.key.split(a),
+                                r = [];
+                            for (let e = 0; e < c.length; e++) r.push(y(c[e]));
+                            r.sort().join("") === p.sort().join("") && $(e, n, i, t)
+                        }
+            }
+
+            function A(e) {
+                return b.indexOf(e) > -1
+            }
+
+            function B(e, t, n) {
+                p = [];
+                const o = a(e);
+                let c = [],
+                    r = "all",
+                    u = document,
+                    d = 0,
+                    m = !1,
+                    w = !0,
+                    _ = "+",
+                    g = !1,
+                    k = !1;
+                for (void 0 === n && "function" === typeof t && (n = t), "[object Object]" === Object.prototype.toString.call(t) && (t.scope && (r = t.scope), t.element && (u = t.element), t.keyup && (m = t.keyup), void 0 !== t.keydown && (w = t.keydown), void 0 !== t.capture && (g = t.capture), "string" === typeof t.splitKey && (_ = t.splitKey), !0 === t.single && (k = !0)), "string" === typeof t && (r = t), k && K(e, r); d < o.length; d++) e = o[d].split(_), c = [], e.length > 1 && (c = s(l, e)), e = e[e.length - 1], e = "*" === e ? "*" : y(e), e in f || (f[e] = []), f[e].push({
+                    keyup: m,
+                    keydown: w,
+                    scope: r,
+                    mods: c,
+                    shortcut: o[d],
+                    method: n,
+                    key: o[d],
+                    splitKey: _,
+                    element: u
+                });
+                "undefined" !== typeof u && !A(u) && window && (b.push(u), i(u, "keydown", e => {
+                    T(e, u)
+                }, g), h || (h = !0, i(window, "focus", () => {
+                    p = []
+                }, g)), i(u, "keyup", e => {
+                    T(e, u), j(e)
+                }, g))
+            }
+
+            function L(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "all";
+                Object.keys(f).forEach(n => {
+                    const o = f[n].filter(n => n.scope === t && n.shortcut === e);
+                    o.forEach(e => {
+                        e && e.method && e.method()
+                    })
+                })
+            }
+            const M = {
+                getPressedKeyString: C,
+                setScope: g,
+                getScope: k,
+                deleteScope: E,
+                getPressedKeyCodes: v,
+                getAllKeyCodes: S,
+                isPressed: x,
+                filter: O,
+                trigger: L,
+                unbind: K,
+                keyMap: r,
+                modifier: l,
+                modifierMap: u
+            };
+            for (const I in M) Object.prototype.hasOwnProperty.call(M, I) && (B[I] = M[I]);
+            if ("undefined" !== typeof window) {
+                const e = window.hotkeys;
+                B.noConflict = t => (t && window.hotkeys === B && (window.hotkeys = e), B), window.hotkeys = B
+            }
+            t["default"] = {
+                keys: {},
+                on(e, t, n = "", o = "all") {
+                    return n && (this.keys[o] = this.keys[o] || {}, this.keys[o][e] = n), B(e, o, (e, n) => {
+                        e.preventDefault(), t(e, n)
+                    })
+                },
+                off(e, t = "all") {
+                    return B.unbind(e, t)
+                },
+                scope(e) {
+                    return e ? B.setScope(e) : B.getScope()
+                },
+                deleteScope(e) {
+                    return B.deleteScope(e)
+                }
+            };
+            const D = e => {
+                const t = e.toLowerCase().split("+"),
+                    n = t.length - 2,
+                    o = t.length - 1;
+                return "shift" === t[n] && (t[o] = t[o].toUpperCase(), t.splice(n, 1)), t.join("-")
+            }
+        },
+        "3cb5": function(e, t, n) {
+            "use strict";
+            var o = function() {
+                    var e, t = this,
+                        n = t.$createElement,
+                        o = t._self._c || n;
+                    return o("winui-menubar", {
+                        class: ["window__menubar", (e = {
+                            "is-toolbar": t.asToolbar
+                        }, e["is-" + t.iconSize] = !!t.iconSize, e)]
+                    }, [t._l(t.items, (function(e, n) {
+                        return [o("winui-menuitem", {
+                            key: n,
+                            staticClass: "window__menubar-item",
+                            attrs: {
+                                "aria-disabled": e.disabled,
+                                tabindex: "0",
+                                "data-test-menu-item": e.label
+                            }
+                        }, [e.items && !e.disabled ? [o("menu-item-button", t._b({}, "menu-item-button", t.bindProps(e), !1)), o("base-menu", {
+                            staticClass: "can-hover",
+                            attrs: {
+                                items: e.items
+                            }
+                        })] : o("menu-item-button", t._b({
+                            attrs: {
+                                disabled: e.disabled
+                            },
+                            on: {
+                                click: function(n) {
+                                    return n.stopPropagation(), t.click(e.click)
+                                }
+                            }
+                        }, "menu-item-button", t.bindProps(e), !1))], 2)]
+                    })), t._t("default")], 2)
+                },
+                i = [],
+                s = n("0d94"),
+                a = n("b5ba"),
+                c = {
+                    props: {
+                        items: {
+                            type: Array,
+                            required: !0
+                        },
+                        asToolbar: Boolean,
+                        hideLabel: Boolean,
+                        iconSize: {
+                            type: String,
+                            validator: e => ["small", "medium"].includes(e)
+                        }
+                    },
+                    methods: {
+                        click(e) {
+                            e && e()
+                        },
+                        bindProps(e) {
+                            const {
+                                icon: t,
+                                label: n
+                            } = e;
+                            return {
+                                icon: t,
+                                label: n,
+                                hideLabel: this.hideLabel,
+                                "data-test-menu-action": n
+                            }
+                        }
+                    },
+                    components: {
+                        BaseMenu: s["a"],
+                        MenuItemButton: a["a"]
+                    }
+                },
+                r = c,
+                l = (n("ce26"), n("2877")),
+                u = Object(l["a"])(r, o, i, !1, null, null, null);
+            t["a"] = u.exports
+        },
+        "411e": function(e, t, n) {
+            "use strict";
+            var o = function() {
+                    var e = this,
+                        t = e.$createElement,
+                        n = e._self._c || t;
+                    return n("div", {
+                        class: ["is-static p-1.5 window__main active", {
+                            pinging: e.pinging
+                        }, {
+                            "center-absolute": !e.decentered
+                        }, {
+                            "w-[256px] is-wait": "wait" === e.variant
+                        }, {
+                            "w-[340px] is-help": "help" === e.variant
+                        }, {
+                            "w-[340px] is-message": "message" === e.variant
+                        }]
+                    }, ["wait" === e.variant ? n("window-body", {
+                        staticClass: "is-wait"
+                    }, [e._t("default")], 2) : e._t("default")], 2)
+                },
+                i = [],
+                s = n("1521"),
+                a = n("7744"),
+                c = {
+                    mixins: [a["a"]],
+                    props: {
+                        variant: {
+                            type: String,
+                            validator: e => ["wait", "help", "message"].includes(e)
+                        },
+                        parent: String,
+                        decentered: Boolean
+                    },
+                    components: {
+                        WindowBody: s["a"]
+                    }
+                },
+                r = c,
+                l = (n("9312"), n("2877")),
+                u = Object(l["a"])(r, o, i, !1, null, null, null);
+            t["a"] = u.exports
+        },
+        4615: function(e, t, n) {},
+        "554d": function(e, t, n) {
+            "use strict";
+            n.d(t, "c", (function() {
+                return r
+            })), n.d(t, "d", (function() {
+                return l
+            })), n.d(t, "b", (function() {
+                return u
+            })), n.d(t, "a", (function() {
+                return f
+            }));
+            var o = n("968c"),
+                i = n("0d26"),
+                s = n("2f62"),
+                a = n("51e6");
+            const c = {
+                    SetEffects: "setEffects",
+                    SaveEffects: "saveEffects",
+                    GetPresetAuto: "getPresetAuto"
+                },
+                r = "effects",
+                l = Object(s["a"])(r),
+                u = c,
+                d = {
+                    animateControls: !0,
+                    animateWindows: !1,
+                    animateTaskbar: !1,
+                    enableAeroPeek: !1,
+                    enableComposition: !1,
+                    enableGlass: !1,
+                    fadeMenus: !0,
+                    fadeTooltips: !1,
+                    fadeMenuItems: !1,
+                    saveTaskbarThumbnails: !1,
+                    showMouseShadows: !0,
+                    showWindowShadows: !0,
+                    showThumbnails: !1,
+                    showSelectionRectangle: !1,
+                    showWindowOnDrag: !1,
+                    slideComboBoxes: !1,
+                    smoothText: !1,
+                    smoothScroll: !1,
+                    desktopIconShadow: !0
+                },
+                f = ["enableAeroPeek", "enableComposition", "fadeTooltips", "fadeMenuItems", "saveTaskbarThumbnails", "showThumbnails", "showSelectionRectangle", "slideComboBoxes", "smoothText", "smoothScroll"],
+                p = e => Object.keys(d).reduce((t, n) => {
+                    const o = f.includes(n);
+                    return { ...t,
+                        [n]: "appearance" === e && !o
+                    }
+                }, {
+                    preset: e
+                });
+            t["e"] = {
+                namespaced: !0,
+                state() {
+                    return Object.keys(d).reduce((e, t) => ({ ...e,
+                        [t]: null
+                    }), {})
+                },
+                getters: {
+                    presetAppearance: () => p("appearance"),
+                    presetPerformance: () => p("performance")
+                },
+                mutations: {
+                    [c.SetEffects]: (e, t) => {
+                        Object.assign(e, t)
+                    }
+                },
+                actions: {
+                    [c.SetEffects]: async ({
+                        commit: e,
+                        dispatch: t
+                    }, n) => {
+                        if (n) e(c.SetEffects, n);
+                        else {
+                            const n = await t(c.GetPresetAuto);
+                            e(c.SetEffects, n)
+                        }
+                    },
+                    [c.SaveEffects]: async ({
+                        state: e,
+                        rootState: t
+                    }) => o["default"].update("/configs/", t.user, "configs", {
+                        effects: e
+                    }),
+                    [c.GetPresetAuto]: async ({
+                        getters: e
+                    }) => {
+                        let t = await Object(a["getWeiBaseScore"])();
+                        i["default"].enabled && i["default"].get("wei") && (t = parseFloat(i["default"].get("wei")));
+                        const n = t > 4 ? e.presetAppearance : t >= 3 ? d : e.presetPerformance;
+                        return { ...n,
+                            preset: "auto"
+                        }
+                    }
+                }
+            }
+        },
+        "58cd": function(e, t, n) {
+            "use strict";
+            var o = function() {
+                    var e = this,
+                        t = e.$createElement,
+                        n = e._self._c || t;
+                    return n("span", {
+                        staticClass: "inline-block bg-contain bg-no-repeat bg-center w-[16px] h-[16px] shrink-0 icon",
+                        style: e.style,
+                        attrs: {
+                            "data-icon": e.id
+                        }
+                    })
+                },
+                i = [],
+                s = {
+                    props: {
+                        id: String,
+                        icon: String
+                    },
+                    computed: {
+                        style() {
+                            return {
+                                "--icon": `url('${this.icon}')`
+                            }
+                        }
+                    }
+                },
+                a = s,
+                c = (n("ce5d"), n("2877")),
+                r = Object(c["a"])(a, o, i, !1, null, null, null);
+            t["a"] = r.exports
+        },
+        9312: function(e, t, n) {
+            "use strict";
+            n("eb0f")
+        },
+        a995: function(e, t, n) {
+            "use strict";
+            var o = function() {
+                    var e = this,
+                        t = e.$createElement,
+                        n = e._self._c || t;
+                    return n("window-main-static", {
+                        staticClass: "w-auto",
+                        attrs: {
+                            id: e.id
+                        }
+                    }, [n("window-titlebar", {
+                        attrs: {
+                            title: e.$t("reset") + " " + e.$t("statistics")
+                        }
+                    }, [n("window-controls", {
+                        attrs: {
+                            hideMaximize: "",
+                            hideMinimize: "",
+                            close: e.handleClose
+                        }
+                    })], 1), n("window-body", [n("div", {
+                        staticClass: "mb-5"
+                    }, [e._v(e._s(e.$t("confirm-reset")))]), n("section", {
+                        staticClass: "text-center"
+                    }, [n("winui-button", {
+                        staticClass: "default",
+                        on: {
+                            click: function(t) {
+                                return t.stopPropagation(), e.reset(t)
+                            }
+                        }
+                    }, [e._v(" " + e._s(e.$t("yes")) + " ")]), n("winui-button", {
+                        on: {
+                            click: function(t) {
+                                return t.stopPropagation(), e.handleClose(t)
+                            }
+                        }
+                    }, [e._v(" " + e._s(e.$t("no")) + " ")])], 1)])], 1)
+                },
+                i = [],
+                s = n("1521"),
+                a = n("e863"),
+                c = n("411e"),
+                r = n("e314"),
+                l = {
+                    props: {
+                        id: String,
+                        close: Function
+                    },
+                    methods: {
+                        handleClose() {
+                            this.close && this.close()
+                        },
+                        reset() {
+                            this.$emit("reset")
+                        }
+                    },
+                    components: {
+                        WindowTitlebar: r["a"],
+                        WindowControls: a["a"],
+                        WindowMainStatic: c["a"],
+                        WindowBody: s["a"]
+                    }
+                },
+                u = l,
+                d = n("2877"),
+                f = Object(d["a"])(u, o, i, !1, null, null, null);
+            t["a"] = f.exports
+        },
+        b5ba: function(e, t, n) {
+            "use strict";
+            var o = function() {
+                    var e = this,
+                        t = e.$createElement,
+                        n = e._self._c || t;
+                    return n("button", {
+                        class: e.context + "-button",
+                        on: {
+                            click: function(t) {
+                                return e.$emit("click", t)
+                            }
+                        }
+                    }, [e.icon ? n("base-icon", {
+                        class: e.context + "-icon",
+                        attrs: {
+                            icon: e.icon
+                        }
+                    }) : e._e(), e.hideLabel ? e._e() : n("span", {
+                        class: e.context + "-label"
+                    }, [e._v(e._s(e.label))])], 1)
+                },
+                i = [],
+                s = n("58cd"),
+                a = {
+                    props: {
+                        icon: String,
+                        label: String,
+                        hideLabel: Boolean,
+                        context: {
+                            type: String,
+                            default: "window__menubar"
+                        }
+                    },
+                    components: {
+                        BaseIcon: s["a"]
+                    }
+                },
+                c = a,
+                r = n("2877"),
+                l = Object(r["a"])(c, o, i, !1, null, null, null);
+            t["a"] = l.exports
+        },
+        ce26: function(e, t, n) {
+            "use strict";
+            n("4615")
+        },
+        ce5d: function(e, t, n) {
+            "use strict";
+            n("0f9f")
+        },
+        eb0f: function(e, t, n) {}
+    }
+]);

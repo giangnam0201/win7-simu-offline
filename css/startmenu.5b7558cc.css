@@ -1,0 +1,1169 @@
+.startmenu__wrapper.is-chromeos {
+    bottom: calc(var(--taskbar-height) + 8px);
+    width: 470px;
+    height: auto
+}
+
+[dir] .startmenu__wrapper.is-chromeos {
+    background: var(--startmenu-bg)
+}
+
+[dir] .is-chromeos .startmenu__button.has-image:hover {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .2)
+}
+
+.is-chromeos .startmenu__program-list.is-all {
+    height: 300px;
+    scrollbar-width: thin
+}
+
+.is-chromeos .startmenu__program-list.is-all::-webkit-scrollbar {
+    width: 8px
+}
+
+[dir] .is-chromeos .startmenu__program-list.is-all::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .1333333333);
+    border-radius: 4px
+}
+
+.is-chromeos .startmenu__program-item {
+    width: 64px;
+    height: 64px
+}
+
+.is-chromeos .startmenu__program-icon {
+    width: 32px;
+    height: 32px
+}
+
+.is-chromeos .startmenu__program-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+[dir] .is-chromeos .startmenu__program-label {
+    text-align: center
+}
+
+.is-chromeos .startmenu__menu:focus-within>.winui-menu,
+.is-chromeos .startmenu__menu:hover>.winui-menu {
+    display: block
+}
+
+.is-chromeos .startmenu__divider {
+    width: calc(100% - 48px);
+    height: 1px
+}
+
+.startmenu__wrapper.is-launchpad {
+    --launchpad-cols: 6;
+    --launchpad-rows: 3;
+    bottom: 0;
+    height: auto
+}
+
+.is-launchpad .startmenu__overlay {
+    filter: blur(12px)
+}
+
+.is-launchpad .startmenu__search::-webkit-input-placeholder {
+    color: hsla(0, 0%, 100%, .6)
+}
+
+.is-launchpad .startmenu__search::-webkit-search-cancel-button {
+    appearance: none
+}
+
+.is-launchpad .startmenu__program-list {
+    width: 75%;
+    height: 75%;
+    grid-template-columns: repeat(var(--launchpad-cols), minmax(0, 1fr));
+    grid-template-rows: repeat(var(--launchpad-rows), minmax(0, 1fr))
+}
+
+[dir] .is-launchpad .startmenu__program-button {
+    text-shadow: 0 0 3px #000
+}
+
+.is-launchpad .startmenu__program-icon {
+    width: 48px;
+    height: 48px
+}
+
+.is-launchpad .startmenu__program-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+[dir] .is-launchpad .startmenu__program-label {
+    padding: 0 4px
+}
+
+.grid__item {
+    height: 120px
+}
+
+.grid__item-button {
+    color: inherit;
+    font-family: inherit
+}
+
+[dir] .grid__item-button:focus,
+[dir] .grid__item-button:hover {
+    box-shadow: inset 0 0 0 1px #fff
+}
+
+.grid__item-icon {
+    width: 60%;
+    height: 60%
+}
+
+[dir] .grid__item-icon {
+    margin: auto
+}
+
+[dir] .grid__item-text {
+    margin-top: auto
+}
+
+[dir=ltr] .grid__item-text {
+    text-align: left
+}
+
+[dir=rtl] .grid__item-text {
+    text-align: right
+}
+
+.startmenu__wrapper.is-win10 {
+    color: #fff;
+    height: 430px
+}
+
+[dir] .startmenu__wrapper.is-win10 {
+    background: #1f1f1f
+}
+
+[dir=ltr] .startmenu__wrapper.is-win10 {
+    padding: 16px 8px 0 0
+}
+
+[dir=rtl] .startmenu__wrapper.is-win10 {
+    padding: 16px 0 0 8px
+}
+
+.is-win10 .startmenu__groupbutton:focus-within .startmenu__menu,
+.is-win10 .startmenu__groupbutton:hover .startmenu__menu {
+    display: flex
+}
+
+[dir] .is-win10 .startmenu__groupbutton:focus-within .startmenu__menu,
+[dir] .is-win10 .startmenu__groupbutton:hover .startmenu__menu {
+    animation: fadeIn .2s
+}
+
+.is-win10 .startmenu__button {
+    color: inherit;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%
+}
+
+[dir] .is-win10 .startmenu__button {
+    background: none;
+    border: 0;
+    padding: 6px;
+    transition: transform .2s
+}
+
+[dir=ltr] .is-win10 .startmenu__button {
+    text-align: left
+}
+
+[dir=rtl] .is-win10 .startmenu__button {
+    text-align: right
+}
+
+[dir] .is-win10 .startmenu__button:focus,
+[dir] .is-win10 .startmenu__button:hover {
+    background: hsla(0, 0%, 100%, .1333333333)
+}
+
+[dir] .is-win10 .startmenu__button:active {
+    background: hsla(0, 0%, 100%, .2666666667)
+}
+
+.is-win10 .startmenu__sidebar {
+    width: 48px
+}
+
+[dir] .is-win10 .startmenu__sidebar {
+    padding-top: 8px
+}
+
+.is-win10 .startmenu__sidebar .startmenu__button {
+    gap: 16px
+}
+
+[dir] .is-win10 .startmenu__sidebar .startmenu__button {
+    padding: 12px 14px
+}
+
+.is-win10 .startmenu__sidebar .startmenu__program-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    font-size: 16px
+}
+
+.is-win10 .startmenu__program-list {
+    width: 300px
+}
+
+[dir=ltr] .is-win10 .startmenu__program-list {
+    margin-right: 8px;
+    padding: 0 8px 0 52px
+}
+
+[dir=rtl] .is-win10 .startmenu__program-list {
+    margin-left: 8px;
+    padding: 0 52px 0 8px
+}
+
+.is-win10 .startmenu__program-list::-webkit-scrollbar {
+    width: 3px
+}
+
+[dir] .is-win10 .startmenu__program-list::-webkit-scrollbar {
+    background: hsla(0, 0%, 100%, 0)
+}
+
+[dir] .is-win10 .startmenu__program-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .6);
+    border-radius: 99px
+}
+
+[dir] .is-win10 .startmenu__program-list .startmenu__button:active {
+    transform: scale(.98)
+}
+
+.is-win10 .startmenu__program-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+[dir] .is-win10 .startmenu__menu {
+    background: #2c2c2c
+}
+
+.is-win10 .startmenu__shortcut-list {
+    gap: 4px
+}
+
+[dir=ltr] .is-win10 .startmenu__shortcut-list {
+    padding-right: 8px
+}
+
+[dir=rtl] .is-win10 .startmenu__shortcut-list {
+    padding-left: 8px
+}
+
+.is-win10 .startmenu__shortcut-list::-webkit-scrollbar {
+    width: 3px
+}
+
+[dir] .is-win10 .startmenu__shortcut-list::-webkit-scrollbar {
+    background: hsla(0, 0%, 100%, 0)
+}
+
+[dir] .is-win10 .startmenu__shortcut-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .6);
+    border-radius: 99px
+}
+
+.is-win10 .grid__list {
+    gap: 4px
+}
+
+.is-win10 .grid__item {
+    width: 100px;
+    height: 100px
+}
+
+[dir] .is-win10 .grid__item-button {
+    background-color: #353535;
+    transition: transform .1s
+}
+
+[dir] .is-win10 .grid__item-button:focus,
+[dir] .is-win10 .grid__item-button:hover {
+    box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, .6)
+}
+
+[dir] .is-win10 .grid__item-button:active {
+    box-shadow: none;
+    transform: scale(.97)
+}
+
+.is-win10 .grid__item-icon {
+    width: 32px;
+    height: 32px
+}
+
+.startmenu__aligner {
+    bottom: calc(var(--taskbar-height) + 8px)
+}
+
+.startmenu__wrapper.is-win11 {
+    color: var(--text-color);
+    height: auto
+}
+
+[dir] .startmenu__wrapper.is-win11 {
+    background: var(--startmenu-bg);
+    border: 1px solid var(--border-color)
+}
+
+[dir] .is-win11 .startmenu__pane {
+    transition: transform .6s cubic-bezier(.22, 1, .36, 1)
+}
+
+[dir=ltr] .is-win11 .startmenu__pane:first-child {
+    transform: translateX(-100%)
+}
+
+[dir=rtl] .is-win11 .startmenu__pane:first-child {
+    transform: translateX(100%)
+}
+
+[dir] .is-win11 .startmenu__pane.is-visible:first-child {
+    transform: translateX(0)
+}
+
+[dir=ltr] .is-win11 .startmenu__pane.is-visible:nth-child(2) {
+    transform: translateX(-100%)
+}
+
+[dir=rtl] .is-win11 .startmenu__pane.is-visible:nth-child(2) {
+    transform: translateX(100%)
+}
+
+.is-win11 .startmenu__pane-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600
+}
+
+[dir=ltr] .is-win11 .startmenu__pane-title {
+    padding-left: 14px
+}
+
+[dir=rtl] .is-win11 .startmenu__pane-title {
+    padding-right: 14px
+}
+
+.is-win11 .startmenu__all {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    gap: 8px
+}
+
+[dir] .is-win11 .startmenu__all {
+    border-radius: 4px;
+    background: var(--startmenu-item--hover);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, .0666666667) rgba(0, 0, 0, .0666666667) rgba(0, 0, 0, .2) rgba(0, 0, 0, .0666666667);
+    padding: 3px 6px
+}
+
+.is-win11 .startmenu__all:hover {
+    filter: brightness(.98)
+}
+
+.is-win11 .startmenu__all:active {
+    opacity: .6
+}
+
+.is-win11 .startmenu__grid-wrapper {
+    --grid-item-height: 80px;
+    height: calc(var(--grid-item-height)*2)
+}
+
+[dir] .is-win11 .startmenu__grid-list {
+    transition: transform .6s cubic-bezier(.22, 1, .36, 1)
+}
+
+.is-win11 .startmenu__grid-list .startmenu__button {
+    width: 90px;
+    height: var(--grid-item-height)
+}
+
+.is-win11 .startmenu__grid-list .startmenu__button-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    width: 100%
+}
+
+.is-win11 .startmenu__grid-list .startmenu__button-icon {
+    width: 32px;
+    height: 32px
+}
+
+.is-win11 .startmenu__program-list::-webkit-scrollbar {
+    width: 2px
+}
+
+[dir] .is-win11 .startmenu__program-list::-webkit-scrollbar {
+    background: hsla(0, 0%, 100%, 0)
+}
+
+[dir] .is-win11 .startmenu__program-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .5333333333);
+    border-radius: 99px
+}
+
+.is-win11 .startmenu__button {
+    display: flex;
+    align-items: center
+}
+
+[dir] .is-win11 .startmenu__button {
+    transition: background .2s
+}
+
+[dir] .is-win11 .startmenu__button:hover {
+    background-color: var(--startmenu-item--hover)
+}
+
+.is-win11 .startmenu__button-icon {
+    width: 24px;
+    height: 24px
+}
+
+[dir] .is-win11 .startmenu__menu {
+    background: var(--theme-surface--bright);
+    border: 1px solid var(--border-color--bright)
+}
+
+.is-win11 .startmenu__menu .startmenu__button {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+[dir] .is-win11 .startmenu__menu .startmenu__button:hover {
+    background: var(--theme-surface)
+}
+
+[dir] .is-win11 .startmenu__footer {
+    background: var(--theme-surface);
+    border-top: 1px solid var(--border-color--bright)
+}
+
+.ad__container--google.is-horizontal {
+    height: 100px
+}
+
+.ad__container--google.is-auto {
+    height: 280px
+}
+
+.ad__container--google ins {
+    width: inherit;
+    max-width: inherit
+}
+
+#start-menu-wrapper.is-win31 {
+    position: fixed;
+    top: 0
+}
+
+[dir] #start-menu-wrapper.is-win31 .window__body {
+    padding: 4px
+}
+
+#start-menu-wrapper.is-win31 .icon {
+    width: 32px;
+    height: 32px
+}
+
+.is-win31 .startmenu__group-button:hover .startmenu__group-label {
+    color: #fff
+}
+
+[dir] .is-win31 .startmenu__group-button:hover .startmenu__group-label {
+    background: #2900ad
+}
+
+[dir] .is-win31 .adsbygoogle {
+    margin-top: 0
+}
+
+.startmenu__wrapper.is-win2k {
+    height: auto
+}
+
+.is-win2k .startmenu__banner {
+    height: calc(100% - 8px);
+    writing-mode: sideways-lr
+}
+
+[dir] .is-win2k .startmenu__banner {
+    background: linear-gradient(0deg, #00f, #000)
+}
+
+.is-win2k .startmenu__menu {
+    position: static
+}
+
+[dir=ltr] .is-win2k .startmenu__menu {
+    padding: 4px 4px 4px 20px
+}
+
+[dir=rtl] .is-win2k .startmenu__menu {
+    padding: 4px 20px 4px 4px
+}
+
+[dir=ltr] .is-win2k .startmenu__program-item>button {
+    padding: 12px 4px 12px 40px
+}
+
+[dir=rtl] .is-win2k .startmenu__program-item>button {
+    padding: 12px 40px 12px 4px
+}
+
+.is-win2k .startmenu__program-item>.startmenu__program-icon {
+    width: 24px;
+    height: 24px
+}
+
+.is-win2k .startmenu__program-item .winui-menu {
+    scrollbar-width: thin
+}
+
+.is-win2k .startmenu__program-item:last-child .winui-menu {
+    top: unset;
+    bottom: 0
+}
+
+.is-kubuntu .startmenu__button,
+.is-kubuntu .startmenu__grid-item,
+.is-kubuntu .startmenu__program-item {
+    position: relative
+}
+
+.is-kubuntu .startmenu__button:before,
+.is-kubuntu .startmenu__grid-item:before,
+.is-kubuntu .startmenu__program-item:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    content: "";
+    opacity: 0;
+    z-index: -1
+}
+
+[dir] .is-kubuntu .startmenu__button:before,
+[dir] .is-kubuntu .startmenu__grid-item:before,
+[dir] .is-kubuntu .startmenu__program-item:before {
+    left: 0;
+    right: 0;
+    background: var(--theme-color)
+}
+
+.startmenu__wrapper.is-kubuntu {
+    height: auto
+}
+
+[dir] .startmenu__wrapper.is-kubuntu {
+    background: #2a2e32;
+    border: 1px solid transparent;
+    border-top-color: #40464d;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .6666666667)
+}
+
+[data-effect-enable-glass] .startmenu__wrapper.is-kubuntu {
+    backdrop-filter: blur(6px)
+}
+
+[dir] .is-kubuntu .startmenu__search,
+[dir] [data-effect-enable-glass] .startmenu__wrapper.is-kubuntu {
+    background: rgba(42, 46, 50, .8666666667)
+}
+
+[dir] .is-kubuntu .startmenu__search {
+    border-color: var(--border-color)
+}
+
+.is-kubuntu .startmenu__body {
+    height: 320px
+}
+
+.is-kubuntu .startmenu__button {
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+[dir] .is-kubuntu .startmenu__button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px
+}
+
+[dir] .is-kubuntu .startmenu__button:active,
+[dir] .is-kubuntu .startmenu__button:hover {
+    border-color: var(--theme-color)
+}
+
+.is-kubuntu .startmenu__button:active:before {
+    opacity: .6
+}
+
+.is-kubuntu .startmenu__program-list {
+    scrollbar-width: thin
+}
+
+[dir] .is-kubuntu .startmenu__program-item:hover {
+    border-color: var(--theme-color)
+}
+
+.is-kubuntu .startmenu__program-item:hover:before {
+    opacity: .4
+}
+
+.is-kubuntu .startmenu__program-icon {
+    width: 32px;
+    height: 32px
+}
+
+.is-kubuntu .startmenu__program-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+.is-kubuntu .startmenu__grid-item {
+    width: 100px;
+    height: 100px
+}
+
+[dir] .is-kubuntu .startmenu__grid-item:hover {
+    border-color: var(--theme-color)
+}
+
+.is-kubuntu .startmenu__grid-item:hover:before {
+    opacity: .4
+}
+
+.is-kubuntu .startmenu__grid-icon {
+    width: 48px;
+    height: 48px
+}
+
+.is-kubuntu .startmenu__grid-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    width: 100%
+}
+
+.startmenu__wrapper.is-winxp {
+    width: 360px;
+    height: auto
+}
+
+[dir] .startmenu__wrapper.is-winxp {
+    background: var(--startmenu-bg);
+    border: 1px solid var(--startmenu-bd);
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 1px
+}
+
+[dir=ltr] .startmenu__wrapper.is-winxp {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5333333333)
+}
+
+[dir=rtl] .startmenu__wrapper.is-winxp {
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .5333333333)
+}
+
+[dir] .is-winxp .startmenu__region-top {
+    background: radial-gradient(circle at 100% 0, rgba(0, 0, 0, .1333333333) 0, hsla(0, 0%, 100%, 0) 6%, hsla(0, 0%, 100%, 0) 100%), linear-gradient(180deg, hsla(0, 0%, 100%, .4) 1.5%, rgba(0, 0, 0, .0666666667) 5%, var(--startmenu-gd-top--1) 10%, var(--startmenu-gd-top--2));
+    border-bottom: 1px solid var(--startmenu-bd);
+    border-radius: 6px 6px 0 0
+}
+
+[dir=ltr] .is-winxp .startmenu__region-top {
+    box-shadow: inset -2px 0 3px var(--startmenu-sd-top), inset 2px 0 3px hsla(0, 0%, 100%, .2)
+}
+
+[dir=rtl] .is-winxp .startmenu__region-top {
+    box-shadow: inset 2px 0 3px var(--startmenu-sd-top), inset -2px 0 3px hsla(0, 0%, 100%, .2)
+}
+
+.is-winxp .startmenu__region-main {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #fff 1%, var(--startmenu-bd--top), var(--startmenu-bg--right, hsla(0, 0%, 100%, 0)) 99%)
+}
+
+[dir] .is-winxp .startmenu__region-main {
+    border-top: 2px solid;
+    margin: 0 1px
+}
+
+[dir] .is-winxp .startmenu__region-bottom {
+    background: radial-gradient(circle at 0 100%, rgba(0, 0, 0, .1333333333) 0, hsla(0, 0%, 100%, 0) 13%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(circle at 100% 100%, rgba(0, 0, 0, .1333333333) 0, hsla(0, 0%, 100%, 0) 13%, hsla(0, 0%, 100%, 0) 100%)
+}
+
+[dir=ltr] .is-winxp .startmenu__region-bottom {
+    box-shadow: inset 3px 0 2px hsla(0, 0%, 100%, .1333333333)
+}
+
+[dir=rtl] .is-winxp .startmenu__region-bottom {
+    box-shadow: inset -3px 0 2px hsla(0, 0%, 100%, .1333333333)
+}
+
+[dir=ltr] .is-winxp .startmenu__name {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .8)
+}
+
+[dir=rtl] .is-winxp .startmenu__name {
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, .8)
+}
+
+[dir=ltr] .is-winxp .startmenu__button {
+    padding-right: 8px
+}
+
+[dir=rtl] .is-winxp .startmenu__button {
+    padding-left: 8px
+}
+
+.is-winxp .startmenu__button-iconbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    position: relative
+}
+
+[dir] .is-winxp .startmenu__button-iconbox {
+    border-radius: 3px;
+    background: radial-gradient(at 10% 10%, var(--gd--idle-1, hsla(0, 0%, 100%, .4)) 0, hsla(0, 0%, 100%, .1333333333) 30%, hsla(0, 0%, 100%, 0) 60%), radial-gradient(at 85% 40%, var(--gd--idle-2, hsla(0, 0%, 100%, .2)) 0, hsla(0, 0%, 100%, 0) 50%), var(--bg--idle)
+}
+
+[dir=ltr] .is-winxp .startmenu__button-iconbox {
+    box-shadow: inset 2px 2px 3px var(--sd--idle-1), inset -1px -1px 2px var(--sd--idle-2)
+}
+
+[dir=rtl] .is-winxp .startmenu__button-iconbox {
+    box-shadow: inset -2px 2px 3px var(--sd--idle-1), inset 1px -1px 2px var(--sd--idle-2)
+}
+
+.is-winxp .startmenu__button-iconbox:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute
+}
+
+[dir] .is-winxp .startmenu__button-iconbox:after {
+    border: 1px solid #fff;
+    border-radius: 3px
+}
+
+[dir=ltr] .is-winxp .startmenu__button-iconbox:after {
+    box-shadow: inset 1px 1px 1px var(--sd--idle-3), inset -1px -1px 1px var(--sd--idle-4)
+}
+
+[dir=rtl] .is-winxp .startmenu__button-iconbox:after {
+    box-shadow: inset -1px 1px 1px var(--sd--idle-3), inset 1px -1px 1px var(--sd--idle-4)
+}
+
+.is-winxp .startmenu__button-icon {
+    width: 20px;
+    height: 20px
+}
+
+.is-winxp .startmenu__button.is-restart {
+    --bd--inactive: #a4d9a4;
+    --bg--idle: #339833;
+    --sd--idle-1: #339833;
+    --sd--idle-2: #026202;
+    --sd--idle-3: #339833;
+    --sd--idle-4: #026202;
+    --bg--hover: #2abc2a;
+    --gd--hover-1: #a4d9a4;
+    --gd--hover-2: hsla(0, 0%, 100%, 0);
+    --gd--hover-2: #73ce73;
+    --sd--hover-1: #339833;
+    --sd--hover-2: #026202;
+    --sd--hover-3: #2abc2a;
+    --sd--hover-4: #0d740d;
+    --sd--hover-5: #2abc2a;
+    --sd--hover-6: #0d740d;
+    --gd--active-1: #026202;
+    --gd--active-2: #026202;
+    --gd--active-3: #029d02;
+    --gd--active-4: #029d02;
+    --sd--active-1: #026202;
+    --sd--active-2: #026202
+}
+
+.is-winxp .startmenu__button.is-logoff {
+    --bg--idle: #d7942d;
+    --gd--idle-1: #eac484;
+    --gd--idle-2: #eac484;
+    --gd--idle-2: #b56a02;
+    --sd--idle-1: #d68f24;
+    --sd--idle-2: #9c5d02;
+    --sd--idle-3: #d68f24;
+    --sd--idle-4: #9c5d02;
+    --bg--hover: #ffad31;
+    --gd--hover-1: #fad698;
+    --gd--hover-2: hsla(0, 0%, 100%, 0);
+    --gd--hover-2: #fedb1b;
+    --sd--hover-1: #d68f24;
+    --sd--hover-2: #9c5d02;
+    --sd--hover-3: hsla(0, 0%, 100%, 0);
+    --sd--hover-4: hsla(0, 0%, 100%, 0);
+    --sd--hover-5: #fda926;
+    --sd--hover-6: #b97a08;
+    --gd--active-1: #8c5200;
+    --gd--active-2: #cc7900;
+    --gd--active-3: #eea600;
+    --gd--active-4: #cc7900
+}
+
+.is-winxp .startmenu__button.is-shutdown {
+    --bg--inactive: #ae7891;
+    --bd--inactive: #fff;
+    --gd--inactive-1: #b49cba;
+    --gd--inactive-2: #ad687e;
+    --sd--inactive-1: #b396b3;
+    --sd--inactive-2: #b16775;
+    --sd--inactive-3: #ae768c;
+    --sd--inactive-4: #955b76;
+    --bg--idle: #e66a4d;
+    --gd--idle-1: #f1ac9a;
+    --gd--idle-2: #e34d22;
+    --sd--idle-1: #ec937c;
+    --sd--idle-2: #e34d22;
+    --sd--idle-3: rgba(228, 95, 62, 0.6666666666666666);
+    --sd--idle-4: rgba(174, 36, 0, 0.6666666666666666);
+    --bg--hover: #ff6452;
+    --gd--hover-1: #ffb8b0;
+    --gd--hover-2: #ffa27d;
+    --sd--hover-1: #ffa59b;
+    --sd--hover-2: #ff6857;
+    --sd--hover-3: rgba(255, 107, 90, 0.6666666666666666);
+    --sd--hover-4: rgba(201, 60, 43, 0.6666666666666666);
+    --sd--hover-5: rgba(255, 87, 68, 0.6666666666666666);
+    --sd--hover-6: rgba(207, 76, 59, 0.6666666666666666);
+    --gd--active-1: #8d2c14;
+    --gd--active-2: #ba391a;
+    --gd--active-3: #c5431f;
+    --gd--active-4: #cf4c23;
+    --sd--active-1: rgba(90, 29, 13, 0.6666666666666666);
+    --sd--active-2: rgba(195, 65, 30, 0.6666666666666666)
+}
+
+.is-winxp .startmenu__button:hover {
+    color: var(--text-color--hover)
+}
+
+[dir] .is-winxp .startmenu__button:hover {
+    background: var(--theme-accent)
+}
+
+[dir] .is-winxp .startmenu__button:hover .startmenu__button-iconbox {
+    background: radial-gradient(at 10% 10%, var(--gd--hover-1) 0, hsla(0, 0%, 100%, .1333333333) 30%, hsla(0, 0%, 100%, 0) 60%), radial-gradient(at 70% 70%, var(--gd--hover-2) 0, hsla(0, 0%, 100%, 0) 50%), var(--bg--hover)
+}
+
+[dir=ltr] .is-winxp .startmenu__button:hover .startmenu__button-iconbox {
+    box-shadow: inset 2px 2px 3px var(--sd--hover-1), inset -1px -1px 2px var(--sd--hover-2)
+}
+
+[dir=rtl] .is-winxp .startmenu__button:hover .startmenu__button-iconbox {
+    box-shadow: inset -2px 2px 3px var(--sd--hover-1), inset 1px -1px 2px var(--sd--hover-2)
+}
+
+.is-winxp .startmenu__button:hover .startmenu__button-iconbox:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute
+}
+
+[dir] .is-winxp .startmenu__button:hover .startmenu__button-iconbox:after {
+    border: 1px solid #fff;
+    border-radius: 3px
+}
+
+[dir=ltr] .is-winxp .startmenu__button:hover .startmenu__button-iconbox:after {
+    box-shadow: inset 1px 0 1px var(--sd--hover-3), inset -1px 0 1px var(--sd--hover-4), inset 0 1px 1px var(--sd--hover-5), inset 0 -1px 1px var(--sd--hover-6)
+}
+
+[dir=rtl] .is-winxp .startmenu__button:hover .startmenu__button-iconbox:after {
+    box-shadow: inset -1px 0 1px var(--sd--hover-3), inset 1px 0 1px var(--sd--hover-4), inset 0 1px 1px var(--sd--hover-5), inset 0 -1px 1px var(--sd--hover-6)
+}
+
+[dir=ltr] .is-winxp .startmenu__button:active>* {
+    transform: translate(1px, 1px)
+}
+
+[dir=rtl] .is-winxp .startmenu__button:active>* {
+    transform: translate(-1px, 1px)
+}
+
+.is-winxp .startmenu__program-item {
+    color: #333;
+    gap: 4px
+}
+
+[dir] .is-winxp .startmenu__program-item {
+    border: 0;
+    padding: 2px;
+    margin-bottom: 4px
+}
+
+[dir] .is-winxp .startmenu__program-item:focus,
+[dir] .is-winxp .startmenu__program-item:hover {
+    background: var(--theme-accent)
+}
+
+.is-winxp .startmenu__program-icon {
+    flex-shrink: 0
+}
+
+.is-winxp .startmenu__program-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: .875rem
+}
+
+[dir] .is-winxp .startmenu__left {
+    background: var(--startmenu-bg--left, #fff)
+}
+
+.is-winxp .startmenu__left>.startmenu__program-item {
+    color: var(--startmenu-text--left, #000)
+}
+
+.is-winxp .startmenu__left .startmenu__program-icon {
+    width: 32px;
+    height: 32px
+}
+
+[dir=ltr] .is-winxp .startmenu__left .startmenu__divider {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), var(--startmenu-bd--all, var(--startmenu-bd--body)), hsla(0, 0%, 100%, 0))
+}
+
+[dir=rtl] .is-winxp .startmenu__left .startmenu__divider {
+    background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), var(--startmenu-bd--all, var(--startmenu-bd--body)), hsla(0, 0%, 100%, 0))
+}
+
+[dir] .is-winxp .startmenu__right {
+    background: var(--startmenu-bg--right)
+}
+
+[dir=ltr] .is-winxp .startmenu__right {
+    border-left: 1px solid var(--startmenu-bd--body)
+}
+
+[dir=rtl] .is-winxp .startmenu__right {
+    border-right: 1px solid var(--startmenu-bd--body)
+}
+
+.is-winxp .startmenu__right .startmenu__program-item {
+    color: var(--startmenu-text--right, #000)
+}
+
+.is-winxp .startmenu__right .startmenu__program-item:focus,
+.is-winxp .startmenu__right .startmenu__program-item:hover {
+    color: var(--text-color--hover)
+}
+
+.is-winxp .startmenu__right .startmenu__program-item.is-bold {
+    font-weight: 600
+}
+
+.is-winxp .startmenu__right .startmenu__program-icon {
+    width: 24px;
+    height: 24px
+}
+
+[dir=ltr] .is-winxp .startmenu__divider {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), var(--startmenu-bd--body), hsla(0, 0%, 100%, 0))
+}
+
+[dir=rtl] .is-winxp .startmenu__divider {
+    background: linear-gradient(-90deg, hsla(0, 0%, 100%, 0), var(--startmenu-bd--body), hsla(0, 0%, 100%, 0))
+}
+
+.is-winxp .startmenu__nav:focus-within .startmenu__menu {
+    display: block
+}
+
+.is-winxp .startmenu__all {
+    color: var(--startmenu-text--left, #000)
+}
+
+[dir] .is-winxp .startmenu__all {
+    margin-bottom: 0;
+    padding: 4px
+}
+
+.is-winxp .startmenu__all:focus .startmenu__all-icon,
+.is-winxp .startmenu__all:hover .startmenu__all-icon {
+    filter: brightness(1.4)
+}
+
+.is-winxp .startmenu__all:focus+.startmenu__menu,
+.is-winxp .startmenu__all:hover+.startmenu__menu {
+    display: block
+}
+
+.is-winxp .startmenu__menu {
+    scrollbar-width: thin
+}
+
+[dir] .is-winxp .startmenu__menu {
+    border: 1px solid var(--startmenu-bd)
+}
+
+[dir=ltr] .is-winxp .startmenu__menu {
+    box-shadow: inset .5px 0 0 #fff, inset 4px 0 0 var(--startmenu-bd), 3px 3px 3px rgba(0, 0, 0, .5333333333);
+    left: 80%;
+    padding-left: 4px
+}
+
+[dir=rtl] .is-winxp .startmenu__menu {
+    box-shadow: inset -.5px 0 0 #fff, inset -4px 0 0 var(--startmenu-bd), -3px 3px 3px rgba(0, 0, 0, .5333333333);
+    right: 80%;
+    padding-right: 4px
+}
+
+[dir] .is-winxp .startmenu__menu .startmenu__program-item {
+    padding: 4px 6px;
+    margin: 0
+}
+
+.is-winxp .startmenu__menu .startmenu__program-icon {
+    width: 16px;
+    height: 16px
+}
+
+.is-win8.startmenu__wrapper {
+    bottom: 0;
+    height: auto
+}
+
+.is-win8 .startmenu__name {
+    max-width: 200px
+}
+
+[dir] .is-win8 .startmenu__button:hover {
+    background: hsla(0, 0%, 100%, .2)
+}
+
+[dir] .is-win8 .startmenu__button:active {
+    transform: scale(.95)
+}
+
+[dir] .is-win8 .startmenu__avatar {
+    transform: none
+}
+
+.is-win8 .startmenu__account:focus-within .startmenu__menu,
+.is-win8 .startmenu__account:focus .startmenu__menu {
+    display: block
+}
+
+.is-win8 .startmenu__menu {
+    width: 200px
+}
+
+[dir] .is-win8 .startmenu__menu {
+    animation: fadeIn .2s
+}
+
+.is-win8 .startmenu__menu-button {
+    width: 100%;
+    font-weight: 600
+}
+
+[dir] .is-win8 .startmenu__menu-button {
+    padding: 12px 20px
+}
+
+[dir=ltr] .is-win8 .startmenu__menu-button {
+    text-align: left
+}
+
+[dir=rtl] .is-win8 .startmenu__menu-button {
+    text-align: right
+}
+
+[dir] .is-win8 .startmenu__menu-button:focus,
+[dir] .is-win8 .startmenu__menu-button:hover {
+    background: #dedede
+}
+
+.is-win8 .grid__list {
+    grid-template-columns: repeat(auto-fill, 120px);
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    min-width: 240px;
+    min-height: 372px;
+    flex-shrink: 0
+}
+
+[dir] .is-win8 .grid__item.is-desktop .grid__item-text {
+    text-shadow: 0 1px 1px #000
+}
+
+[dir] .is-win8 .grid__item.is-cpanel .grid__item-button {
+    background: #0e4aa0
+}
+
+[dir] .is-win8 .grid__item.is-computer .grid__item-button {
+    background: #4a329b
+}
+
+[dir] .is-win8 .grid__item-button {
+    background: #006582;
+    border: 1px solid hsla(0, 0%, 100%, .2);
+    transition: transform .2s
+}
+
+[dir] .is-win8 .grid__item-button:hover {
+    box-shadow: 0 0 0 4px hsla(0, 0%, 100%, .1333333333)
+}
+
+[dir] .is-win8 .grid__item-button:focus-visible {
+    box-shadow: 0 0 0 2px #fff
+}
+
+[dir] .is-win8 .grid__item-button:active {
+    transform: scale(.95)
+}

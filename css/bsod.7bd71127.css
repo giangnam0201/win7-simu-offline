@@ -1,0 +1,87 @@
+.bsod__screen.is-win10 {
+    font-family: Segoe UI, sans-serif;
+    color: #fff
+}
+
+[dir] .bsod__screen.is-win10 {
+    background-color: #0079d8
+}
+
+[dir] .bsod__screen.is-win10.win11 {
+    background-color: #000
+}
+
+.is-win10 .bsod__title {
+    font-size: 12rem
+}
+
+.is-win10 .bsod__text {
+    line-height: 40px
+}
+
+[dir] .is-win10 .bsod__body {
+    margin: 3% 20% auto 20%
+}
+
+.bsod__screen.is-win31 {
+    font-family: lucida console, lucidacons, monospace
+}
+
+[dir] .bsod__screen.is-win31 {
+    background-color: #00a
+}
+
+[dir] .is-win31 .bsod__body {
+    margin: auto 20%
+}
+
+.is-win31 .bsod__title-text {
+    color: #00a
+}
+
+[dir] .is-win31 .bsod__title-text {
+    background-color: #aaa
+}
+
+.bsod__screen.is-win7 {
+    font-family: lucida console, lucidacons, monospace
+}
+
+[dir] .bsod__screen.is-win7 {
+    background-color: #0100ad;
+    padding: 0 5vmax
+}
+
+.bsod__screen.is-win8 {
+    font-family: Segoe UI, sans-serif
+}
+
+[dir] .bsod__screen.is-win8 {
+    background-color: #1173aa
+}
+
+[dir] .is-win8 .bsod__body {
+    margin: 3% 20% auto 20%
+}
+
+.is-win8 .bsod__title {
+    font-size: 12rem
+}
+
+.is-win8 .bsod__text {
+    line-height: 40px
+}
+
+.window__wrapper.is-bsod .window__body.is-wide {
+    flex-direction: row
+}
+
+.bsod__actions>.winui-button {
+    display: block;
+    min-width: 150px;
+    max-width: 100%
+}
+
+[dir] .bsod__actions>.winui-button+.winui-button {
+    margin: 0
+}

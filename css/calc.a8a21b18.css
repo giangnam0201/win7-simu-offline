@@ -1,0 +1,22 @@
+[dir] .is-calc .window__body {
+    padding: 12px
+}
+
+.calc__button-item {
+    position: relative;
+    min-width: 20%
+}
+
+[dir] .calc__button-item {
+    background: rgba(0, 0, 0, .0666666667);
+    padding: 4px;
+    text-align: center
+}
+
+[dir] .calc__button-item:hover {
+    background: rgba(0, 0, 0, .1333333333)
+}
+
+[dir] .calc__button-item:active {
+    background: rgba(0, 0, 0, .2666666667)
+}

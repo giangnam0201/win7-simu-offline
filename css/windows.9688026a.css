@@ -1,0 +1,120 @@
+[dir] .desktop-background {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .2), 0 0 0 1px hsla(0, 0%, 100%, .2)
+}
+
+[dir] .desktop-background.is-static {
+    background: var(--bg) no-repeat 50%/cover
+}
+
+.desktop__icon-item {
+    touch-action: manipulation
+}
+
+[dir] .desktop__icon-item:hover {
+    background: rgba(0, 0, 0, .1333333333)
+}
+
+.desktop__icon-item.is-shortcut .desktop__icon-box:after {
+    width: 30%;
+    height: 30%;
+    bottom: 0
+}
+
+[dir] .desktop__icon-item.is-shortcut .desktop__icon-box:after {
+    background-image: var(--shortcut)
+}
+
+[dir=ltr] .desktop__icon-item.is-shortcut .desktop__icon-box:after {
+    left: 0
+}
+
+[dir=rtl] .desktop__icon-item.is-shortcut .desktop__icon-box:after {
+    right: 0
+}
+
+html[dir][dir=rtl] .desktop__icon-item.is-shortcut .desktop__icon-box:after {
+    transform: scaleX(-1)
+}
+
+.desktop__icon-item.is-file .desktop__icon-box:after {
+    width: 50%;
+    height: 50%;
+    bottom: 25%
+}
+
+[dir] .desktop__icon-item.is-file .desktop__icon-box:after {
+    background-image: var(--program)
+}
+
+[dir=ltr] .desktop__icon-item.is-file .desktop__icon-box:after {
+    left: 25%
+}
+
+[dir=rtl] .desktop__icon-item.is-file .desktop__icon-box:after {
+    right: 25%
+}
+
+.desktop__icon-item.is-cut .desktop__icon-icon {
+    opacity: .4
+}
+
+.desktop__icon-box {
+    width: 100%;
+    height: calc(100% - 20px)
+}
+
+.desktop__icon-box:after {
+    content: "";
+    position: absolute
+}
+
+[dir] .desktop__icon-box:after {
+    background: no-repeat 50%/contain
+}
+
+.desktop__icon-icon {
+    width: 100%;
+    height: 100%
+}
+
+.desktop__icon-name {
+    height: 20px;
+    line-height: 20px
+}
+
+.desktop__wrapper {
+    height: calc(100vh - var(--taskbar-height))
+}
+
+[dir] .desktop__icon-item.is-active {
+    background: rgba(0, 0, 0, .2666666667)
+}
+
+.desktop .fragment {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    pointer-events: none
+}
+
+[dir] .desktop .fragment {
+    left: 0;
+    right: 0
+}
+
+.desktop .fragment :not(.fragment) {
+    pointer-events: auto
+}
+
+.main__screensaver {
+    position: absolute;
+    top: 0
+}
+
+[dir=ltr] .main__screensaver {
+    left: 0
+}
+
+[dir=rtl] .main__screensaver {
+    right: 0
+}

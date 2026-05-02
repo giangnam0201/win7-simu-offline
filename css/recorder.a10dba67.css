@@ -1,0 +1,62 @@
+.window__wrapper.is-recorder .window__body {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+[dir] .window__wrapper.is-recorder .window__body {
+    padding: 4px 6px
+}
+
+.window__wrapper.is-recorder [role=progressbar] {
+    width: 35%;
+    height: 100%
+}
+
+[dir] .window__wrapper.is-recorder [role=progressbar] {
+    margin: 0
+}
+
+.recorder__button {
+    min-width: 40px;
+    height: 100%;
+    color: currentColor
+}
+
+[dir] .recorder__button:hover {
+    background: rgba(0, 0, 0, .1333333333)
+}
+
+.recorder__button:first-child {
+    width: 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+[dir] .recorder__button:first-child {
+    padding: 0 5px
+}
+
+.recorder__button:first-child:before {
+    width: 12px;
+    height: 12px;
+    content: "";
+    display: block
+}
+
+[dir] .recorder__button:first-child:before {
+    background: red;
+    border-radius: 50%
+}
+
+[dir] .recorder__button:first-child.recording:before {
+    background: #00f;
+    border-radius: 2px
+}
+
+.recorder__button.is-help .icon {
+    width: 20px;
+    height: 20px
+}

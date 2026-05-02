@@ -1,0 +1,1219 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([
+    ["bin~bsod~camera~chess~chrome~cmd~computer~cpanel~installer~mediacenter~mouse~notepad~onlinegame~pain~47ce5097", "device"], {
+        "01b4": function(e, n, t) {
+            "use strict";
+            const r = {
+                Theme: "setTheme",
+                Color: "setColor",
+                Background: "setBackground",
+                AeroTransparent: "setAeroTransparent",
+                User: "setUser",
+                CurrentUser: "setCurrentUser",
+                Start: "toggleStart",
+                Popup: "togglePopup",
+                Accounts: "accounts",
+                WindowLocation: "setLocation",
+                GameOpen: "openGame",
+                GameClose: "closeGame",
+                RecentPrograms: "setRecentPrograms",
+                PinnedPrograms: "pins",
+                ProgramPin: "pinProgram",
+                ProgramUnpin: "unpinProgram",
+                Shortcuts: "setShortcuts",
+                ShortcutAdd: "addShortcut",
+                ShortcutMove: "moveShortcut",
+                ShortcutRemove: "removeShortcut",
+                ShortcutRename: "renameShortcut",
+                WindowAdd: "addWindow",
+                WindowUpdate: "updateWindow",
+                WindowRemove: "removeWindow",
+                WindowFocus: "focusWindow",
+                Trash: "setTrash",
+                TrashAdd: "addTrash",
+                TrashRemove: "removeTrash",
+                TrashRestore: "restoreTrash",
+                ClipboardItem: "setClipboardItem",
+                Taskbar: "setTaskbar",
+                ShowAds: "setShowAds",
+                ForceUpdate: "forceUpdate",
+                Path: "path",
+                UnlockTheme: "unlockTheme"
+            };
+            n["a"] = r
+        },
+        "0e9a": function(e, n, t) {
+            "use strict";
+            t.d(n, "h", (function() {
+                return o
+            })), t.d(n, "f", (function() {
+                return i
+            })), t.d(n, "g", (function() {
+                return s
+            })), t.d(n, "j", (function() {
+                return u
+            })), t.d(n, "n", (function() {
+                return c
+            })), t.d(n, "m", (function() {
+                return a
+            })), t.d(n, "o", (function() {
+                return d
+            })), t.d(n, "e", (function() {
+                return T
+            })), t.d(n, "i", (function() {
+                return S
+            })), t.d(n, "d", (function() {
+                return I
+            })), t.d(n, "k", (function() {
+                return _
+            })), t.d(n, "l", (function() {
+                return N
+            })), t.d(n, "q", (function() {
+                return f
+            })), t.d(n, "r", (function() {
+                return l
+            })), t.d(n, "c", (function() {
+                return A
+            })), t.d(n, "a", (function() {
+                return h
+            })), t.d(n, "b", (function() {
+                return O
+            })), t.d(n, "p", (function() {
+                return C
+            }));
+            const r = /data:([^;]*)(;.*)*,(.+)/;
+
+            function o(e) {
+                return "string" === typeof e && r.test(e)
+            }
+
+            function i(e) {
+                try {
+                    return e.length > 3 && !(e.length % 4) && atob(e) && !0
+                } catch (n) {
+                    return !1
+                }
+            }
+
+            function s(e) {
+                return e.startsWith("blob:")
+            }
+
+            function u(e) {
+                return E(e, /(webp|apng|png|jpg|jpeg|jfif|svg|gif|ico)$/)
+            }
+
+            function c(e) {
+                return E(e, /(txt|text|readme|md|json|xml|rtf|wpl)$/)
+            }
+
+            function a(e) {
+                return E(e, /rtf$/)
+            }
+
+            function d(e) {
+                return E(e, /(webm|mp4|mpg|mpeg|ogm|wmv|avi|mov)$/)
+            }
+
+            function T(e) {
+                return E(e, /(webm|mp3|ogg|wav|wma|aac|m4a|flac|mid)$/)
+            }
+
+            function S(e) {
+                return E(e, /(exe|msi|apk)$/)
+            }
+
+            function I(e) {
+                return E(e, /(zip)$/)
+            }
+
+            function _(e) {
+                return E(e, /(pdf)$/)
+            }
+
+            function N(e) {
+                return E(e, /(wpl)$/)
+            }
+
+            function f(e) {
+                return E(e, /(html|htm)$/)
+            }
+
+            function E(e, n) {
+                const {
+                    ext: t
+                } = l(e);
+                return !!t && n.test(t.toLowerCase())
+            }
+
+            function l(e) {
+                const n = A(e),
+                    [, t, r] = Array.from(n.match(/(.*)\.(.*)$/) || []);
+                return t || r ? {
+                    name: decodeURIComponent(t),
+                    ext: r
+                } : {
+                    name: n,
+                    ext: null
+                }
+            }
+
+            function A(e) {
+                const n = e.split("/").filter(Boolean),
+                    t = n.pop();
+                return t ? decodeURIComponent(t) : ""
+            }
+
+            function h(e) {
+                const n = e.match(r);
+                return n ? {
+                    mime: n[1],
+                    data: n[3]
+                } : null
+            }
+
+            function O(e, n, t) {
+                const r = T(e) ? "audio" : u(e) ? "image" : null;
+                let o = "";
+                o = s(t) ? t : r ? `data:${r}/${n};base64,${t}` : `data:application/${n},${encodeURIComponent(t)}`;
+                const i = document.createElement("a");
+                i.download = e, i.href = o, i.click()
+            }
+            async function C(e) {
+                return new Promise(n => {
+                    const t = document.createElement("video");
+                    t.src = e, t.onloadedmetadata = () => {
+                        const e = t.videoWidth > 0 && t.videoHeight > 0;
+                        t.remove(), n(e)
+                    }
+                })
+            }
+        },
+        "0f35": function(e, n, t) {
+            "use strict";
+            t.d(n, "e", (function() {
+                return u
+            })), t.d(n, "d", (function() {
+                return c
+            })), t.d(n, "f", (function() {
+                return a
+            })), t.d(n, "b", (function() {
+                return d
+            })), t.d(n, "a", (function() {
+                return T
+            })), t.d(n, "k", (function() {
+                return S
+            })), t.d(n, "m", (function() {
+                return I
+            })), t.d(n, "l", (function() {
+                return _
+            })), t.d(n, "h", (function() {
+                return N
+            })), t.d(n, "c", (function() {
+                return f
+            })), t.d(n, "p", (function() {
+                return E
+            })), t.d(n, "o", (function() {
+                return l
+            })), t.d(n, "q", (function() {
+                return A
+            })), t.d(n, "n", (function() {
+                return h
+            })), t.d(n, "j", (function() {
+                return O
+            })), t.d(n, "g", (function() {
+                return C
+            })), t.d(n, "i", (function() {
+                return g
+            }));
+            var r = t("e5dd"),
+                o = t("0fbc"),
+                i = t("4cca"),
+                s = t("0e9a");
+
+            function u(e) {
+                return /^https?:\/\//.test(e)
+            }
+
+            function c(e) {
+                return /(img|media)\//.test(e)
+            }
+
+            function a(e) {
+                return null === e || void 0 === e
+            }
+
+            function d(e) {
+                return (u(e) ? e : "https://" + e).toLowerCase()
+            }
+
+            function T(e, n) {
+                return e.find(e => new RegExp(`(img|media)/${n}\\.`, "g").test(e))
+            }
+
+            function S(e) {
+                return (e < 10 ? "0" : "") + e
+            }
+
+            function I(e) {
+                return new Promise((n, t) => {
+                    const r = new Image;
+                    r.onerror = t, r.onload = n, r.src = e
+                })
+            }
+
+            function _(e) {
+                const n = "string" === typeof e,
+                    t = n && e.endsWith("mp4") || !n && e.type.includes("video"),
+                    r = n ? e : Object(o["b"])(e.src, e.type);
+                return {
+                    url: r,
+                    isAnimated: t
+                }
+            }
+
+            function N(e) {
+                try {
+                    const {
+                        hostname: n
+                    } = new URL(e);
+                    return /.+\..+/.test(n)
+                } catch (n) {
+                    return !1
+                }
+            }
+
+            function f(e) {
+                return e.startsWith("com.") || e.startsWith("org.chromium")
+            }
+
+            function E(e, n) {
+                return n || (n = e, e = 0), Math.floor(Math.random() * (n - e + 1)) + e
+            }
+
+            function l(e = "") {
+                return `${e}-${Math.random().toString(36).substring(2,9)}`
+            }
+
+            function A(e) {
+                return new Promise(n => setTimeout(n, e))
+            }
+            async function h(e, n) {
+                for (const t of e) await n(t)
+            }
+
+            function O() {
+                r["a"].open({
+                    url: "https://youtube.com/playlist?list=PLztkJSxlj5P76jbbySzGMBZ4reCYbSA5y"
+                })
+            }
+
+            function C(e, n) {
+                const t = Object(s["c"])(e);
+                return Object(i["b"])(t) === n
+            }
+
+            function g(e, n, t, r, o) {
+                e = Math.min(Math.max(e, n), t);
+                const i = (e - n) / (t - n),
+                    s = (o - r) * i + r;
+                return s
+            }
+        },
+        "0fbc": function(e, n, t) {
+            "use strict";
+            t.d(n, "e", (function() {
+                return o
+            })), t.d(n, "j", (function() {
+                return i
+            })), t.d(n, "i", (function() {
+                return s
+            })), t.d(n, "d", (function() {
+                return u
+            })), t.d(n, "f", (function() {
+                return c
+            })), t.d(n, "b", (function() {
+                return a
+            })), t.d(n, "a", (function() {
+                return d
+            })), t.d(n, "g", (function() {
+                return T
+            })), t.d(n, "h", (function() {
+                return S
+            })), t.d(n, "c", (function() {
+                return I
+            }));
+            var r = t("0e9a");
+
+            function o(e) {
+                return e ? URL.createObjectURL(e) : null
+            }
+
+            function i(e) {
+                return new Promise((n, t) => {
+                    const r = new Image;
+                    r.src = e, r.onload = () => n(r), r.onerror = () => t()
+                })
+            }
+
+            function s(e, n = 0, t = 0) {
+                const r = document.createElement("canvas"),
+                    o = r.getContext("2d");
+                if (!o) throw new Error("Failed to get canvas context");
+                let i = n,
+                    s = t;
+                return i && s || (i = e.width || parseFloat(e.style.width) || parseFloat(getComputedStyle(e).width), s = e.height || parseFloat(e.style.height) || parseFloat(getComputedStyle(e).height)), r.width = i, r.height = s, o.drawImage(e, 0, 0, i, s), r
+            }
+
+            function u(e) {
+                return new Promise(n => {
+                    const t = new FileReader;
+                    t.onloadend = () => n(t.result), t.readAsArrayBuffer(e)
+                })
+            }
+
+            function c(e, n) {
+                return new Promise((t, r) => {
+                    e.toBlob(e => {
+                        if (!e) return r("Failed to create blob from canvas");
+                        u(e).then(t)
+                    }, n)
+                })
+            }
+
+            function a(e, n) {
+                const t = new Blob([e], {
+                    type: n || "application/octet-stream"
+                });
+                return o(t)
+            }
+
+            function d(e) {
+                for (var n = "", t = new Uint8Array(e), r = t.byteLength, o = 0; o < r; o++) n += String.fromCharCode(t[o]);
+                return window.btoa(n)
+            }
+
+            function T(e, n, t) {
+                const o = Object(r["a"])(e),
+                    i = o ? o.data : e,
+                    s = n || 512,
+                    u = atob(i),
+                    c = [];
+                for (let r = 0; r < u.length; r += s) {
+                    const e = u.slice(r, r + s),
+                        n = new Array(e.length);
+                    for (let r = 0; r < e.length; r++) n[r] = e.charCodeAt(r);
+                    const t = new Uint8Array(n);
+                    c.push(t)
+                }
+                return new Blob(c, {
+                    type: t || "image/webp"
+                })
+            }
+
+            function S(e, n, t) {
+                const r = T(e, n, t);
+                return o(r)
+            }
+
+            function I(e, n = "webp") {
+                return `data:image/${n};base64,${e}`
+            }
+        },
+        "15d4": function(e, n, t) {
+            var r = {
+                "./aeroNoir.scss": ["04d1", "theme-aeroNoir-scss"],
+                "./chromeos.scss": ["13d0", "theme-chromeos-scss"],
+                "./kubuntu.scss": ["18dd", "theme-kubuntu-scss"],
+                "./macos.scss": ["f30c", "theme-macos-scss"],
+                "./onebit.scss": ["cbbd", "theme-onebit-scss"],
+                "./oxygen.scss": ["b514", "theme-oxygen-scss"],
+                "./ubuntu.scss": ["c91b", "theme-ubuntu-scss"],
+                "./win10.scss": ["a139", "theme-win10-scss"],
+                "./win11.scss": ["f562", "theme-win11-scss"],
+                "./win31.scss": ["7294", "theme-win31-scss"],
+                "./win7-classic.scss": ["a5ab", "theme-win7-classic-scss"],
+                "./win7.scss": ["e163", "theme-win7-scss"],
+                "./win8.scss": ["8f05", "theme-win8-scss"],
+                "./win9x.scss": ["ea0d", "theme-win9x-scss"],
+                "./winW.scss": ["d857", "theme-winW-scss"],
+                "./winlonghorn.scss": ["8456", "theme-winlonghorn-scss"],
+                "./winvista.scss": ["9ba7", "theme-winvista-scss"],
+                "./winxp.scss": ["a949", "theme-winxp-scss"]
+            };
+
+            function o(e) {
+                if (!t.o(r, e)) return Promise.resolve().then((function() {
+                    var n = new Error("Cannot find module '" + e + "'");
+                    throw n.code = "MODULE_NOT_FOUND", n
+                }));
+                var n = r[e],
+                    o = n[0];
+                return t.e(n[1]).then((function() {
+                    return t(o)
+                }))
+            }
+            o.keys = function() {
+                return Object.keys(r)
+            }, o.id = "15d4", e.exports = o
+        },
+        "26a1": function(e, n, t) {
+            "use strict";
+            t.d(n, "c", (function() {
+                return o
+            })), t.d(n, "a", (function() {
+                return i
+            })), t.d(n, "e", (function() {
+                return s
+            })), t.d(n, "f", (function() {
+                return u
+            })), t.d(n, "d", (function() {
+                return c
+            })), t.d(n, "b", (function() {
+                return a
+            })), t.d(n, "i", (function() {
+                return d
+            })), t.d(n, "j", (function() {
+                return T
+            })), t.d(n, "g", (function() {
+                return S
+            })), t.d(n, "k", (function() {
+                return I
+            })), t.d(n, "l", (function() {
+                return _
+            })), t.d(n, "n", (function() {
+                return N
+            })), t.d(n, "m", (function() {
+                return f
+            })), t.d(n, "h", (function() {
+                return E
+            }));
+            const r = "#root",
+                o = "#main",
+                i = ".desktop__wrapper",
+                s = ".taskbar__wrapper",
+                u = ".taskbar-popup",
+                c = ".startmenu__wrapper",
+                a = ".listview__item";
+
+            function d() {
+                return document.body.querySelector(r)
+            }
+
+            function T() {
+                return document.body.querySelector("#stage")
+            }
+
+            function S() {
+                return document.body.querySelector(o)
+            }
+
+            function I() {
+                return document.body.querySelector(s)
+            }
+
+            function _(e) {
+                const n = `[data-target="${e}"]`;
+                return document.body.querySelector(n)
+            }
+
+            function N({
+                flag: e,
+                id: n,
+                content: t
+            }) {
+                if (e) {
+                    const e = document.createElement("style");
+                    e.id = n, e.innerHTML = t, document.body.append(e)
+                } else {
+                    const e = document.querySelector("#" + n);
+                    e && e.remove()
+                }
+            }
+
+            function f({
+                type: e,
+                url: n
+            }) {
+                if (document.querySelector(`link[href="${n}"]`)) return;
+                const t = document.createElement("link");
+                t.rel = "preload", t.as = e, t.href = n, document.head.appendChild(t)
+            }
+
+            function E(e) {
+                const n = e.target,
+                    {
+                        top: t,
+                        left: r,
+                        width: o,
+                        height: i
+                    } = n.getBoundingClientRect(),
+                    s = (e.clientX - r) / o,
+                    u = (e.clientY - t) / i;
+                return {
+                    x: s,
+                    y: u
+                }
+            }
+        },
+        "4cca": function(e, n, t) {
+            "use strict";
+            t.d(n, "h", (function() {
+                return o
+            })), t.d(n, "a", (function() {
+                return i
+            })), t.d(n, "d", (function() {
+                return s
+            })), t.d(n, "g", (function() {
+                return u
+            })), t.d(n, "j", (function() {
+                return a
+            })), t.d(n, "e", (function() {
+                return d
+            })), t.d(n, "c", (function() {
+                return T
+            })), t.d(n, "b", (function() {
+                return S
+            })), t.d(n, "f", (function() {
+                return I
+            })), t.d(n, "i", (function() {
+                return _
+            }));
+            var r = t("0e9a");
+
+            function o(e) {
+                const n = ["bytes", "KB", "MB", "GB", "TB"];
+                if (0 === e) return "0 bytes";
+                const t = Math.floor(Math.log(e) / Math.log(1024));
+                return 0 === t ? `${e} ${n[t]}` : `${(e/Math.pow(1024,t)).toFixed(1)} ${n[t]}`
+            }
+
+            function i(e, n) {
+                let t = 1;
+                const o = e => {
+                    const i = n.find(n => n.lbl === e);
+                    if (!i) return e;
+                    const {
+                        ext: s,
+                        name: u
+                    } = Object(r["r"])(e), [c] = Array.from(/\s?\(\d+\).*/.exec(e) || []), a = ` (${++t})` + (s ? "." + s : "");
+                    let d = e;
+                    return d = c ? d.replace(c, a) : u + a, o(d)
+                };
+                return o(e)
+            }
+
+            function s(e, n) {
+                return e + ` (${n.toUpperCase()}:)`
+            }
+
+            function u(e, n) {
+                return ["computer", e, n].filter(Boolean).join("/")
+            }
+            const c = /(tmpZip)?(\/EXTERNAL\/)?computer\/drive\d+\/?|file:\/\/\/storage\/emulated\/\d+|Android\/data\/com.visnalize.win7simu\/files/g;
+
+            function a(e) {
+                return e ? e.replace(c, "") : null
+            }
+
+            function d(e, n) {
+                return "directory" === n ? "folder" : Object(r["j"])(e) ? "photo" : Object(r["e"])(e) || Object(r["o"])(e) ? "media" : Object(r["l"])(e) ? "wpl" : Object(r["n"])(e) ? "text" : Object(r["i"])(e) ? "executable" : Object(r["m"])(e) ? "richtext" : Object(r["d"])(e) ? "zip" : Object(r["r"])(e).ext ? "file" : "folder"
+            }
+
+            function T(e) {
+                return "system" === e ? "disk-os" : "disk-data"
+            }
+
+            function S(e) {
+                return Object(r["j"])(e) ? "photo" : Object(r["e"])(e) || Object(r["o"])(e) ? "player" : Object(r["q"])(e) || Object(r["k"])(e) ? "chrome" : Object(r["m"])(e) ? "wordpad" : Object(r["n"])(e) ? "notepad" : Object(r["d"])(e) || !Object(r["r"])(e).ext ? "computer" : "file"
+            }
+
+            function I(e) {
+                const n = e.split("/");
+                return n.pop(), n.join("/")
+            }
+
+            function _(e, n) {
+                return e.replace(/%APPDATA%/g, n.appDataPath || "").replace(/%USERPROFILE%/g, n.userPath || "").replace(/\\/g, "/")
+            }
+        },
+        "51e6": function(e, n, t) {
+            "use strict";
+            t.r(n), t.d(n, "Action", (function() {
+                return d["a"]
+            })), t.d(n, "isTouchDevice", (function() {
+                return T
+            })), t.d(n, "isOnline", (function() {
+                return S
+            })), t.d(n, "getBattery", (function() {
+                return I
+            })), t.d(n, "showToast", (function() {
+                return _
+            })), t.d(n, "openFile", (function() {
+                return N
+            })), t.d(n, "getDeviceInfo", (function() {
+                return f
+            })), t.d(n, "getAndroidVersion", (function() {
+                return E
+            })), t.d(n, "launchApp", (function() {
+                return l
+            })), t.d(n, "launchSetting", (function() {
+                return A
+            })), t.d(n, "restart", (function() {
+                return h
+            })), t.d(n, "getWeiScore", (function() {
+                return O
+            })), t.d(n, "getWeiBaseScore", (function() {
+                return C
+            }));
+            var r = t("1547");
+            const o = Object(r["d"])("Device", {
+                web: () => t.e("chunk-2d0c8407").then(t.bind(null, "53a4")).then(e => new e.DeviceWeb)
+            });
+            var i = t("a81a");
+            const s = Object(r["d"])("Launcher", {
+                web: () => t.e("launcher").then(t.bind(null, "d5b0")).then(e => new e.LauncherWeb)
+            });
+            var u = t("c8ec");
+            const c = Object(r["d"])("Toast", {
+                web: () => t.e("chunk-2d0a45fe").then(t.bind(null, "05be")).then(e => new e.ToastWeb)
+            });
+            var a = t("f708"),
+                d = t("6792");
+            const T = () => "ontouchstart" in window || navigator.maxTouchPoints > 0,
+                S = async () => Object(a["a"])() ? (await u["a"].getStatus()).connected : new Promise(e => {
+                    const n = new Image;
+                    n.src = "https://picsum.photos/1/1", n.onload = () => e(!0), n.onerror = () => e(!1)
+                }),
+                I = async () => {
+                    try {
+                        return await o.getBatteryInfo()
+                    } catch (e) {
+                        return {
+                            batteryLevel: 1,
+                            isCharging: !1
+                        }
+                    }
+                },
+                _ = async (e, n = "long") => {
+                    await c.show({
+                        text: "string" === typeof e ? e : null,
+                        duration: n
+                    });
+                    const t = document.querySelector("pwa-toast");
+                    t && t.setAttribute("style", "z-index: 9999")
+                },
+                N = (e = !1, n = "") => new Promise(t => {
+                    const r = document.createElement("input");
+                    r.type = "file", r.multiple = e, r.accept = n, r.click(), r.onchange = e => {
+                        r.remove(), t(e.target)
+                    }
+                }),
+                f = async () => {
+                    const e = (await I()).batteryLevel || 1;
+                    return { ...await o.getInfo(),
+                        ...await i["a"].getInfo(),
+                        battery: 100 * e
+                    }
+                },
+                E = async () => {
+                    if (!Object(a["a"])()) return null;
+                    const {
+                        osVersion: e
+                    } = await o.getInfo();
+                    return parseInt(e)
+                },
+                l = e => s.launchPackage({
+                    packageName: e
+                }),
+                A = e => s.launchMiscellaneous({
+                    target: e
+                }),
+                h = () => window.location.reload(),
+                O = async () => {
+                    const e = await i["a"].getInfo(),
+                        n = e.cpuCores,
+                        t = e.totalMemory / 1024 ** 3,
+                        r = document.createElement("canvas"),
+                        o = !(!window.WebGL2RenderingContext || !r.getContext("webgl2"));
+                    return {
+                        cpu: n >= 8 ? 7.9 : n >= 4 ? 7 : n >= 2 ? 5 : 2,
+                        ram: t >= 8 ? 7.9 : t >= 4 ? 6 : t >= 2 ? 5 : 3,
+                        graphics: o ? 7.9 : 4
+                    }
+                },
+                C = async () => {
+                    const e = await O();
+                    return Math.min(...Object.values(e))
+                }
+        },
+        6792: function(e, n, t) {
+            "use strict";
+            t.d(n, "a", (function() {
+                return o
+            })), t.d(n, "c", (function() {
+                return i
+            })), t.d(n, "b", (function() {
+                return s
+            }));
+            var r = t("8229");
+            const o = {
+                    ACTION_ACCESSIBILITY_SETTINGS: "android.settings.ACCESSIBILITY_SETTINGS",
+                    ACTION_ADD_ACCOUNT: "android.settings.ADD_ACCOUNT",
+                    ACTION_AIRPLANE_MODE_SETTINGS: "android.settings.AIRPLANE_MODE_SETTINGS",
+                    ACTION_APN_SETTINGS: "android.settings.APN_SETTINGS",
+                    ACTION_APPLICATION_DETAILS_SETTINGS: "android.settings.APPLICATION_DETAILS_SETTINGS",
+                    ACTION_APPLICATION_DEVELOPMENT_SETTINGS: "android.settings.APPLICATION_DEVELOPMENT_SETTINGS",
+                    ACTION_APPLICATION_SETTINGS: "android.settings.APPLICATION_SETTINGS",
+                    ACTION_APP_NOTIFICATION_BUBBLE_SETTINGS: "android.settings.APP_NOTIFICATION_BUBBLE_SETTINGS",
+                    ACTION_APP_NOTIFICATION_SETTINGS: "android.settings.APP_NOTIFICATION_SETTINGS",
+                    ACTION_APP_SEARCH_SETTINGS: "android.settings.APP_SEARCH_SETTINGS",
+                    ACTION_APP_USAGE_SETTINGS: "android.settings.APP_USAGE_SETTINGS",
+                    ACTION_BATTERY_SAVER_SETTINGS: "android.settings.BATTERY_SAVER_SETTINGS",
+                    ACTION_BLUETOOTH_SETTINGS: "android.settings.BLUETOOTH_SETTINGS",
+                    ACTION_CAPTIONING_SETTINGS: "android.settings.CAPTIONING_SETTINGS",
+                    ACTION_CAST_SETTINGS: "android.settings.CAST_SETTINGS",
+                    ACTION_CHANNEL_NOTIFICATION_SETTINGS: "android.settings.CHANNEL_NOTIFICATION_SETTINGS",
+                    ACTION_DATA_ROAMING_SETTINGS: "android.settings.DATA_ROAMING_SETTINGS",
+                    ACTION_DATA_USAGE_SETTINGS: "android.settings.DATA_USAGE_SETTINGS",
+                    ACTION_DATE_SETTINGS: "android.settings.DATE_SETTINGS",
+                    ACTION_DEVICE_INFO_SETTINGS: "android.settings.DEVICE_INFO_SETTINGS",
+                    ACTION_DISPLAY_SETTINGS: "android.settings.DISPLAY_SETTINGS",
+                    ACTION_DREAM_SETTINGS: "android.settings.DREAM_SETTINGS",
+                    ACTION_FINGERPRINT_ENROLL: "android.settings.FINGERPRINT_ENROLL",
+                    ACTION_HARD_KEYBOARD_SETTINGS: "android.settings.HARD_KEYBOARD_SETTINGS",
+                    ACTION_HOME_SETTINGS: "android.settings.HOME_SETTINGS",
+                    ACTION_INPUT_METHOD_SETTINGS: "android.settings.INPUT_METHOD_SETTINGS",
+                    ACTION_INPUT_METHOD_SUBTYPE_SETTINGS: "android.settings.INPUT_METHOD_SUBTYPE_SETTINGS",
+                    ACTION_INTERNAL_STORAGE_SETTINGS: "android.settings.INTERNAL_STORAGE_SETTINGS",
+                    ACTION_LOCALE_SETTINGS: "android.settings.LOCALE_SETTINGS",
+                    ACTION_LOCATION_SOURCE_SETTINGS: "android.settings.LOCATION_SOURCE_SETTINGS",
+                    ACTION_MANAGE_ALL_APPLICATIONS_SETTINGS: "android.settings.MANAGE_ALL_APPLICATIONS_SETTINGS",
+                    ACTION_MANAGE_APPLICATIONS_SETTINGS: "android.settings.MANAGE_APPLICATIONS_SETTINGS",
+                    ACTION_MANAGE_DEFAULT_APPS_SETTINGS: "android.settings.MANAGE_DEFAULT_APPS_SETTINGS",
+                    ACTION_MANAGE_OVERLAY_PERMISSION: "android.settings.MANAGE_OVERLAY_PERMISSION",
+                    ACTION_MANAGE_UNKNOWN_APP_SOURCES: "android.settings.MANAGE_UNKNOWN_APP_SOURCES",
+                    ACTION_MANAGE_WRITE_SETTINGS: "android.settings.MANAGE_WRITE_SETTINGS",
+                    ACTION_MEMORY_CARD_SETTINGS: "android.settings.MEMORY_CARD_SETTINGS",
+                    ACTION_NETWORK_OPERATOR_SETTINGS: "android.settings.NETWORK_OPERATOR_SETTINGS",
+                    ACTION_NIGHT_DISPLAY_SETTINGS: "android.settings.NIGHT_DISPLAY_SETTINGS",
+                    ACTION_NOTIFICATION_ASSISTANT_SETTINGS: "android.settings.NOTIFICATION_ASSISTANT_SETTINGS",
+                    ACTION_NOTIFICATION_LISTENER_SETTINGS: "android.settings.NOTIFICATION_LISTENER_SETTINGS",
+                    ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS: "android.settings.NOTIFICATION_POLICY_ACCESS_SETTINGS",
+                    ACTION_PRINT_SETTINGS: "android.settings.PRINT_SETTINGS",
+                    ACTION_PRIVACY_SETTINGS: "android.settings.PRIVACY_SETTINGS",
+                    ACTION_PROCESS_WIFI_EASY_CONNECT_URI: "android.settings.PROCESS_WIFI_EASY_CONNECT_URI",
+                    ACTION_QUICK_LAUNCH_SETTINGS: "android.settings.QUICK_LAUNCH_SETTINGS",
+                    ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: "android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+                    ACTION_REQUEST_SET_AUTOFILL_SERVICE: "android.settings.REQUEST_SET_AUTOFILL_SERVICE",
+                    ACTION_SEARCH_SETTINGS: "android.settings.SEARCH_SETTINGS",
+                    ACTION_SECURITY_SETTINGS: "android.settings.SECURITY_SETTINGS",
+                    ACTION_SHOW_REGULATORY_INFO: "android.settings.SHOW_REGULATORY_INFO",
+                    ACTION_SOUND_SETTINGS: "android.settings.SOUND_SETTINGS",
+                    ACTION_SYNC_SETTINGS: "android.settings.SYNC_SETTINGS",
+                    ACTION_USAGE_ACCESS_SETTINGS: "android.settings.USAGE_ACCESS_SETTINGS",
+                    ACTION_USER_DICTIONARY_SETTINGS: "android.settings.USER_DICTIONARY_SETTINGS",
+                    ACTION_VOICE_CONTROL_AIRPLANE_MODE: "android.settings.VOICE_CONTROL_AIRPLANE_MODE",
+                    ACTION_VOICE_CONTROL_BATTERY_SAVER_MODE: "android.settings.VOICE_CONTROL_BATTERY_SAVER_MODE",
+                    ACTION_VOICE_CONTROL_DO_NOT_DISTURB_MODE: "android.settings.VOICE_CONTROL_DO_NOT_DISTURB_MODE",
+                    ACTION_VOICE_INPUT_SETTINGS: "android.settings.VOICE_INPUT_SETTINGS",
+                    ACTION_VPN_SETTINGS: "android.settings.VPN_SETTINGS",
+                    ACTION_VR_LISTENER_SETTINGS: "android.settings.VR_LISTENER_SETTINGS",
+                    ACTION_WIFI_IP_SETTINGS: "android.settings.WIFI_IP_SETTINGS",
+                    ACTION_WIFI_SETTINGS: "android.settings.WIFI_SETTINGS"
+                },
+                i = {
+                    ChangePage: "changePage",
+                    OpenWindow: "open",
+                    CloseWindow: "close",
+                    PingWindow: "ping"
+                },
+                s = {
+                    THEME: "aero-1",
+                    SIZE_ICONS: "md",
+                    SHOW_ICONS: !0,
+                    AUTO_ICONS: !1,
+                    SHOW_CURSOR: !0,
+                    CURSOR_SCHEME: r["c"].Aero,
+                    CURSOR_TRAIL: !1,
+                    CURSOR_SHADOW: !1,
+                    CURSOR_HIGHLIGHT: !1,
+                    SCREENSAVER: {
+                        type: null,
+                        timeout: 1,
+                        showLogon: !1
+                    }
+                }
+        },
+        "6c8d": function(e, n, t) {
+            "use strict";
+            t.d(n, "b", (function() {
+                return u
+            })), t.d(n, "c", (function() {
+                return c
+            })), t.d(n, "a", (function() {
+                return a
+            }));
+            var r = t("8229"),
+                o = t("2f62"),
+                i = t("968c");
+            const s = {
+                    ShowCursor: "showCursor",
+                    SetCursorTrail: "setCursorTrail",
+                    SetCursorScheme: "setCursorScheme",
+                    SetCursorShadow: "setCursorShadow",
+                    SetCursorHighlight: "setCursorHighlight",
+                    ChangeCursor: "changeCursor",
+                    ChangeDefaultCursor: "changeDefaultCursor",
+                    ChangeWorkingCursor: "changeWorkingCursor"
+                },
+                u = "cursor",
+                c = Object(o["a"])(u),
+                a = s;
+            n["d"] = {
+                namespaced: !0,
+                state() {
+                    return {
+                        cursorType: null,
+                        showCursor: !0,
+                        cursorTrail: !1,
+                        cursorHighlight: !1,
+                        cursorScheme: r["c"].Aero,
+                        cursorShadow: !1
+                    }
+                },
+                getters: {},
+                mutations: {
+                    [s.ChangeCursor]: (e, n) => {
+                        e.cursorType = n
+                    },
+                    [s.ShowCursor]: (e, n) => {
+                        e.showCursor = n
+                    },
+                    [s.SetCursorScheme]: (e, n) => {
+                        e.cursorScheme = n
+                    },
+                    [s.SetCursorShadow]: (e, n) => {
+                        e.cursorShadow = n
+                    },
+                    [s.SetCursorTrail]: (e, n) => {
+                        e.cursorTrail = n
+                    },
+                    [s.SetCursorHighlight]: (e, n) => {
+                        e.cursorHighlight = n
+                    }
+                },
+                actions: {
+                    [s.ChangeCursor]: ({
+                        commit: e
+                    }, n) => {
+                        e(s.ChangeCursor, n)
+                    },
+                    [s.ChangeDefaultCursor]: ({
+                        dispatch: e
+                    }) => e(s.ChangeCursor, r["a"].Default),
+                    [s.ChangeWorkingCursor]: ({
+                        dispatch: e
+                    }) => e(s.ChangeCursor, r["a"].Working),
+                    [s.ShowCursor]: ({
+                        commit: e,
+                        rootState: n
+                    }, t) => (e(s.ShowCursor, t), i["default"].update("/configs/", n.user, "configs", {
+                        showCursor: t
+                    })),
+                    [s.SetCursorScheme]: ({
+                        commit: e,
+                        rootState: n
+                    }, t) => (e(s.SetCursorScheme, t), i["default"].update("/configs/", n.user, "configs", {
+                        cursorScheme: t
+                    })),
+                    [s.SetCursorShadow]: ({
+                        commit: e,
+                        rootState: n
+                    }, t) => (e(s.SetCursorShadow, t), i["default"].update("/configs/", n.user, "configs", {
+                        cursorShadow: t
+                    })),
+                    [s.SetCursorTrail]: ({
+                        commit: e,
+                        rootState: n
+                    }, t) => (e(s.SetCursorTrail, t), i["default"].update("/configs/", n.user, "configs", {
+                        cursorTrail: t
+                    })),
+                    [s.SetCursorHighlight]: ({
+                        commit: e,
+                        rootState: n
+                    }, t) => (e(s.SetCursorHighlight, t), i["default"].update("/configs/", n.user, "configs", {
+                        cursorHighlight: t
+                    }))
+                }
+            }
+        },
+        8229: function(e, n, t) {
+            "use strict";
+            t.d(n, "a", (function() {
+                return r
+            })), t.d(n, "c", (function() {
+                return o
+            })), t.d(n, "d", (function() {
+                return i
+            })), t.d(n, "b", (function() {
+                return s
+            })), t.d(n, "e", (function() {
+                return u
+            })), t.d(n, "f", (function() {
+                return c
+            }));
+            const r = {
+                    Default: 0,
+                    Working: 1,
+                    Busy: 2,
+                    Precision: 3,
+                    Typing: 4,
+                    ResizeV: 6,
+                    ResizeH: 7,
+                    ResizeD1: 8,
+                    ResizeD2: 9,
+                    Move: 10,
+                    Pencil: "pencil",
+                    Picker: "picker",
+                    Bucket: "bucket",
+                    Eraser: "eraser",
+                    Shape: "shape",
+                    Brush: "brush"
+                },
+                o = {
+                    Aero: 0,
+                    Standard: 1,
+                    Black: 2,
+                    Magnified: 3,
+                    ThreeD: 4,
+                    Hand: 5,
+                    MacOS: 6,
+                    Ubuntu: 7
+                },
+                i = {
+                    [o.Aero]: {
+                        label: "Windows Aero",
+                        suffix: "-aero"
+                    },
+                    [o.Standard]: {
+                        label: "Windows Standard",
+                        suffix: "-standard"
+                    },
+                    [o.Black]: {
+                        label: "Windows Black",
+                        suffix: "-black"
+                    },
+                    [o.Magnified]: {
+                        label: "Magnified",
+                        suffix: "-magnified"
+                    },
+                    [o.ThreeD]: {
+                        label: "3d-White",
+                        suffix: "-3d"
+                    },
+                    [o.Hand]: {
+                        label: "Hands",
+                        suffix: "-hand"
+                    },
+                    [o.MacOS]: {
+                        label: "MacOS",
+                        suffix: "-macos"
+                    },
+                    [o.Ubuntu]: {
+                        label: "Ubuntu",
+                        suffix: "-ubuntu"
+                    }
+                },
+                s = {
+                    [r.Default]: "default",
+                    [r.Working]: "working",
+                    [r.Busy]: "busy",
+                    [r.Precision]: "precision",
+                    [r.Typing]: "typing",
+                    [r.ResizeV]: "resizev",
+                    [r.ResizeH]: "resizeh",
+                    [r.ResizeD1]: "resized1",
+                    [r.ResizeD2]: "resized2",
+                    [r.Move]: "move"
+                },
+                u = {
+                    tl: r.ResizeD1,
+                    br: r.ResizeD1,
+                    tr: r.ResizeD2,
+                    bl: r.ResizeD2,
+                    tm: r.ResizeV,
+                    mt: r.ResizeV,
+                    bm: r.ResizeV,
+                    mb: r.ResizeV,
+                    ml: r.ResizeH,
+                    mr: r.ResizeH,
+                    "top-left": r.ResizeD1,
+                    "bottom-right": r.ResizeD1,
+                    "top-right": r.ResizeD2,
+                    "bottom-left": r.ResizeD2,
+                    top: r.ResizeV,
+                    bottom: r.ResizeV,
+                    left: r.ResizeH,
+                    right: r.ResizeH
+                },
+                c = {
+                    select: r.Shape,
+                    pencil: r.Pencil,
+                    bucket: r.Bucket,
+                    text: r.Typing,
+                    eraser: r.Eraser,
+                    picker: r.Picker,
+                    brush: r.Brush,
+                    shape: r.Shape
+                }
+        },
+        a81a: function(e, n, t) {
+            "use strict";
+            t.d(n, "a", (function() {
+                return o
+            }));
+            var r = t("1547");
+            const o = Object(r["d"])("Device2", {
+                web: () => t.e("device2").then(t.bind(null, "1b4b")).then(e => new e.DeviceWeb)
+            })
+        },
+        c8ec: function(e, n, t) {
+            "use strict";
+            t.d(n, "a", (function() {
+                return o
+            }));
+            var r = t("1547");
+            const o = Object(r["d"])("Network", {
+                web: () => t.e("chunk-2d0abc10").then(t.bind(null, "172f")).then(e => new e.NetworkWeb)
+            })
+        },
+        e47c: function(e, n, t) {
+            "use strict";
+            t.d(n, "c", (function() {
+                return s
+            })), t.d(n, "d", (function() {
+                return u
+            })), t.d(n, "b", (function() {
+                return c
+            })), t.d(n, "h", (function() {
+                return d
+            })), t.d(n, "f", (function() {
+                return T
+            })), t.d(n, "g", (function() {
+                return S
+            })), t.d(n, "a", (function() {
+                return I
+            }));
+            var r = t("2f62"),
+                o = t("3b8c");
+            const i = {
+                    TogglePreview: "togglePreview",
+                    SetBootTheme: "setBootTheme",
+                    LoadTheme: "loadTheme",
+                    UnloadTheme: "unloadTheme"
+                },
+                s = "personalization",
+                u = Object(r["a"])(s),
+                c = i,
+                a = {
+                    win7: "win7",
+                    "aero-1": "win7",
+                    "aero-2": "win7",
+                    "aero-3": "win7",
+                    "aero-4": "win7",
+                    "basic-1": "win7",
+                    "basic-2": "win7-classic",
+                    "basic-3": "win7-classic",
+                    "basic-4": "win7-classic",
+                    win95: "win9x",
+                    win98: "win9x",
+                    win2k: "win9x",
+                    winxpE: "winxp",
+                    winxpG: "winxp",
+                    winxpN: "winxp",
+                    winxpR: "winxp",
+                    winxpS: "winxp",
+                    winxpZ: "winxp",
+                    win81: "win8",
+                    win11dark: "win11",
+                    winLP: "winlonghorn",
+                    winLS: "winlonghorn"
+                };
+            n["e"] = {
+                namespaced: !0,
+                state() {
+                    return {
+                        bootTheme: null,
+                        previewTheme: null,
+                        loadedTheme: null
+                    }
+                },
+                getters: {
+                    themes: () => o["a"]
+                },
+                mutations: {
+                    [i.TogglePreview]: (e, n) => {
+                        e.previewTheme = n || null
+                    },
+                    [i.SetBootTheme]: (e, n) => {
+                        e.bootTheme = n
+                    },
+                    [i.LoadTheme]: (e, n) => {
+                        e.loadedTheme = n
+                    }
+                },
+                actions: {
+                    [i.TogglePreview]: ({
+                        commit: e
+                    }, n) => {
+                        e(i.TogglePreview, n)
+                    },
+                    [i.LoadTheme]: async ({
+                        commit: e,
+                        dispatch: n
+                    }, r) => {
+                        if (r) {
+                            await n(i.UnloadTheme);
+                            try {
+                                const n = T(r),
+                                    {
+                                        default: o
+                                    } = await t("15d4")(`./${n}.scss`);
+                                o.use(), e(i.LoadTheme, o)
+                            } catch (o) {
+                                console.error("Failed to load theme style for: " + r, o)
+                            }
+                        }
+                    },
+                    [i.UnloadTheme]: ({
+                        state: e,
+                        commit: n
+                    }) => {
+                        e.loadedTheme && (e.loadedTheme.unuse(), n(i.LoadTheme, null))
+                    }
+                }
+            };
+            const d = e => "win11dark" === e ? "win11" : "win81" === e ? "win8" : "winLP" === e ? "winLS" : /xp.{1}/.test(e) ? "winxp" : /^(aero|basic)-/.test(e) || "base" === e ? "win7" : e,
+                T = e => a[e] || e,
+                S = e => "win7" === e ? "aero-1" : e,
+                I = {
+                    AeroGlass: /^aero|winvista/,
+                    AeroTaskbarItem: /^win8|^aero|basic-1/,
+                    CenterTaskbar: /win11|chromeos/,
+                    ChangeColor: /^aero|^win8|win10|^win11|kubuntu|ubuntu|oxygen/,
+                    ChangeTransparency: /^aero|^win8|kubuntu/,
+                    DarkMode: /basic-3|win11dark|macos|ubuntu|kubuntu|oxygen|aeroNoir/
+                }
+        },
+        e5dd: function(e, n, t) {
+            "use strict";
+            t.d(n, "a", (function() {
+                return o
+            }));
+            var r = t("1547");
+            const o = Object(r["d"])("Browser", {
+                web: () => t.e("chunk-2d0e2170").then(t.bind(null, "7ce3")).then(e => new e.BrowserWeb)
+            })
+        }
+    }
+]);

@@ -1,0 +1,344 @@
+[dir] .window__main.is-help h3,
+[dir] .window__main.is-help ul {
+    margin: .5rem 0
+}
+
+.window__main.is-wait .window__body.is-wait {
+    font-weight: 700
+}
+
+[dir] .window__main.is-wait .window__body.is-wait {
+    padding: 32px 0;
+    text-align: center
+}
+
+.window__main.is-message .icon {
+    width: 44px;
+    height: 44px
+}
+
+[dir] .listview__item:hover {
+    background-color: rgba(0, 0, 0, .1333333333)
+}
+
+[dir] .listview__item.is-active,
+[dir] .listview__item:focus {
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.listview__item-icon {
+    width: 100%;
+    height: 100%
+}
+
+.winui-progress.is-disk {
+    max-width: 90%
+}
+
+.listview__view.has-icons.is-small .listview__item {
+    display: flex;
+    align-items: center;
+    min-width: 160px;
+    width: 30%
+}
+
+[dir] .listview__view.has-icons.is-small .listview__item {
+    padding: 2px
+}
+
+.listview__view.has-icons.is-small .listview__item-iconbox {
+    width: 16px;
+    height: 16px
+}
+
+[dir] .listview__view.has-icons.is-small .listview__item-info {
+    padding: 0 2px
+}
+
+.listview__view.has-icons.is-medium .listview__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 96px
+}
+
+[dir] .listview__view.has-icons.is-medium .listview__item {
+    padding: 2px 4px 4px
+}
+
+.listview__view.has-icons.is-medium .listview__item-iconbox {
+    width: 88px;
+    height: 88px
+}
+
+[dir] .listview__view.has-icons.is-medium .listview__item-info {
+    padding: 0 4px
+}
+
+.listview__view.has-icons.is-medium .listview__item-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal
+}
+
+[dir] .listview__view.has-icons.is-medium .listview__item-label {
+    text-align: center
+}
+
+.listview__view.has-icons.is-large .listview__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 144px
+}
+
+[dir] .listview__view.has-icons.is-large .listview__item {
+    padding: 2px 8px 8px
+}
+
+.listview__view.has-icons.is-large .listview__item-iconbox {
+    width: 128px;
+    height: 128px
+}
+
+[dir] .listview__view.has-icons.is-large .listview__item-info {
+    padding: 0 4px
+}
+
+.listview__view.has-icons.is-large .listview__item-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal
+}
+
+[dir] .listview__view.has-icons.is-large .listview__item-label {
+    text-align: center
+}
+
+.listview__view.has-icons.is-extra .listview__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 212px
+}
+
+[dir] .listview__view.has-icons.is-extra .listview__item {
+    padding: 2px 8px 8px
+}
+
+.listview__view.has-icons.is-extra .listview__item-iconbox {
+    width: 196px;
+    height: 196px
+}
+
+[dir] .listview__view.has-icons.is-extra .listview__item-info {
+    padding: 0 4px
+}
+
+.listview__view.has-icons.is-extra .listview__item-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal
+}
+
+[dir] .listview__view.has-icons.is-extra .listview__item-label {
+    text-align: center
+}
+
+.listview__view.has-content {
+    min-width: fit-content
+}
+
+.listview__view.has-content .listview__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%
+}
+
+[dir] .listview__view.has-content .listview__item {
+    padding: 4px
+}
+
+.listview__view.has-content .listview__item-iconbox {
+    width: 48px;
+    height: 48px
+}
+
+.listview__view.has-content .listview__item-info {
+    display: grid;
+    gap: 6px;
+    grid-template-columns: minmax(144px, 1fr) minmax(144px, 1fr);
+    width: 100%
+}
+
+.listview__view.has-tiles .listview__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 256px;
+    width: calc(20% - 8px)
+}
+
+[dir] .listview__view.has-tiles .listview__item {
+    padding: 4px
+}
+
+.listview__view.has-tiles .listview__item-iconbox {
+    width: 48px;
+    height: 48px;
+    align-self: center
+}
+
+.listview__view.has-tiles .listview__item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}
+
+[dir] .computer__pane-content .collapse-body {
+    padding: 0
+}
+
+.treeview__collapse-caret {
+    width: 16px;
+    height: 16px
+}
+
+.treeview__collapse-button {
+    width: 100%
+}
+
+[dir] .treeview__collapse-button {
+    padding: 2px 4px
+}
+
+[dir] .treeview__collapse-body .treeview__main {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+[dir=ltr] .treeview__collapse-body .treeview__main {
+    padding-right: 0
+}
+
+[dir=rtl] .treeview__collapse-body .treeview__main {
+    padding-left: 0
+}
+
+.treeview__collapse-body .treeview__button {
+    width: 100%
+}
+
+[dir] .treeview__collapse-body .treeview__button {
+    padding: 2px 4px
+}
+
+.treeview__main {
+    display: block
+}
+
+[dir] .treeview__main {
+    margin: 0
+}
+
+[dir=ltr] .treeview__main {
+    padding: .375rem .375rem .375rem 1.75rem
+}
+
+[dir=rtl] .treeview__main {
+    padding: .375rem 1.75rem .375rem .375rem
+}
+
+[dir=ltr] .treeview__main ul {
+    padding-left: 1.75rem
+}
+
+[dir=rtl] .treeview__main ul {
+    padding-right: 1.75rem
+}
+
+.treeview__main.has-connector ul {
+    position: relative
+}
+
+.treeview__main.has-connector ul:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: calc(100% - .5rem)
+}
+
+[dir=ltr] .treeview__main.has-connector ul:before {
+    left: .5rem;
+    border-left: 1px dotted currentColor
+}
+
+[dir=rtl] .treeview__main.has-connector ul:before {
+    right: .5rem;
+    border-right: 1px dotted currentColor
+}
+
+.treeview__main.has-connector ul li:before {
+    content: "";
+    position: absolute;
+    top: .5rem;
+    width: .875rem
+}
+
+[dir] .treeview__main.has-connector ul li:before {
+    border-bottom: 1px dotted currentColor
+}
+
+[dir=ltr] .treeview__main.has-connector ul li:before {
+    right: calc(100% + .125rem)
+}
+
+[dir=rtl] .treeview__main.has-connector ul li:before {
+    left: calc(100% + .125rem)
+}
+
+.window__wrapper.is-computer .winui-slider {
+    width: 192px
+}
+
+[dir=ltr] .window__wrapper.is-computer .winui-slider {
+    transform: rotate(90deg) scaleY(-1);
+    transform-origin: top left
+}
+
+[dir=rtl] .window__wrapper.is-computer .winui-slider {
+    transform: rotate(-90deg) scaleY(-1);
+    transform-origin: top right
+}
+
+[dir=ltr] .winui-menu.is-view {
+    left: auto;
+    right: 0
+}
+
+[dir=rtl] .winui-menu.is-view {
+    right: auto;
+    left: 0
+}
+
+.winui-menu.is-view li>button {
+    width: calc(100% - 28px);
+    height: 26px;
+    display: flex;
+    align-items: center
+}
+
+[dir=ltr] .winui-menu.is-view li>button {
+    margin-left: 28px
+}
+
+[dir=rtl] .winui-menu.is-view li>button {
+    margin-right: 28px
+}

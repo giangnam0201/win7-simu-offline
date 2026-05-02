@@ -1,0 +1,109 @@
+[dir] .battery-meter {
+    background: var(--sprites) no-repeat;
+    background-position-x: var(--x)
+}
+
+[dir] .battery-plug {
+    background: var(--sprites) no-repeat;
+    background-position-x: -960px
+}
+
+[dir=ltr] .taskbar-popup.is-centered {
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+[dir=rtl] .taskbar-popup.is-centered {
+    right: 50%;
+    transform: translateX(50%)
+}
+
+.taskbar-popup.is-battery {
+    min-width: 210px
+}
+
+.battery-icon.has-shadow {
+    filter: drop-shadow(0 0 1px #000)
+}
+
+[dir=ltr] .is-analog .clock-pivot {
+    transform: translateX(-50%) translateY(-50%)
+}
+
+[dir=rtl] .is-analog .clock-pivot {
+    transform: translateX(50%) translateY(-50%)
+}
+
+.taskbar-popup.is-datetime {
+    flex-direction: column;
+    width: 400px
+}
+
+[dir] .taskbar-popup.is-datetime {
+    text-align: center
+}
+
+[dir=ltr] .taskbar-popup.is-datetime {
+    right: 8px
+}
+
+[dir=rtl] .taskbar-popup.is-datetime {
+    left: 8px
+}
+
+.startbutton-thumbnail {
+    width: 140px;
+    height: 70px
+}
+
+[dir] .startbutton-thumbnail {
+    border: 1px solid #555;
+    animation: fadeIn .3s
+}
+
+.startbutton-thumbnail .app__list {
+    display: grid;
+    grid-template: repeat(3, 6px)/repeat(3, 6px);
+    gap: 2px
+}
+
+.startbutton-thumbnail .app__list.has-desktop {
+    grid-template-columns: repeat(2, 6px)
+}
+
+[dir] .startbutton-thumbnail .app__list.has-desktop .app__item:first-child {
+    background: #2672ec
+}
+
+[dir] .startbutton-thumbnail .app__list.has-desktop .app__item:nth-child(2) {
+    background: #4a329b
+}
+
+[dir] .startbutton-thumbnail .app__list.has-desktop .app__item:nth-child(3) {
+    background: #0e4aa0
+}
+
+[dir] .startbutton-thumbnail .app__item {
+    background: #006582
+}
+
+.volume__meter {
+    width: 32px;
+    height: 146px
+}
+
+[dir] .volume__meter-wrapper {
+    transform: translateY(50%)
+}
+
+.volume__meter-slider {
+    width: 130px
+}
+
+[dir=ltr] .volume__meter-slider {
+    transform: translateY(calc(var(--slider-height)*-1)) rotate(-90deg)
+}
+
+[dir=rtl] .volume__meter-slider {
+    transform: translateY(calc(var(--slider-height)*-1)) rotate(90deg)
+}

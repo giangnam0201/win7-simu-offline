@@ -1,0 +1,47 @@
+[dir] .note {
+    background-color: var(--note-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .4)
+}
+
+.note__control-item {
+    width: 20px;
+    height: 20px
+}
+
+[dir] .note__control-item:hover {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .6)
+}
+
+.note__textarea {
+    font-family: Segoe Print, segoepr, sans-serif
+}
+
+.note .handle {
+    width: 16px;
+    height: 16px;
+    opacity: 0
+}
+
+.note .handle-bm,
+.note .handle-tm {
+    width: unset
+}
+
+[dir] .note .handle-bm,
+[dir] .note .handle-tm {
+    margin: 0;
+    left: 8px;
+    right: 8px
+}
+
+.note .handle-ml,
+.note .handle-mr {
+    top: 8px;
+    bottom: 8px;
+    height: unset
+}
+
+[dir] .note .handle-ml,
+[dir] .note .handle-mr {
+    margin: 0
+}

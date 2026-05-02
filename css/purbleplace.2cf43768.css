@@ -1,0 +1,116 @@
+.purble__menu>:not(:first-child) {
+    position: absolute
+}
+
+[dir] .purble__menu>:not(:first-child) {
+    cursor: pointer
+}
+
+.purble__menu #purblepair {
+    width: 160px;
+    height: 170px;
+    top: 105px
+}
+
+[dir=ltr] .purble__menu #purblepair {
+    left: 30px
+}
+
+[dir=rtl] .purble__menu #purblepair {
+    right: 30px
+}
+
+.purble__menu #comfycakes {
+    width: 180px;
+    height: 170px;
+    top: 200px
+}
+
+[dir=ltr] .purble__menu #comfycakes {
+    left: 250px
+}
+
+[dir=rtl] .purble__menu #comfycakes {
+    right: 250px
+}
+
+.purble__menu #purbleshop {
+    width: 230px;
+    height: 170px;
+    top: 200px
+}
+
+[dir=ltr] .purble__menu #purbleshop {
+    right: 15px
+}
+
+[dir=rtl] .purble__menu #purbleshop {
+    left: 15px
+}
+
+.purble__menu #purbleplace-exit {
+    width: 70px;
+    height: 85px;
+    bottom: 30px
+}
+
+[dir=ltr] .purble__menu #purbleplace-exit {
+    left: 15px
+}
+
+[dir=rtl] .purble__menu #purbleplace-exit {
+    right: 15px
+}
+
+.window__main.is-message .icon {
+    width: 44px;
+    height: 44px
+}
+
+[dir=ltr] .purble__pair-bg {
+    transform: translate(-50%, -50%)
+}
+
+[dir=rtl] .purble__pair-bg {
+    transform: translate(50%, -50%)
+}
+
+[dir=ltr] .purble__pair-card.is-back {
+    transform: rotateY(-180deg)
+}
+
+[dir=rtl] .purble__pair-card.is-back {
+    transform: rotateY(180deg)
+}
+
+.purble__pair-card-wrapper.is-flipped .purble__pair-card.is-front {
+    z-index: 0
+}
+
+[dir=ltr] .purble__pair-card-wrapper.is-flipped .purble__pair-card.is-front {
+    transform: rotateY(180deg)
+}
+
+[dir=rtl] .purble__pair-card-wrapper.is-flipped .purble__pair-card.is-front {
+    transform: rotateY(-180deg)
+}
+
+.purble__pair-card-wrapper.is-flipped .purble__pair-card.is-back {
+    z-index: 1
+}
+
+[dir] .purble__pair-card-wrapper.is-flipped .purble__pair-card.is-back {
+    transform: rotateY(0)
+}
+
+[dir] .window__wrapper.is-purbleplace .window__body {
+    padding: 0
+}
+
+[dir=ltr] .window__wrapper.is-purbleplace .window__body {
+    background: linear-gradient(90deg, #02399d, #308dfc, #02399d)
+}
+
+[dir=rtl] .window__wrapper.is-purbleplace .window__body {
+    background: linear-gradient(270deg, #02399d, #308dfc, #02399d)
+}

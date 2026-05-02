@@ -1,0 +1,23 @@
+.listview__view.has-tiles .listview__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 256px;
+    width: calc(20% - 8px)
+}
+
+[dir] .listview__view.has-tiles .listview__item {
+    padding: 4px
+}
+
+.listview__view.has-tiles .listview__item-iconbox {
+    width: 48px;
+    height: 48px;
+    align-self: center
+}
+
+.listview__view.has-tiles .listview__item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}

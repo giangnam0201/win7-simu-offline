@@ -1,0 +1,1579 @@
+[dir] .window__main.is-help h3,
+[dir] .window__main.is-help ul {
+    margin: .5rem 0
+}
+
+.window__main.is-wait .window__body.is-wait {
+    font-weight: 700
+}
+
+[dir] .window__main.is-wait .window__body.is-wait {
+    padding: 32px 0;
+    text-align: center
+}
+
+.installer__home {
+    --theme-surface: #d4d0c8;
+    --theme-accent: #082767
+}
+
+.installer__home .winui-dropdown:not([multiple]) {
+    appearance: none
+}
+
+[dir] .installer__home .winui-dropdown:not([multiple]) {
+    border: 0
+}
+
+[dir=ltr] .installer__home .winui-dropdown:not([multiple]) {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 0H0v16h1V1h14V0z' fill='%23bdbebd'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1H1v14h1V2h12V1H2z' fill='%23fff'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 17H0v-1h15V0h1v17z' fill='%23000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 1h-1v14H1v1h14V1z' fill='%237b7b7b'/%3E%3Cpath fill='%23bdbebd' d='M2 2h12v13H2z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 6H4v1h1v1h1v1h1v1h1V9h1V8h1V7h1V6z' fill='%23000'/%3E%3C/svg%3E") no-repeat 100%/contain #fff;
+    box-shadow: inset 1px 1px #000, inset -1px -1px var(--theme-surface), 1px 1px var(--border-color--contrast, #fff), 0 1px var(--border-color--contrast, #fff), 1px 0 var(--border-color--contrast, #fff), -1px -1px var(--text-color--disabled, #7b7b7b), 0 -1px var(--text-color--disabled, #7b7b7b), -1px 0 var(--text-color--disabled, #7b7b7b);
+    padding: 4px 32px 4px 4px
+}
+
+[dir=rtl] .installer__home .winui-dropdown:not([multiple]) {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 0H0v16h1V1h14V0z' fill='%23bdbebd'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1H1v14h1V2h12V1H2z' fill='%23fff'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 17H0v-1h15V0h1v17z' fill='%23000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 1h-1v14H1v1h14V1z' fill='%237b7b7b'/%3E%3Cpath fill='%23bdbebd' d='M2 2h12v13H2z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 6H4v1h1v1h1v1h1v1h1V9h1V8h1V7h1V6z' fill='%23000'/%3E%3C/svg%3E") no-repeat 0/contain #fff;
+    box-shadow: inset -1px 1px #000, inset 1px -1px var(--theme-surface), -1px 1px var(--border-color--contrast, #fff), 0 1px var(--border-color--contrast, #fff), -1px 0 var(--border-color--contrast, #fff), 1px -1px var(--text-color--disabled, #7b7b7b), 0 -1px var(--text-color--disabled, #7b7b7b), 1px 0 var(--text-color--disabled, #7b7b7b);
+    padding: 4px 4px 4px 32px
+}
+
+.installer__home .winui-dropdown:not([multiple]):disabled {
+    color: var(--text-color--disabled, #7b7b7b);
+    opacity: 1
+}
+
+[dir] .installer__home .winui-dropdown:not([multiple]):disabled {
+    background-color: var(--theme-surface)
+}
+
+[dir=ltr] .installer__home .winui-dropdown:not([multiple]):disabled {
+    text-shadow: 1px 1px var(--border-color--contrast, #fff)
+}
+
+[dir=rtl] .installer__home .winui-dropdown:not([multiple]):disabled {
+    text-shadow: -1px 1px var(--border-color--contrast, #fff)
+}
+
+[dir] .installer__home .winui-dropdown:not([multiple]):not(:disabled):focus,
+[dir] .installer__home .winui-dropdown:not([multiple]):not(:disabled):hover {
+    background-color: #fff
+}
+
+[dir] .installer__home .winui-dropdown:not([multiple]):not(:disabled):active {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h16v17H0V0zm1 16h14V1H1v15z' fill='%237b7b7b'/%3E%3Cpath fill='%23bdbebd' d='M1 1h14v15H1z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 7H5v1h1v1h1v1h1v1h1v-1h1V9h1V8h1V7z' fill='%23000'/%3E%3C/svg%3E")
+}
+
+.installer__home .winui-dropdown:not([multiple]):not(:disabled):focus {
+    color: #fff;
+    outline: 1px dotted #ff3;
+    outline-offset: -1px
+}
+
+[dir] .installer__home .winui-dropdown:not([multiple]):not(:disabled):focus {
+    background-color: var(--theme-accent)
+}
+
+.installer__home .winui-dropdown:not([multiple]):not(:disabled):focus option {
+    color: #000
+}
+
+[dir] .installer__home .winui-dropdown:not([multiple]):not(:disabled):focus option {
+    background-color: #fff
+}
+
+[dir] .installer__home .window__main {
+    background-color: var(--theme-surface);
+    padding: 3px
+}
+
+[dir=ltr] .installer__home .window__main {
+    box-shadow: inset -1px -1px var(--border-color, #393c39), inset 1px 1px var(--border-color--contrast, #fff), inset -2px -2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=rtl] .installer__home .window__main {
+    box-shadow: inset 1px -1px var(--border-color, #393c39), inset -1px 1px var(--border-color--contrast, #fff), inset 2px -2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=ltr] .installer__home .window__main.active {
+    box-shadow: inset -1px -1px var(--border-color, #393c39), inset 1px 1px var(--border-color--contrast, #fff), inset -2px -2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=rtl] .installer__home .window__main.active {
+    box-shadow: inset 1px -1px var(--border-color, #393c39), inset -1px 1px var(--border-color--contrast, #fff), inset 2px -2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir] .installer__home .window__main.active .window__titlebar {
+    background: var(--theme-accent)
+}
+
+.installer__home .window__titlebar {
+    color: #fff;
+    font-weight: 700
+}
+
+[dir] .installer__home .window__titlebar {
+    background: #7b7b7b;
+    padding: 2px
+}
+
+.installer__home .window__control-item {
+    width: 20px;
+    height: 20px;
+    color: #000
+}
+
+[dir] .installer__home .window__control-item {
+    background-color: var(--theme-surface)
+}
+
+[dir=ltr] .installer__home .window__control-item {
+    box-shadow: inset -1px -1px var(--border-color, #393c39), inset 1px 1px var(--border-color--contrast, #fff), inset -2px -2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=rtl] .installer__home .window__control-item {
+    box-shadow: inset 1px -1px var(--border-color, #393c39), inset -1px 1px var(--border-color--contrast, #fff), inset 2px -2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir] .installer__home .window__control-item:not(:disabled):hover {
+    background-color: var(--theme-surface)
+}
+
+[dir=ltr] .installer__home .window__control-item:not(:disabled):active {
+    box-shadow: inset 1px 1px var(--border-color, #393c39), inset -1px -1px var(--border-color--contrast, #fff), inset 2px 2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=rtl] .installer__home .window__control-item:not(:disabled):active {
+    box-shadow: inset -1px 1px var(--border-color, #393c39), inset 1px -1px var(--border-color--contrast, #fff), inset -2px 2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir] .installer__home .window__control-item:not(:disabled):active>* {
+    transform: none
+}
+
+.installer__home .window__control-item>* {
+    width: 12px;
+    height: 12px
+}
+
+[dir=ltr] .installer__home .window__control-item>* {
+    transform: translate(-1px, -1px)
+}
+
+[dir=rtl] .installer__home .window__control-item>* {
+    transform: translate(1px, -1px)
+}
+
+.installer__home .window__control-item:disabled {
+    color: var(--text-color--disabled, #7b7b7b);
+    opacity: 1
+}
+
+.installer__home .window__control-item:disabled>* {
+    filter: drop-shadow(2px 2px #fff)
+}
+
+[dir=ltr] .installer__home .window__control-item.is-close {
+    margin-left: 2px
+}
+
+[dir=rtl] .installer__home .window__control-item.is-close {
+    margin-right: 2px
+}
+
+[dir] .installer__home .window__addressbar {
+    box-shadow: inset 0 1px var(--text-color--disabled, #7b7b7b), inset 0 2px var(--border-color--contrast, #fff);
+    margin: 0;
+    padding: 4px 0 3px
+}
+
+[dir] .installer__home .window__addressbar-location {
+    background: var(--theme-surface);
+    border: 0;
+    padding-top: 1px
+}
+
+[dir=ltr] .installer__home .window__addressbar-location {
+    box-shadow: inset 1px 1px var(--text-color--disabled, #7b7b7b), inset -1px -1px var(--border-color--contrast, #fff)
+}
+
+[dir=rtl] .installer__home .window__addressbar-location {
+    box-shadow: inset -1px 1px var(--text-color--disabled, #7b7b7b), inset 1px -1px var(--border-color--contrast, #fff)
+}
+
+[dir] .installer__home .window__menubar {
+    background-color: var(--theme-surface);
+    box-shadow: inset 0 1px var(--text-color--disabled, #7b7b7b), inset 0 2px var(--border-color--contrast, #fff);
+    padding: 2px 0 1px
+}
+
+[dir=ltr] .installer__home .window__menubar-button:not(:disabled):hover {
+    box-shadow: inset -1px -1px var(--border-color, #393c39), inset 1px 1px var(--border-color--contrast, #fff), inset -2px -2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=rtl] .installer__home .window__menubar-button:not(:disabled):hover {
+    box-shadow: inset 1px -1px var(--border-color, #393c39), inset -1px 1px var(--border-color--contrast, #fff), inset 2px -2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=ltr] .installer__home .window__menubar-button:not(:disabled):active,
+[dir=ltr] .installer__home .window__menubar-button:not(:disabled):focus {
+    box-shadow: inset 1px 1px var(--border-color, #393c39), inset -1px -1px var(--border-color--contrast, #fff), inset 2px 2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=rtl] .installer__home .window__menubar-button:not(:disabled):active,
+[dir=rtl] .installer__home .window__menubar-button:not(:disabled):focus {
+    box-shadow: inset -1px 1px var(--border-color, #393c39), inset 1px -1px var(--border-color--contrast, #fff), inset -2px 2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=ltr] .installer__home .window__menubar-button:not(:disabled):active>*,
+[dir=ltr] .installer__home .window__menubar-button:not(:disabled):focus>* {
+    transform: translate(1px, 1px)
+}
+
+[dir=rtl] .installer__home .window__menubar-button:not(:disabled):active>*,
+[dir=rtl] .installer__home .window__menubar-button:not(:disabled):focus>* {
+    transform: translate(-1px, 1px)
+}
+
+[dir=ltr] .installer__home .window__body {
+    box-shadow: inset 1px 1px var(--border-color, #393c39), inset -1px -1px var(--border-color--contrast, #fff), inset 2px 2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=rtl] .installer__home .window__body {
+    box-shadow: inset -1px 1px var(--border-color, #393c39), inset 1px -1px var(--border-color--contrast, #fff), inset -2px 2px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir] .installer__home .window__body.is-dialog,
+[dir] .installer__home .window__body.is-message,
+[dir] .installer__home .window__body.is-settings {
+    background: var(--theme-surface);
+    box-shadow: none
+}
+
+[dir] .installer__home .window__body.is-panel>:not(:only-child):first-child {
+    background: var(--theme-surface)
+}
+
+[dir=ltr] .installer__home .window__body.is-panel>:not(:only-child):first-child {
+    border-right: 6px solid var(--theme-surface);
+    box-shadow: inset -1px 0 #fff, inset 0 1px var(--border-color, #393c39), 1px 0 var(--border-color, #393c39)
+}
+
+[dir=rtl] .installer__home .window__body.is-panel>:not(:only-child):first-child {
+    border-left: 6px solid var(--theme-surface);
+    box-shadow: inset 1px 0 #fff, inset 0 1px var(--border-color, #393c39), -1px 0 var(--border-color, #393c39)
+}
+
+.installer__home .window__statusbar {
+    color: #000
+}
+
+[dir] .installer__home .window__statusbar {
+    background: var(--theme-surface);
+    padding: 2px 0
+}
+
+[dir=ltr] .installer__home .window__statusbar-item {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=rtl] .installer__home .window__statusbar-item {
+    box-shadow: inset 1px -1px #fff, inset -1px 1px var(--text-color--disabled, #7b7b7b)
+}
+
+[dir=ltr] .installer__home .window__main.active .window__titlebar {
+    background: linear-gradient(90deg, var(--theme-accent), #a4caee)
+}
+
+[dir=rtl] .installer__home .window__main.active .window__titlebar {
+    background: linear-gradient(270deg, var(--theme-accent), #a4caee)
+}
+
+[dir=ltr] .installer__home .window__titlebar {
+    background: linear-gradient(90deg, #7f7e78, transparent)
+}
+
+[dir=rtl] .installer__home .window__titlebar {
+    background: linear-gradient(270deg, #7f7e78, transparent)
+}
+
+.installer__home .window__main {
+    width: 700px
+}
+
+.installer__home .window__body {
+    height: 420px
+}
+
+[dir] .installer__home .window__body {
+    background-image: var(--bg);
+    background-size: 120%
+}
+
+[dir] .installer__button:hover {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 87.1%, .8), rgba(50, 97, 159, .2));
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3)
+}
+
+[dir] .listview__item:hover {
+    background-color: rgba(0, 0, 0, .1333333333)
+}
+
+[dir] .listview__item.is-active,
+[dir] .listview__item:focus {
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.listview__item-icon {
+    width: 100%;
+    height: 100%
+}
+
+.listview__view.has-icons.is-small .listview__item {
+    display: flex;
+    align-items: center;
+    min-width: 160px;
+    width: 30%
+}
+
+[dir] .listview__view.has-icons.is-small .listview__item {
+    padding: 2px
+}
+
+.listview__view.has-icons.is-small .listview__item-iconbox {
+    width: 16px;
+    height: 16px
+}
+
+[dir] .listview__view.has-icons.is-small .listview__item-info {
+    padding: 0 2px
+}
+
+.listview__view.has-icons.is-medium .listview__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 96px
+}
+
+[dir] .listview__view.has-icons.is-medium .listview__item {
+    padding: 2px 4px 4px
+}
+
+.listview__view.has-icons.is-medium .listview__item-iconbox {
+    width: 88px;
+    height: 88px
+}
+
+[dir] .listview__view.has-icons.is-medium .listview__item-info {
+    padding: 0 4px
+}
+
+.listview__view.has-icons.is-medium .listview__item-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal
+}
+
+[dir] .listview__view.has-icons.is-medium .listview__item-label {
+    text-align: center
+}
+
+.listview__view.has-icons.is-large .listview__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 144px
+}
+
+[dir] .listview__view.has-icons.is-large .listview__item {
+    padding: 2px 8px 8px
+}
+
+.listview__view.has-icons.is-large .listview__item-iconbox {
+    width: 128px;
+    height: 128px
+}
+
+[dir] .listview__view.has-icons.is-large .listview__item-info {
+    padding: 0 4px
+}
+
+.listview__view.has-icons.is-large .listview__item-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal
+}
+
+[dir] .listview__view.has-icons.is-large .listview__item-label {
+    text-align: center
+}
+
+.listview__view.has-icons.is-extra .listview__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 212px
+}
+
+[dir] .listview__view.has-icons.is-extra .listview__item {
+    padding: 2px 8px 8px
+}
+
+.listview__view.has-icons.is-extra .listview__item-iconbox {
+    width: 196px;
+    height: 196px
+}
+
+[dir] .listview__view.has-icons.is-extra .listview__item-info {
+    padding: 0 4px
+}
+
+.listview__view.has-icons.is-extra .listview__item-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal
+}
+
+[dir] .listview__view.has-icons.is-extra .listview__item-label {
+    text-align: center
+}
+
+.installer__program {
+    --link-color: #06c;
+    --link-color--hover: #39f
+}
+
+.installer__program .winui-checkbox input[type=checkbox]+label:before {
+    content: ""
+}
+
+[dir] .installer__program .winui-checkbox input[type=checkbox]+label:before {
+    transition-duration: calc(0.4s*var(--effect-animate-controls));
+    transition-property: background, border-color, box-shadow;
+    background: #f6f6f6;
+    border: 1px solid #8e8f8f
+}
+
+[dir=ltr] .installer__program .winui-checkbox input[type=checkbox]+label:before {
+    box-shadow: inset 0 0 0 1px #f4f4f4, inset 1px 1px 0 1px #aeaeae, inset -1px -1px 0 1px #ddd, inset 3px 3px 6px #ccc
+}
+
+[dir=rtl] .installer__program .winui-checkbox input[type=checkbox]+label:before {
+    box-shadow: inset 0 0 0 1px #f4f4f4, inset -1px 1px 0 1px #aeaeae, inset 1px -1px 0 1px #ddd, inset -3px 3px 6px #ccc
+}
+
+[dir] .installer__program .winui-checkbox input[type=checkbox]+label:hover:before {
+    background: #e9f7fe;
+    border-color: #3c7fb1
+}
+
+[dir=ltr] .installer__program .winui-checkbox input[type=checkbox]+label:hover:before {
+    box-shadow: inset 0 0 0 1px #def9fa, inset 1px 1px 0 1px #79c6f9, inset -1px -1px 0 1px #c6e9fc, inset 3px 3px 6px #b1dffd
+}
+
+[dir=rtl] .installer__program .winui-checkbox input[type=checkbox]+label:hover:before {
+    box-shadow: inset 0 0 0 1px #def9fa, inset -1px 1px 0 1px #79c6f9, inset 1px -1px 0 1px #c6e9fc, inset -3px 3px 6px #b1dffd
+}
+
+.installer__program .winui-checkbox input[type=checkbox]+label:after {
+    content: ""
+}
+
+[dir] .installer__program .winui-checkbox input[type=checkbox]+label:after {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.004 4.008l1.863 2.16L6.998.5H8v1.473L4.978 8.5H3.006L1.002 4.994z' fill='%23455a92'/%3E%3C/svg%3E") no-repeat 50%
+}
+
+[dir] .installer__program .winui-checkbox input[type=checkbox]+label:hover:after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.004 4.008l1.863 2.16L6.998.5H8v1.473L4.978 8.5H3.006L1.002 4.994z' fill='%23042271'/%3E%3C/svg%3E")
+}
+
+.installer__program .winui-checkbox input[type=checkbox]:focus-visible+label {
+    outline: 1px dotted #000
+}
+
+.installer__program .winui-checkbox input[type=checkbox]:checked+label:after {
+    color: #4a5f97
+}
+
+.installer__program .winui-checkbox input[type=checkbox]:disabled+label {
+    color: #6d6d6d
+}
+
+.installer__program .winui-checkbox input[type=checkbox]:disabled+label:before {
+    content: ""
+}
+
+[dir] .installer__program .winui-checkbox input[type=checkbox]:disabled+label:before {
+    box-shadow: none;
+    border: 1px solid #b1b1b1
+}
+
+[dir=ltr] .installer__program .winui-checkbox input[type=checkbox]:disabled+label:before {
+    background: linear-gradient(to bottom right, #f0f0f0, #fbfbfb)
+}
+
+[dir=rtl] .installer__program .winui-checkbox input[type=checkbox]:disabled+label:before {
+    background: linear-gradient(to bottom left, #f0f0f0, #fbfbfb)
+}
+
+[dir] .installer__program .winui-checkbox input[type=checkbox]:disabled+label:after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.004 4.008l1.863 2.16L6.998.5H8v1.473L4.978 8.5H3.006L1.002 4.994z' fill='%23bebebe'/%3E%3C/svg%3E")
+}
+
+[dir] .installer__program .listview__header {
+    background: linear-gradient(#fff 50%, #f7f8fa 0, #f1f2f4);
+    border-color: #d5d5d5
+}
+
+.installer__program .listview__view.has-content .listview__item:not(:last-child):after {
+    position: absolute;
+    bottom: -1px;
+    content: "";
+    height: 1px
+}
+
+[dir] .installer__program .listview__view.has-content .listview__item:not(:last-child):after {
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .1333333333)
+}
+
+.installer__program .listview__item {
+    position: relative
+}
+
+[dir] .installer__program .listview__item {
+    border: 1px solid transparent;
+    border-radius: 3px
+}
+
+[dir] .installer__program .listview__item:hover {
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667);
+    border-color: #b8d6fc;
+    background: linear-gradient(0deg, #f2f7fe, #fcfdfe)
+}
+
+[dir] .installer__program .listview__item.is-active,
+[dir] .installer__program .listview__item:focus {
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667);
+    border-color: #7da2ce;
+    background: linear-gradient(0deg, #c1dcfc, #dcebfc)
+}
+
+.installer__program .typography.is-instruction {
+    color: #039
+}
+
+[data-effect-enable-glass] .installer__program .window__background:before {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    content: ""
+}
+
+[dir=ltr] [data-effect-enable-glass] .installer__program .window__background:before {
+    left: 0;
+    background: linear-gradient(54deg, rgba(0, 0, 0, .1333333333) 4%, hsla(0, 0%, 40%, .0666666667) 6% 6%, rgba(0, 0, 0, .1333333333) 8% 10%, rgba(0, 0, 0, .1333333333) 15% 16%, hsla(0, 0%, 66.7%, .0666666667) 17% 18%, rgba(0, 0, 0, .1333333333) 23% 24%, hsla(0, 0%, 73.3%, .1333333333) 25% 26%, rgba(0, 0, 0, .1333333333) 31% 33%, rgba(0, 0, 0, .1333333333) 34% 34.5%, hsla(0, 0%, 73.3%, .1333333333) 36% 40%, rgba(0, 0, 0, .1333333333) 41% 41.5%, hsla(0, 0%, 73.3%, .1333333333) 44% 45%, hsla(0, 0%, 73.3%, .1333333333) 46% 47%, rgba(0, 0, 0, .1333333333) 48% 49%, rgba(0, 0, 0, .1333333333) 50% 50.5%, rgba(0, 0, 0, .1333333333) 56% 56.5%, hsla(0, 0%, 73.3%, .1333333333) 57% 63%, rgba(0, 0, 0, .1333333333) 67% 69%, hsla(0, 0%, 73.3%, .1333333333) 69.5% 70%, rgba(0, 0, 0, .1333333333) 73.5% 74%, hsla(0, 0%, 73.3%, .1333333333) 74.5% 79%, rgba(0, 0, 0, .1333333333) 80% 84%, hsla(0, 0%, 66.7%, .1333333333) 85% 86%, rgba(0, 0, 0, .1333333333) 87%, hsla(0, 0%, 73.3%, .0666666667) 90%) 0/100vw 100vh;
+    transform: translate(calc(var(--window-x)*-1), calc(var(--window-y)*-1))
+}
+
+[dir=rtl] [data-effect-enable-glass] .installer__program .window__background:before {
+    right: 0;
+    background: linear-gradient(-54deg, rgba(0, 0, 0, .1333333333) 4%, hsla(0, 0%, 40%, .0666666667) 6% 6%, rgba(0, 0, 0, .1333333333) 8% 10%, rgba(0, 0, 0, .1333333333) 15% 16%, hsla(0, 0%, 66.7%, .0666666667) 17% 18%, rgba(0, 0, 0, .1333333333) 23% 24%, hsla(0, 0%, 73.3%, .1333333333) 25% 26%, rgba(0, 0, 0, .1333333333) 31% 33%, rgba(0, 0, 0, .1333333333) 34% 34.5%, hsla(0, 0%, 73.3%, .1333333333) 36% 40%, rgba(0, 0, 0, .1333333333) 41% 41.5%, hsla(0, 0%, 73.3%, .1333333333) 44% 45%, hsla(0, 0%, 73.3%, .1333333333) 46% 47%, rgba(0, 0, 0, .1333333333) 48% 49%, rgba(0, 0, 0, .1333333333) 50% 50.5%, rgba(0, 0, 0, .1333333333) 56% 56.5%, hsla(0, 0%, 73.3%, .1333333333) 57% 63%, rgba(0, 0, 0, .1333333333) 67% 69%, hsla(0, 0%, 73.3%, .1333333333) 69.5% 70%, rgba(0, 0, 0, .1333333333) 73.5% 74%, hsla(0, 0%, 73.3%, .1333333333) 74.5% 79%, rgba(0, 0, 0, .1333333333) 80% 84%, hsla(0, 0%, 66.7%, .1333333333) 85% 86%, rgba(0, 0, 0, .1333333333) 87%, hsla(0, 0%, 73.3%, .0666666667) 90%) 100%/100vw 100vh;
+    transform: translate(calc(var(--window-x)*-1*-1), calc(var(--window-y)*-1))
+}
+
+[dir] .installer__program .window__main {
+    border-radius: 6px;
+    background: var(--theme-color--inactive);
+    border: 1px solid #000;
+    padding: 6px
+}
+
+[data-effect-enable-glass] .installer__program .window__main {
+    backdrop-filter: blur(4px)
+}
+
+[dir] [data-effect-show-window-shadows] .installer__program .window__main {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3333333333), inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__program .window__main.active {
+    border: 1px solid #000;
+    border-radius: 7px
+}
+
+[dir=ltr] .installer__program .window__main.active {
+    background: linear-gradient(hsla(0, 0%, 100%, 0) 30px, hsla(0, 0%, 100%, .7019607843) 40%, hsla(0, 0%, 100%, 0) 41%), linear-gradient(135deg, hsla(0, 0%, 100%, .3333333333) 70px, hsla(0, 0%, 100%, 0) 100px), linear-gradient(225deg, hsla(0, 0%, 100%, .3333333333) 70px, hsla(0, 0%, 100%, 0) 100px), var(--theme-color)
+}
+
+[dir=rtl] .installer__program .window__main.active {
+    background: linear-gradient(hsla(0, 0%, 100%, 0) 30px, hsla(0, 0%, 100%, .7019607843) 40%, hsla(0, 0%, 100%, 0) 41%), linear-gradient(-135deg, hsla(0, 0%, 100%, .3333333333) 70px, hsla(0, 0%, 100%, 0) 100px), linear-gradient(-225deg, hsla(0, 0%, 100%, .3333333333) 70px, hsla(0, 0%, 100%, 0) 100px), var(--theme-color)
+}
+
+[dir=ltr] [data-effect-show-window-shadows] .installer__program .window__main.active {
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667), 2px 2px 15px 1px rgba(0, 0, 0, .9333333333)
+}
+
+[dir=rtl] [data-effect-show-window-shadows] .installer__program .window__main.active {
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667), -2px 2px 15px 1px rgba(0, 0, 0, .9333333333)
+}
+
+[dir] .installer__program .window__main.active .window__control-list {
+    border-color: rgba(0, 0, 0, .6666666667);
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__program .window__main.active .window__control-item {
+    background-image: linear-gradient(hsla(0, 0%, 95.7%, .5725490196), hsla(0, 0%, 82.7%, .4549019608) 45%, rgba(0, 0, 0, .1803921569) 50%, rgba(143, 150, 173, .3058823529));
+    border-color: rgba(0, 0, 0, .6666666667);
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__program .window__main.active .window__control-item.is-close {
+    background-image: linear-gradient(hsla(0, 0%, 95.7%, .5725490196), hsla(0, 0%, 82.7%, .4549019608) 45%, rgba(0, 0, 0, .1803921569) 50%, rgba(143, 150, 173, .3058823529)), radial-gradient(circle at -60% 50%, rgba(0, 0, 0, .3333333333) 5% 10%, transparent 50%), radial-gradient(circle at 160% 50%, rgba(0, 0, 0, .3333333333) 5% 10%, transparent 50%);
+    background-color: #d54f36
+}
+
+[dir] .installer__program .window__main.maximized {
+    padding: 0;
+    border: 0;
+    border-radius: 0
+}
+
+.installer__program .window__main.maximized .window__control-list {
+    top: 0
+}
+
+[dir=ltr] .installer__program .window__main.maximized .window__control-list {
+    right: 2px
+}
+
+[dir=rtl] .installer__program .window__main.maximized .window__control-list {
+    left: 2px
+}
+
+[dir] .installer__program .window__main.maximized .window__body,
+[dir] .installer__program .window__main.maximized .window__menubar,
+[dir] .installer__program .window__main.maximized .window__statusbar {
+    border-left: 0;
+    border-right: 0
+}
+
+.installer__program .window__titlebar {
+    min-height: 24px
+}
+
+[dir] .installer__program .window__titlebar {
+    text-shadow: 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667)
+}
+
+.installer__program .window__control-list {
+    position: relative;
+    top: -5px;
+    align-self: flex-start
+}
+
+[dir] .installer__program .window__control-list {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .5333333333);
+    border-top: 0
+}
+
+.installer__program .window__control-item {
+    height: 20px;
+    position: relative
+}
+
+[dir] .installer__program .window__control-item {
+    background: none;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .3333333333);
+    cursor: pointer
+}
+
+[dir=ltr] .installer__program .window__control-item {
+    border-right: 1px solid rgba(0, 0, 0, .5333333333)
+}
+
+[dir=rtl] .installer__program .window__control-item {
+    border-left: 1px solid rgba(0, 0, 0, .5333333333)
+}
+
+.installer__program .window__control-item.is-close {
+    width: 48px
+}
+
+[dir] .installer__program .window__control-item.is-close {
+    border: 0
+}
+
+[dir=ltr] .installer__program .window__control-item:first-child,
+[dir=ltr] .installer__program .window__control-item:first-child:after,
+[dir=ltr] .installer__program .window__control-item:first-child:before {
+    border-bottom-left-radius: 5px
+}
+
+[dir=ltr] .installer__program .window__control-item:last-child,
+[dir=ltr] .installer__program .window__control-item:last-child:after,
+[dir=ltr] .installer__program .window__control-item:last-child:before,
+[dir=rtl] .installer__program .window__control-item:first-child,
+[dir=rtl] .installer__program .window__control-item:first-child:after,
+[dir=rtl] .installer__program .window__control-item:first-child:before {
+    border-bottom-right-radius: 5px
+}
+
+[dir=rtl] .installer__program .window__control-item:last-child,
+[dir=rtl] .installer__program .window__control-item:last-child:after,
+[dir=rtl] .installer__program .window__control-item:last-child:before {
+    border-bottom-left-radius: 5px
+}
+
+.installer__program .window__control-item:after,
+.installer__program .window__control-item:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    content: "";
+    z-index: 0;
+    opacity: 0
+}
+
+[dir] .installer__program .window__control-item:after,
+[dir] .installer__program .window__control-item:before {
+    box-shadow: 0 0 7px 3px #5dc4f0, inset 0 0 0 1px hsla(0, 0%, 100%, .4666666667)
+}
+
+[dir=ltr] .installer__program .window__control-item:after,
+[dir=ltr] .installer__program .window__control-item:before {
+    left: 0
+}
+
+[dir=rtl] .installer__program .window__control-item:after,
+[dir=rtl] .installer__program .window__control-item:before {
+    right: 0
+}
+
+[dir] .installer__program .window__control-item:before {
+    background: radial-gradient(circle at bottom, #0bfdfa, transparent 65%), linear-gradient(#b6d9ee 50%, #1a6ca1 0);
+    transition: opacity calc(0.5s*var(--effect-animate-controls))
+}
+
+[dir] .installer__program .window__control-item:after {
+    background: radial-gradient(circle at bottom, #0bfdfa, transparent 65%), linear-gradient(#86a7bc 50%, #092747 0)
+}
+
+.installer__program .window__control-item:not(:disabled):hover:before {
+    opacity: 1
+}
+
+[dir] .installer__program .window__control-item:not(:disabled):hover:before {
+    transition: opacity calc(0.15s*var(--effect-animate-controls))
+}
+
+.installer__program .window__control-item:not(:disabled):active:after {
+    opacity: 1
+}
+
+[dir] .installer__program .window__control-item.is-close:before {
+    background: radial-gradient(circle at 50% 170%, #f4e676 10% 20%, transparent 60%), radial-gradient(circle at -60% 50%, rgba(0, 0, 0, .4666666667) 5% 10%, transparent 50%), radial-gradient(circle at 160% 50%, rgba(0, 0, 0, .4666666667) 5% 10%, transparent 50%), linear-gradient(#fb9d8b, #ee6d56 25% 50%, #d42809 50%);
+    box-shadow: 0 0 7px 3px #e68e75, inset 0 0 0 1px hsla(0, 0%, 100%, .4666666667)
+}
+
+[dir] .installer__program .window__control-item.is-close:after {
+    background: radial-gradient(circle at 50% 170%, #dcc03f 10% 20%, transparent 60%), radial-gradient(circle at -60% 50%, rgba(0, 0, 0, .6666666667) 5% 10%, transparent 50%), radial-gradient(circle at 160% 50%, rgba(0, 0, 0, .6666666667) 5% 10%, transparent 50%), linear-gradient(#d1a894, #b67562 25% 50%, #7d0d01 50%);
+    box-shadow: 0 0 7px 3px #e68e75, inset 0 0 0 1px hsla(0, 0%, 100%, .4666666667)
+}
+
+.installer__program .window__addressbar-nav {
+    gap: 0
+}
+
+[dir] .installer__program .window__addressbar-nav {
+    background: url("data:image/webp;base64,UklGRl4DAABXRUJQVlA4WAoAAAAQAAAAOAAAHAAAQUxQSOoBAAABmYzof0CyJEmKHWUNw2MQM0s33ZY/nvem2zI+ZtTAg+5aeCCb+YGICZgAhOUKi4MA84UkeFCFxUGA+UISrE0yspIIAAMgvoDPF1iJ2Bw2m4MBEAA21jfAVkvapgMmCQCgIEAIYRMhYQoEFbGoTAZgjAGTAEClIDBTN7YC2ZTBBInBYkYIEEJgKWOMASOwmChUZKCJLSI7bIwxWJ0BW0SAwLqEkEANW7DBxQhEmhFPy39JOUwRNYn0jAGotjCNCiIuzJEGAdJsxAKRD7HAkKJAcqiiJ/gUHQaXygUx9AgelcZlisOEZw4gTxUHoQsE2KSIg9QEAtsHsSwjc3BAEQepBFSaDao4CC1zBotDF4cZXwhyFKo4CFLPxAnVFIseMQg/CLs2zHii59K1VIHhlqYvEDVb1tydKYADF6BkJlq6A/BFCQDArX0TJaEoWQ6Yyu7A/4oXtkgVdWvpNBoDwNTc3Mxa2/aRhpekBaB45AoMNLXNLHHZkhwpOkKAMGBs5t49j8ezRFe0KQM+eU+C5QeeyQM2NOTRaUyWNEKIggQ8gTGABIfDwZjE2FgoIEy50jIAul4rgdVv3DihAWBAAFramloafLDUtmHThg1bYPHcDx98AOvrinbkhAJjIzXwoBvSMgwJXTVtM7AcVlA4IE4BAABwCACdASo5AB0APlEcjEQjoaEYDAYAOAUEs4BfnO4FwWHCRmezy70pAV6LQJqu+hMMt19bI4XwZpKYCCaeAUt3LKK4/KJFfNgogjvAAP7+bxFp4LN7xQ1Tqr3qTG9mqdc3cB0lToAo7aZ4t4+55KBl5e47/o1t1rqNk/bsj6Ca2HKh14rQqrAQtyegh/6XKfnpwSQVuE0zHyTSG516WP0JgKlTulDUU6R48ms61HR2UHJNeFJRGUewwcwBB4F/xrAmtp3hmjMccrZT5K6jUH72w3jgJ+4q/6g77fAndxt5nxHRQ7uKTp+jqFdJPjkPzWw1nza/2NJzbrg2pVA2mbfHR3Xdv/dxDzsXX5B9ZZ9SoiEIKdjWvLLTX9u61YtwM4sCi18LiA9OuPEyVi/Y2p/CfryC9LY4EVADCkv/VEtYNgLX4QWXf//vE4QUKUAA");
+    padding: 1px
+}
+
+.installer__program .window__addressbar-next,
+.installer__program .window__addressbar-prev {
+    width: 27px;
+    height: 27px
+}
+
+[dir] .installer__program .window__addressbar-next,
+[dir] .installer__program .window__addressbar-prev {
+    border-radius: 50%;
+    background: url("data:image/webp;base64,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") no-repeat;
+    background-size: 27px;
+    box-shadow: none
+}
+
+.installer__program .window__addressbar-next>*,
+.installer__program .window__addressbar-prev>* {
+    display: none
+}
+
+[dir] .installer__program .window__addressbar-next.is-active,
+[dir] .installer__program .window__addressbar-prev.is-active {
+    background-position-y: 0
+}
+
+[dir] .installer__program .window__addressbar-next:hover,
+[dir] .installer__program .window__addressbar-prev:hover {
+    background-position-y: -27px
+}
+
+[dir] .installer__program .window__addressbar-next:active,
+[dir] .installer__program .window__addressbar-prev:active {
+    background-position-y: -54px
+}
+
+[dir] .installer__program .window__addressbar-next:disabled,
+[dir] .installer__program .window__addressbar-prev:disabled {
+    background-position-y: -81px
+}
+
+[dir] .installer__program .window__addressbar-next {
+    transform: scaleX(-1)
+}
+
+[dir] .installer__program .window__addressbar-location,
+[dir] .installer__program .window__addressbar-search.winui-searchbox:not(div),
+[dir] .installer__program .window__addressbar-search>input {
+    background-color: hsla(0, 0%, 100%, .6666666667);
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .4666666667), inset 0 0 0 1px #fff
+}
+
+.installer__program .window__addressbar-icon {
+    width: 18px;
+    height: 18px
+}
+
+.installer__program .window__addressbar-breadcrumb {
+    line-height: 22px
+}
+
+[dir] .installer__program .window__menubar {
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    border-bottom: 0
+}
+
+[dir=ltr] .installer__program .window__menubar {
+    box-shadow: -1px -1px hsla(0, 0%, 100%, .6666666667), 1px 0 hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir=rtl] .installer__program .window__menubar {
+    box-shadow: 1px -1px hsla(0, 0%, 100%, .6666666667), -1px 0 hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__program .window__body {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__program .window__body:not(.is-panel) {
+    padding: 10px
+}
+
+[dir] .installer__program .window__body.is-dialog,
+[dir] .installer__program .window__body.is-settings {
+    background: #f0f0f0
+}
+
+[dir] .installer__program .window__body .window__statusbar {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .6666666667)
+}
+
+[dir=ltr] .installer__program .window__sidepane {
+    background: repeating-linear-gradient(60deg, #e8eff9, #dfe9f7 50%, #e8eff9 54%, #dfe9f7 84%, #e8eff9 88%)
+}
+
+[dir=rtl] .installer__program .window__sidepane {
+    background: repeating-linear-gradient(-60deg, #e8eff9, #dfe9f7 50%, #e8eff9 54%, #dfe9f7 84%, #e8eff9 88%)
+}
+
+.installer__program .window__statusbar {
+    line-height: 24px
+}
+
+[dir] .installer__program .window__statusbar {
+    background: #f0f0f0;
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    border-top: 0;
+    box-shadow: inset 0 0 0 1px #fff;
+    padding: 1px 0
+}
+
+.installer__program .window__footer {
+    position: relative
+}
+
+[dir] .installer__program .window__footer {
+    background: #eee;
+    margin-top: -1px;
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    border-top: 0;
+    box-shadow: 0 1px 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__program .window__quickaccess:after,
+[dir] .installer__program .window__quickaccess:before {
+    background: #5e7386;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .3333333333)
+}
+
+[dir] .installer__program .window__quickaccess-item {
+    border: none;
+    border-radius: 2px
+}
+
+[dir] .installer__program .window__quickaccess-item:not(:disabled):hover {
+    background: radial-gradient(ellipse at 50% 100%, hsla(0, 0%, 100%, .3333333333) 5%, transparent 25%), linear-gradient(#fdeddc, #fddeb8 40%, #ffce68 0, #ffe995);
+    box-shadow: inset 0 0 0 1px #ffb700, inset 0 0 2px 1px #fff
+}
+
+[dir] .installer__program .window__quickaccess-item:not(:disabled):active {
+    box-shadow: inset 0 0 0 1px #c29b29, inset 0 1px 1px 1px rgba(0, 0, 0, .1333333333);
+    background: linear-gradient(#ffdca0, #ffd181 40%, #ffc45d 0, #ffd781)
+}
+
+.installer__program .window__main {
+    width: 700px
+}
+
+.installer__program .window__body:not(.is-panel) {
+    height: 384px
+}
+
+[dir] .installer__program .window__body:not(.is-panel) {
+    padding: 16px 40px 10px
+}
+
+[dir] .installer__program .installer__terms {
+    border-style: inset
+}
+
+.installer__program .installer__terms h2 {
+    font-weight: 800
+}
+
+[dir] .installer__program .installer__terms h2,
+[dir] .installer__program .installer__terms p {
+    margin-bottom: 20px
+}
+
+[dir=ltr] .installer__program .installer__action {
+    padding: 6px 24px 6px 0
+}
+
+[dir=rtl] .installer__program .installer__action {
+    padding: 6px 0 6px 24px
+}
+
+[dir] .installer__program .installer__disk-list .listview__item:hover {
+    background-image: linear-gradient(#fff, #d0eaf7)
+}
+
+[dir] .installer__program .installer__disk-list .listview__item.is-active {
+    background-image: linear-gradient(#fff, #c0e5f8, #9dd9f7 80%);
+    border-color: #999;
+    box-shadow: inset 0 2px 5px #fff
+}
+
+.installer__program .installer__task-item.is-done:before {
+    content: "✔";
+    color: #41ac41;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1
+}
+
+.installer__program .winui-progress {
+    height: 10px
+}
+
+[dir] .installer__program .winui-progress {
+    background: #7c94ae;
+    border-color: #7c94ae;
+    border-radius: 0
+}
+
+[dir] .installer__program .winui-progress>div {
+    background: #9acb37
+}
+
+.window__main.is-message .icon {
+    width: 44px;
+    height: 44px
+}
+
+[dir] .installer__main {
+    background-image: var(--bg)
+}
+
+.installer__main .winui-button {
+    color: #000;
+    min-width: 75px;
+    min-height: 23px;
+    position: relative;
+    z-index: 0
+}
+
+[dir] .installer__main .winui-button {
+    background: linear-gradient(#f2f2f2 45%, #ebebeb 0, #cfcfcf);
+    border: 1px solid #8e8f8f;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .4);
+    padding: 0 12px
+}
+
+.installer__main .winui-button:after,
+.installer__main .winui-button:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    content: "";
+    opacity: 0;
+    z-index: -1
+}
+
+[dir] .installer__main .winui-button:after,
+[dir] .installer__main .winui-button:before {
+    transition: opacity calc(0.3s*var(--effect-animate-controls))
+}
+
+[dir=ltr] .installer__main .winui-button:after,
+[dir=ltr] .installer__main .winui-button:before {
+    left: 0
+}
+
+[dir=rtl] .installer__main .winui-button:after,
+[dir=rtl] .installer__main .winui-button:before {
+    right: 0
+}
+
+[dir] .installer__main .winui-button:before {
+    background: linear-gradient(#eaf6fd 45%, #bee6fd 0, #a7d9f5);
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .4)
+}
+
+[dir] .installer__main .winui-button:after {
+    background: linear-gradient(#e5f4fc, #c4e5f6 30% 50%, #98d1ef 50%, #68b3db);
+    border-radius: 2px
+}
+
+[dir=ltr] .installer__main .winui-button:after {
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .2), inset -1px 1px 0 rgba(0, 0, 0, .0666666667)
+}
+
+[dir=rtl] .installer__main .winui-button:after {
+    box-shadow: inset -1px 1px 0 rgba(0, 0, 0, .2), inset 1px 1px 0 rgba(0, 0, 0, .0666666667)
+}
+
+.installer__main .winui-button:disabled {
+    color: #838383
+}
+
+[dir] .installer__main .winui-button:disabled {
+    background: #f4f4f4;
+    border-color: #adb2b5
+}
+
+[dir] .installer__main .winui-button:not(:disabled) {
+    transition: border-color calc(1s*var(--effect-animate-controls));
+    border-color: #8e8f8f
+}
+
+.installer__main .winui-button:not(:disabled):before {
+    opacity: 0
+}
+
+[dir] .installer__main .winui-button:not(:disabled):before {
+    transition: border-color calc(1s*var(--effect-animate-controls))
+}
+
+[dir] .installer__main .winui-button:not(:disabled):hover {
+    transition: border-color calc(0.3s*var(--effect-animate-controls));
+    background: linear-gradient(#f2f2f2 45%, #ebebeb 0, #cfcfcf);
+    border-color: #3c7fb1
+}
+
+.installer__main .winui-button:not(:disabled):hover:before {
+    opacity: 1
+}
+
+[dir] .installer__main .winui-button:not(:disabled):hover:before {
+    transition: opacity calc(0.3s*var(--effect-animate-controls))
+}
+
+[dir] .installer__main .winui-button:not(:disabled).active,
+[dir] .installer__main .winui-button:not(:disabled):active {
+    transition: border-color calc(0.3s*var(--effect-animate-controls));
+    border-color: #6d91ab
+}
+
+.installer__main .winui-button:not(:disabled).active:after,
+.installer__main .winui-button:not(:disabled):active:after {
+    opacity: 1
+}
+
+[dir] .installer__main .winui-button:not(:disabled).active:after,
+[dir] .installer__main .winui-button:not(:disabled):active:after {
+    transition: opacity calc(0.3s*var(--effect-animate-controls))
+}
+
+[dir] .installer__main .winui-button:not(:disabled).focused,
+[dir] .installer__main .winui-button:not(:disabled):focus-visible {
+    box-shadow: inset 0 0 0 2px #98d1ef
+}
+
+[dir] .installer__main .winui-button:not(:disabled).default,
+[dir] .installer__main .winui-button:not(:disabled).focused,
+[dir] .installer__main .winui-button:not(:disabled):focus {
+    border-color: #3c7fb1;
+    box-shadow: inset 0 0 1px #2dd4ff
+}
+
+.installer__main .winui-button:not(:disabled).default:before,
+.installer__main .winui-button:not(:disabled).focused:before,
+.installer__main .winui-button:not(:disabled):focus:before {
+    opacity: 1
+}
+
+[dir] .installer__main .winui-button:not(:disabled).default:before,
+[dir] .installer__main .winui-button:not(:disabled).focused:before,
+[dir] .installer__main .winui-button:not(:disabled):focus:before {
+    box-shadow: inset 0 0 1px 1px #2dd4ff
+}
+
+[dir] .installer__main .winui-button:not(:disabled).default:hover:before,
+[dir] .installer__main .winui-button:not(:disabled).focused:hover:before,
+[dir] .installer__main .winui-button:not(:disabled):focus:hover:before {
+    box-shadow: none
+}
+
+[dir] [data-effect-animate-controls] .installer__main .winui-button:not(:disabled).default:before,
+[dir] [data-effect-animate-controls] .installer__main .winui-button:not(:disabled).focused:before,
+[dir] [data-effect-animate-controls] .installer__main .winui-button:not(:disabled):focus:before {
+    animation: win7__anim-button--pulse 1s linear infinite alternate
+}
+
+.installer__main .winui-button.rounded-full {
+    min-width: unset;
+    min-height: unset
+}
+
+[dir] .installer__main .winui-button.rounded-full {
+    border-radius: 9999px;
+    padding: unset
+}
+
+[dir] .installer__main .winui-button.rounded-full:after,
+[dir] .installer__main .winui-button.rounded-full:before {
+    border-radius: 9999px
+}
+
+@keyframes win7__anim-button--pulse {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+[data-effect-enable-glass] .installer__message .window__background:before {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    content: ""
+}
+
+[dir=ltr] [data-effect-enable-glass] .installer__message .window__background:before {
+    left: 0;
+    background: linear-gradient(54deg, rgba(0, 0, 0, .1333333333) 4%, hsla(0, 0%, 40%, .0666666667) 6% 6%, rgba(0, 0, 0, .1333333333) 8% 10%, rgba(0, 0, 0, .1333333333) 15% 16%, hsla(0, 0%, 66.7%, .0666666667) 17% 18%, rgba(0, 0, 0, .1333333333) 23% 24%, hsla(0, 0%, 73.3%, .1333333333) 25% 26%, rgba(0, 0, 0, .1333333333) 31% 33%, rgba(0, 0, 0, .1333333333) 34% 34.5%, hsla(0, 0%, 73.3%, .1333333333) 36% 40%, rgba(0, 0, 0, .1333333333) 41% 41.5%, hsla(0, 0%, 73.3%, .1333333333) 44% 45%, hsla(0, 0%, 73.3%, .1333333333) 46% 47%, rgba(0, 0, 0, .1333333333) 48% 49%, rgba(0, 0, 0, .1333333333) 50% 50.5%, rgba(0, 0, 0, .1333333333) 56% 56.5%, hsla(0, 0%, 73.3%, .1333333333) 57% 63%, rgba(0, 0, 0, .1333333333) 67% 69%, hsla(0, 0%, 73.3%, .1333333333) 69.5% 70%, rgba(0, 0, 0, .1333333333) 73.5% 74%, hsla(0, 0%, 73.3%, .1333333333) 74.5% 79%, rgba(0, 0, 0, .1333333333) 80% 84%, hsla(0, 0%, 66.7%, .1333333333) 85% 86%, rgba(0, 0, 0, .1333333333) 87%, hsla(0, 0%, 73.3%, .0666666667) 90%) 0/100vw 100vh;
+    transform: translate(calc(var(--window-x)*-1), calc(var(--window-y)*-1))
+}
+
+[dir=rtl] [data-effect-enable-glass] .installer__message .window__background:before {
+    right: 0;
+    background: linear-gradient(-54deg, rgba(0, 0, 0, .1333333333) 4%, hsla(0, 0%, 40%, .0666666667) 6% 6%, rgba(0, 0, 0, .1333333333) 8% 10%, rgba(0, 0, 0, .1333333333) 15% 16%, hsla(0, 0%, 66.7%, .0666666667) 17% 18%, rgba(0, 0, 0, .1333333333) 23% 24%, hsla(0, 0%, 73.3%, .1333333333) 25% 26%, rgba(0, 0, 0, .1333333333) 31% 33%, rgba(0, 0, 0, .1333333333) 34% 34.5%, hsla(0, 0%, 73.3%, .1333333333) 36% 40%, rgba(0, 0, 0, .1333333333) 41% 41.5%, hsla(0, 0%, 73.3%, .1333333333) 44% 45%, hsla(0, 0%, 73.3%, .1333333333) 46% 47%, rgba(0, 0, 0, .1333333333) 48% 49%, rgba(0, 0, 0, .1333333333) 50% 50.5%, rgba(0, 0, 0, .1333333333) 56% 56.5%, hsla(0, 0%, 73.3%, .1333333333) 57% 63%, rgba(0, 0, 0, .1333333333) 67% 69%, hsla(0, 0%, 73.3%, .1333333333) 69.5% 70%, rgba(0, 0, 0, .1333333333) 73.5% 74%, hsla(0, 0%, 73.3%, .1333333333) 74.5% 79%, rgba(0, 0, 0, .1333333333) 80% 84%, hsla(0, 0%, 66.7%, .1333333333) 85% 86%, rgba(0, 0, 0, .1333333333) 87%, hsla(0, 0%, 73.3%, .0666666667) 90%) 100%/100vw 100vh;
+    transform: translate(calc(var(--window-x)*-1*-1), calc(var(--window-y)*-1))
+}
+
+[dir] .installer__message .window__main {
+    border-radius: 6px;
+    background: var(--theme-color--inactive);
+    border: 1px solid #000;
+    padding: 6px
+}
+
+[data-effect-enable-glass] .installer__message .window__main {
+    backdrop-filter: blur(4px)
+}
+
+[dir] [data-effect-show-window-shadows] .installer__message .window__main {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3333333333), inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__message .window__main.active {
+    border: 1px solid #000;
+    border-radius: 7px
+}
+
+[dir=ltr] .installer__message .window__main.active {
+    background: linear-gradient(hsla(0, 0%, 100%, 0) 30px, hsla(0, 0%, 100%, .7019607843) 40%, hsla(0, 0%, 100%, 0) 41%), linear-gradient(135deg, hsla(0, 0%, 100%, .3333333333) 70px, hsla(0, 0%, 100%, 0) 100px), linear-gradient(225deg, hsla(0, 0%, 100%, .3333333333) 70px, hsla(0, 0%, 100%, 0) 100px), var(--theme-color)
+}
+
+[dir=rtl] .installer__message .window__main.active {
+    background: linear-gradient(hsla(0, 0%, 100%, 0) 30px, hsla(0, 0%, 100%, .7019607843) 40%, hsla(0, 0%, 100%, 0) 41%), linear-gradient(-135deg, hsla(0, 0%, 100%, .3333333333) 70px, hsla(0, 0%, 100%, 0) 100px), linear-gradient(-225deg, hsla(0, 0%, 100%, .3333333333) 70px, hsla(0, 0%, 100%, 0) 100px), var(--theme-color)
+}
+
+[dir=ltr] [data-effect-show-window-shadows] .installer__message .window__main.active {
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667), 2px 2px 15px 1px rgba(0, 0, 0, .9333333333)
+}
+
+[dir=rtl] [data-effect-show-window-shadows] .installer__message .window__main.active {
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667), -2px 2px 15px 1px rgba(0, 0, 0, .9333333333)
+}
+
+[dir] .installer__message .window__main.active .window__control-list {
+    border-color: rgba(0, 0, 0, .6666666667);
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__message .window__main.active .window__control-item {
+    background-image: linear-gradient(hsla(0, 0%, 95.7%, .5725490196), hsla(0, 0%, 82.7%, .4549019608) 45%, rgba(0, 0, 0, .1803921569) 50%, rgba(143, 150, 173, .3058823529));
+    border-color: rgba(0, 0, 0, .6666666667);
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__message .window__main.active .window__control-item.is-close {
+    background-image: linear-gradient(hsla(0, 0%, 95.7%, .5725490196), hsla(0, 0%, 82.7%, .4549019608) 45%, rgba(0, 0, 0, .1803921569) 50%, rgba(143, 150, 173, .3058823529)), radial-gradient(circle at -60% 50%, rgba(0, 0, 0, .3333333333) 5% 10%, transparent 50%), radial-gradient(circle at 160% 50%, rgba(0, 0, 0, .3333333333) 5% 10%, transparent 50%);
+    background-color: #d54f36
+}
+
+[dir] .installer__message .window__main.maximized {
+    padding: 0;
+    border: 0;
+    border-radius: 0
+}
+
+.installer__message .window__main.maximized .window__control-list {
+    top: 0
+}
+
+[dir=ltr] .installer__message .window__main.maximized .window__control-list {
+    right: 2px
+}
+
+[dir=rtl] .installer__message .window__main.maximized .window__control-list {
+    left: 2px
+}
+
+[dir] .installer__message .window__main.maximized .window__body,
+[dir] .installer__message .window__main.maximized .window__menubar,
+[dir] .installer__message .window__main.maximized .window__statusbar {
+    border-left: 0;
+    border-right: 0
+}
+
+.installer__message .window__titlebar {
+    min-height: 24px
+}
+
+[dir] .installer__message .window__titlebar {
+    text-shadow: 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667), 0 0 8px hsla(0, 0%, 100%, .6666666667)
+}
+
+.installer__message .window__control-list {
+    position: relative;
+    top: -5px;
+    align-self: flex-start
+}
+
+[dir] .installer__message .window__control-list {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .5333333333);
+    border-top: 0
+}
+
+.installer__message .window__control-item {
+    height: 20px;
+    position: relative
+}
+
+[dir] .installer__message .window__control-item {
+    background: none;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .3333333333);
+    cursor: pointer
+}
+
+[dir=ltr] .installer__message .window__control-item {
+    border-right: 1px solid rgba(0, 0, 0, .5333333333)
+}
+
+[dir=rtl] .installer__message .window__control-item {
+    border-left: 1px solid rgba(0, 0, 0, .5333333333)
+}
+
+.installer__message .window__control-item.is-close {
+    width: 48px
+}
+
+[dir] .installer__message .window__control-item.is-close {
+    border: 0
+}
+
+[dir=ltr] .installer__message .window__control-item:first-child,
+[dir=ltr] .installer__message .window__control-item:first-child:after,
+[dir=ltr] .installer__message .window__control-item:first-child:before {
+    border-bottom-left-radius: 5px
+}
+
+[dir=ltr] .installer__message .window__control-item:last-child,
+[dir=ltr] .installer__message .window__control-item:last-child:after,
+[dir=ltr] .installer__message .window__control-item:last-child:before,
+[dir=rtl] .installer__message .window__control-item:first-child,
+[dir=rtl] .installer__message .window__control-item:first-child:after,
+[dir=rtl] .installer__message .window__control-item:first-child:before {
+    border-bottom-right-radius: 5px
+}
+
+[dir=rtl] .installer__message .window__control-item:last-child,
+[dir=rtl] .installer__message .window__control-item:last-child:after,
+[dir=rtl] .installer__message .window__control-item:last-child:before {
+    border-bottom-left-radius: 5px
+}
+
+.installer__message .window__control-item:after,
+.installer__message .window__control-item:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    content: "";
+    z-index: 0;
+    opacity: 0
+}
+
+[dir] .installer__message .window__control-item:after,
+[dir] .installer__message .window__control-item:before {
+    box-shadow: 0 0 7px 3px #5dc4f0, inset 0 0 0 1px hsla(0, 0%, 100%, .4666666667)
+}
+
+[dir=ltr] .installer__message .window__control-item:after,
+[dir=ltr] .installer__message .window__control-item:before {
+    left: 0
+}
+
+[dir=rtl] .installer__message .window__control-item:after,
+[dir=rtl] .installer__message .window__control-item:before {
+    right: 0
+}
+
+[dir] .installer__message .window__control-item:before {
+    background: radial-gradient(circle at bottom, #0bfdfa, transparent 65%), linear-gradient(#b6d9ee 50%, #1a6ca1 0);
+    transition: opacity calc(0.5s*var(--effect-animate-controls))
+}
+
+[dir] .installer__message .window__control-item:after {
+    background: radial-gradient(circle at bottom, #0bfdfa, transparent 65%), linear-gradient(#86a7bc 50%, #092747 0)
+}
+
+.installer__message .window__control-item:not(:disabled):hover:before {
+    opacity: 1
+}
+
+[dir] .installer__message .window__control-item:not(:disabled):hover:before {
+    transition: opacity calc(0.15s*var(--effect-animate-controls))
+}
+
+.installer__message .window__control-item:not(:disabled):active:after {
+    opacity: 1
+}
+
+[dir] .installer__message .window__control-item.is-close:before {
+    background: radial-gradient(circle at 50% 170%, #f4e676 10% 20%, transparent 60%), radial-gradient(circle at -60% 50%, rgba(0, 0, 0, .4666666667) 5% 10%, transparent 50%), radial-gradient(circle at 160% 50%, rgba(0, 0, 0, .4666666667) 5% 10%, transparent 50%), linear-gradient(#fb9d8b, #ee6d56 25% 50%, #d42809 50%);
+    box-shadow: 0 0 7px 3px #e68e75, inset 0 0 0 1px hsla(0, 0%, 100%, .4666666667)
+}
+
+[dir] .installer__message .window__control-item.is-close:after {
+    background: radial-gradient(circle at 50% 170%, #dcc03f 10% 20%, transparent 60%), radial-gradient(circle at -60% 50%, rgba(0, 0, 0, .6666666667) 5% 10%, transparent 50%), radial-gradient(circle at 160% 50%, rgba(0, 0, 0, .6666666667) 5% 10%, transparent 50%), linear-gradient(#d1a894, #b67562 25% 50%, #7d0d01 50%);
+    box-shadow: 0 0 7px 3px #e68e75, inset 0 0 0 1px hsla(0, 0%, 100%, .4666666667)
+}
+
+.installer__message .window__addressbar-nav {
+    gap: 0
+}
+
+[dir] .installer__message .window__addressbar-nav {
+    background: url("data:image/webp;base64,UklGRl4DAABXRUJQVlA4WAoAAAAQAAAAOAAAHAAAQUxQSOoBAAABmYzof0CyJEmKHWUNw2MQM0s33ZY/nvem2zI+ZtTAg+5aeCCb+YGICZgAhOUKi4MA84UkeFCFxUGA+UISrE0yspIIAAMgvoDPF1iJ2Bw2m4MBEAA21jfAVkvapgMmCQCgIEAIYRMhYQoEFbGoTAZgjAGTAEClIDBTN7YC2ZTBBInBYkYIEEJgKWOMASOwmChUZKCJLSI7bIwxWJ0BW0SAwLqEkEANW7DBxQhEmhFPy39JOUwRNYn0jAGotjCNCiIuzJEGAdJsxAKRD7HAkKJAcqiiJ/gUHQaXygUx9AgelcZlisOEZw4gTxUHoQsE2KSIg9QEAtsHsSwjc3BAEQepBFSaDao4CC1zBotDF4cZXwhyFKo4CFLPxAnVFIseMQg/CLs2zHii59K1VIHhlqYvEDVb1tydKYADF6BkJlq6A/BFCQDArX0TJaEoWQ6Yyu7A/4oXtkgVdWvpNBoDwNTc3Mxa2/aRhpekBaB45AoMNLXNLHHZkhwpOkKAMGBs5t49j8ezRFe0KQM+eU+C5QeeyQM2NOTRaUyWNEKIggQ8gTGABIfDwZjE2FgoIEy50jIAul4rgdVv3DihAWBAAFramloafLDUtmHThg1bYPHcDx98AOvrinbkhAJjIzXwoBvSMgwJXTVtM7AcVlA4IE4BAABwCACdASo5AB0APlEcjEQjoaEYDAYAOAUEs4BfnO4FwWHCRmezy70pAV6LQJqu+hMMt19bI4XwZpKYCCaeAUt3LKK4/KJFfNgogjvAAP7+bxFp4LN7xQ1Tqr3qTG9mqdc3cB0lToAo7aZ4t4+55KBl5e47/o1t1rqNk/bsj6Ca2HKh14rQqrAQtyegh/6XKfnpwSQVuE0zHyTSG516WP0JgKlTulDUU6R48ms61HR2UHJNeFJRGUewwcwBB4F/xrAmtp3hmjMccrZT5K6jUH72w3jgJ+4q/6g77fAndxt5nxHRQ7uKTp+jqFdJPjkPzWw1nza/2NJzbrg2pVA2mbfHR3Xdv/dxDzsXX5B9ZZ9SoiEIKdjWvLLTX9u61YtwM4sCi18LiA9OuPEyVi/Y2p/CfryC9LY4EVADCkv/VEtYNgLX4QWXf//vE4QUKUAA");
+    padding: 1px
+}
+
+.installer__message .window__addressbar-next,
+.installer__message .window__addressbar-prev {
+    width: 27px;
+    height: 27px
+}
+
+[dir] .installer__message .window__addressbar-next,
+[dir] .installer__message .window__addressbar-prev {
+    border-radius: 50%;
+    background: url("data:image/webp;base64,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") no-repeat;
+    background-size: 27px;
+    box-shadow: none
+}
+
+.installer__message .window__addressbar-next>*,
+.installer__message .window__addressbar-prev>* {
+    display: none
+}
+
+[dir] .installer__message .window__addressbar-next.is-active,
+[dir] .installer__message .window__addressbar-prev.is-active {
+    background-position-y: 0
+}
+
+[dir] .installer__message .window__addressbar-next:hover,
+[dir] .installer__message .window__addressbar-prev:hover {
+    background-position-y: -27px
+}
+
+[dir] .installer__message .window__addressbar-next:active,
+[dir] .installer__message .window__addressbar-prev:active {
+    background-position-y: -54px
+}
+
+[dir] .installer__message .window__addressbar-next:disabled,
+[dir] .installer__message .window__addressbar-prev:disabled {
+    background-position-y: -81px
+}
+
+[dir] .installer__message .window__addressbar-next {
+    transform: scaleX(-1)
+}
+
+[dir] .installer__message .window__addressbar-location,
+[dir] .installer__message .window__addressbar-search.winui-searchbox:not(div),
+[dir] .installer__message .window__addressbar-search>input {
+    background-color: hsla(0, 0%, 100%, .6666666667);
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .4666666667), inset 0 0 0 1px #fff
+}
+
+.installer__message .window__addressbar-icon {
+    width: 18px;
+    height: 18px
+}
+
+.installer__message .window__addressbar-breadcrumb {
+    line-height: 22px
+}
+
+[dir] .installer__message .window__menubar {
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    border-bottom: 0
+}
+
+[dir=ltr] .installer__message .window__menubar {
+    box-shadow: -1px -1px hsla(0, 0%, 100%, .6666666667), 1px 0 hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir=rtl] .installer__message .window__menubar {
+    box-shadow: 1px -1px hsla(0, 0%, 100%, .6666666667), -1px 0 hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__message .window__body {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__message .window__body:not(.is-panel) {
+    padding: 10px
+}
+
+[dir] .installer__message .window__body.is-dialog,
+[dir] .installer__message .window__body.is-settings {
+    background: #f0f0f0
+}
+
+[dir] .installer__message .window__body .window__statusbar {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .6666666667)
+}
+
+[dir=ltr] .installer__message .window__sidepane {
+    background: repeating-linear-gradient(60deg, #e8eff9, #dfe9f7 50%, #e8eff9 54%, #dfe9f7 84%, #e8eff9 88%)
+}
+
+[dir=rtl] .installer__message .window__sidepane {
+    background: repeating-linear-gradient(-60deg, #e8eff9, #dfe9f7 50%, #e8eff9 54%, #dfe9f7 84%, #e8eff9 88%)
+}
+
+.installer__message .window__statusbar {
+    line-height: 24px
+}
+
+[dir] .installer__message .window__statusbar {
+    background: #f0f0f0;
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    border-top: 0;
+    box-shadow: inset 0 0 0 1px #fff;
+    padding: 1px 0
+}
+
+.installer__message .window__footer {
+    position: relative
+}
+
+[dir] .installer__message .window__footer {
+    background: #eee;
+    margin-top: -1px;
+    border: 1px solid rgba(0, 0, 0, .6666666667);
+    border-top: 0;
+    box-shadow: 0 1px 0 1px hsla(0, 0%, 100%, .6666666667)
+}
+
+[dir] .installer__message .window__quickaccess:after,
+[dir] .installer__message .window__quickaccess:before {
+    background: #5e7386;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .3333333333)
+}
+
+[dir] .installer__message .window__quickaccess-item {
+    border: none;
+    border-radius: 2px
+}
+
+[dir] .installer__message .window__quickaccess-item:not(:disabled):hover {
+    background: radial-gradient(ellipse at 50% 100%, hsla(0, 0%, 100%, .3333333333) 5%, transparent 25%), linear-gradient(#fdeddc, #fddeb8 40%, #ffce68 0, #ffe995);
+    box-shadow: inset 0 0 0 1px #ffb700, inset 0 0 2px 1px #fff
+}
+
+[dir] .installer__message .window__quickaccess-item:not(:disabled):active {
+    box-shadow: inset 0 0 0 1px #c29b29, inset 0 1px 1px 1px rgba(0, 0, 0, .1333333333);
+    background: linear-gradient(#ffdca0, #ffd181 40%, #ffc45d 0, #ffd781)
+}
+
+[dir] .installer__text {
+    text-shadow: 0 1px #000
+}

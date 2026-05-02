@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["launcher"],{d5b0:function(n,a,c){"use strict";c.r(a),c.d(a,"LauncherWeb",(function(){return u}));var e=c("1547");class u extends e["b"]{launchPackage(){}launchPackageSetting(){}launchMiscellaneous(){}}}}]);

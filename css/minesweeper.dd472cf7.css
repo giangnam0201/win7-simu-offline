@@ -1,0 +1,144 @@
+[dir] .minesweeper__grid {
+    box-shadow: 0 0 0 2px #808da4;
+    border: 1px solid #000
+}
+
+[dir=ltr] .minesweeper__grid {
+    background: linear-gradient(135deg, #0ff, #000078)
+}
+
+[dir=rtl] .minesweeper__grid {
+    background: linear-gradient(-135deg, #0ff, #000078)
+}
+
+[dir] .minesweeper__cell {
+    border: 1px solid #000
+}
+
+.minesweeper__cell.is-opened {
+    opacity: 1
+}
+
+[dir] .minesweeper__cell.is-opened {
+    background-color: #e1eef7;
+    box-shadow: inset 0 0 0 2px #fff
+}
+
+[dir=ltr] .minesweeper__cell.is-opened:first-child,
+[dir=ltr] .minesweeper__cell:not(.is-opened)+.is-opened {
+    box-shadow: inset 1px 0 #000, inset 2px 0 #ccc, inset 0 0 0 2px #fff
+}
+
+[dir=rtl] .minesweeper__cell.is-opened:first-child,
+[dir=rtl] .minesweeper__cell:not(.is-opened)+.is-opened {
+    box-shadow: inset -1px 0 #000, inset -2px 0 #ccc, inset 0 0 0 2px #fff
+}
+
+.minesweeper__cell:not(.is-opened):hover {
+    filter: brightness(1.6)
+}
+
+.minesweeper__cell.cell-1 {
+    color: #4050be
+}
+
+.minesweeper__cell.cell-2 {
+    color: #397e2d
+}
+
+.minesweeper__cell.cell-3 {
+    color: #b60704
+}
+
+.minesweeper__cell.cell-4 {
+    color: #010183
+}
+
+.minesweeper__cell.cell-5 {
+    color: #8b0000
+}
+
+[dir] .minesweeper__stats {
+    margin-top: 10px
+}
+
+.minesweeper__stats-icon {
+    width: 30px
+}
+
+[dir] .minesweeper__stats-icon {
+    background-color: #efefef;
+    border-radius: 50%
+}
+
+[dir=ltr] .minesweeper__stats-icon {
+    padding: 1px 0 1px 1px;
+    box-shadow: -1px -1px 4px 1px #476581;
+    margin-right: 8px
+}
+
+[dir=rtl] .minesweeper__stats-icon {
+    padding: 1px 1px 1px 0;
+    box-shadow: 1px -1px 4px 1px #476581;
+    margin-left: 8px
+}
+
+[dir=ltr] .minesweeper__stats-icon:last-of-type {
+    margin-right: 0;
+    margin-left: 8px
+}
+
+[dir=rtl] .minesweeper__stats-icon:last-of-type {
+    margin-left: 0;
+    margin-right: 8px
+}
+
+.minesweeper__stats-number {
+    width: 45px;
+    color: #fff
+}
+
+[dir] .minesweeper__stats-number {
+    padding: 4px 0;
+    text-align: center;
+    border-radius: .3em
+}
+
+[dir=ltr] .minesweeper__stats-number {
+    background: linear-gradient(135deg, #2c4f8f, #3d6cbc);
+    box-shadow: inset 1px 1px 2px 1px #203665, -1px -1px 2px 1px #69819c, 1px 1px 2px 1px #d4dae0;
+    margin-right: auto
+}
+
+[dir=rtl] .minesweeper__stats-number {
+    background: linear-gradient(-135deg, #2c4f8f, #3d6cbc);
+    box-shadow: inset -1px 1px 2px 1px #203665, 1px -1px 2px 1px #69819c, -1px 1px 2px 1px #d4dae0;
+    margin-left: auto
+}
+
+[dir=ltr] .minesweeper__stats-number:last-of-type {
+    margin-right: 0;
+    margin-left: auto
+}
+
+[dir=rtl] .minesweeper__stats-number:last-of-type {
+    margin-left: 0;
+    margin-right: auto
+}
+
+[dir] #window-minesweeper .window__body {
+    padding: 20px 20px 10px;
+    background-image: radial-gradient(ellipse at 0 0, rgba(135, 157, 181, .1019607843), #879db5)
+}
+
+#window-minesweeper-stats {
+    width: 260px
+}
+
+[dir=ltr] #window-minesweeper-result .title {
+    padding-left: 5px
+}
+
+[dir=rtl] #window-minesweeper-result .title {
+    padding-right: 5px
+}

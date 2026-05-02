@@ -1,0 +1,353 @@
+.chess__sprite {
+    aspect-ratio: 1/1
+}
+
+[dir] .chess__sprite {
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.chess__sprite.is-trim {
+    position: absolute;
+    top: 16%;
+    bottom: 16%
+}
+
+[dir] .chess__sprite.is-trim {
+    left: 16%;
+    right: 16%;
+    padding: .6%
+}
+
+.chess__sprite.is-decal {
+    width: 12.6%;
+    height: 12.6%;
+    position: absolute
+}
+
+.chess__sprite.is-decal.is-select {
+    z-index: 10
+}
+
+[dir] .chess__sprite.is-decal.is-select {
+    transform: scale(1.2)
+}
+
+.chess__sprite.is-decal.is-check,
+.chess__sprite.is-decal.is-lastmove,
+.chess__sprite.is-decal.is-piece,
+.chess__sprite.is-decal.is-select {
+    pointer-events: none
+}
+
+.chess__sprite.is-decal.is-piece {
+    z-index: 8
+}
+
+[dir] .chess__sprite.is-decal.is-piece {
+    background-size: 400% 400%
+}
+
+.chess__sprite.is-decal.is-highlight {
+    z-index: 1
+}
+
+[dir] .chess__sprite.is-decal.is-highlight {
+    background-size: 200% 200%
+}
+
+[dir=ltr] .chess__sprite.is-decal.is-highlight.is-yellow {
+    background-position: 0 0
+}
+
+[dir=ltr] .chess__sprite.is-decal.is-highlight.is-blue,
+[dir=rtl] .chess__sprite.is-decal.is-highlight.is-yellow {
+    background-position: 100% 0
+}
+
+[dir=rtl] .chess__sprite.is-decal.is-highlight.is-blue {
+    background-position: 0 0
+}
+
+[dir=ltr] .chess__sprite.is-decal.is-highlight.is-red {
+    background-position: 0 100%
+}
+
+[dir=ltr] .chess__sprite.is-decal.is-highlight.is-purple,
+[dir=rtl] .chess__sprite.is-decal.is-highlight.is-red {
+    background-position: 100% 100%
+}
+
+[dir=rtl] .chess__sprite.is-decal.is-highlight.is-purple {
+    background-position: 0 100%
+}
+
+.chess__captured {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 15.5%;
+    height: 77%;
+    position: relative
+}
+
+[dir=ltr] .chess__captured.is-left {
+    direction: rtl
+}
+
+[dir=rtl] .chess__captured.is-left {
+    direction: ltr
+}
+
+.chess__captured-piece {
+    width: 55%;
+    height: auto;
+    aspect-ratio: 1/1;
+    pointer-events: none
+}
+
+.chess__about-hr {
+    width: 100%;
+    height: 1px
+}
+
+[dir] .chess__about-hr {
+    border: none;
+    background: #a0a0a0
+}
+
+[dir=ltr] .chess__about-hr {
+    box-shadow: 1px 1px 0 1px #fff
+}
+
+[dir=rtl] .chess__about-hr {
+    box-shadow: -1px 1px 0 1px #fff
+}
+
+.window__main.is-message .icon {
+    width: 44px;
+    height: 44px
+}
+
+[dir] .chess__style-item.is-selected .chess__style-thumbwrapper {
+    box-shadow: 0 0 0 3px #39f
+}
+
+.chess__style-item.is-selected .chess__style-thumbwrapper .chess__style-thumb {
+    background-blend-mode: soft-light
+}
+
+[dir] .chess__style-item.is-selected .chess__style-thumbwrapper .chess__style-thumb {
+    background-color: rgba(51, 153, 255, .5333333333)
+}
+
+.chess__style-item.is-selected .chess__style-label {
+    color: #fff
+}
+
+[dir] .chess__style-item.is-selected .chess__style-label {
+    background-color: #39f
+}
+
+.chess__style-thumbwrapper {
+    width: 100px;
+    height: 100px
+}
+
+.chess__style-thumb {
+    aspect-ratio: 1/1;
+    mask-image: none;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 100% 100%
+}
+
+[dir] .chess__style-thumb {
+    background-size: 100% 100%
+}
+
+[dir] .chess__dialog-mainlabel {
+    margin: 0
+}
+
+[dir=ltr] .chess__dialog-mainlabel {
+    text-align: left
+}
+
+[dir=rtl] .chess__dialog-mainlabel {
+    text-align: right
+}
+
+.chess__dialog-button {
+    color: #039
+}
+
+[dir] .chess__dialog-button {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: border-color 1.5s linear
+}
+
+[dir] .chess__dialog-button:focus {
+    animation: animPulsingBorder 2s linear infinite
+}
+
+.chess__dialog-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0
+}
+
+[dir] .chess__dialog-button:before {
+    border-radius: 3px;
+    background-image: linear-gradient(#fff, #f6f6f6);
+    box-shadow: inset 0 0 1px hsla(0, 0%, 100%, .6666666667);
+    transition: opacity 1.5s linear
+}
+
+[dir=ltr] .chess__dialog-button:before {
+    left: 0
+}
+
+[dir=rtl] .chess__dialog-button:before {
+    right: 0
+}
+
+[dir] .chess__dialog-button:hover {
+    border-color: #c6c6c6;
+    transition: border-color .5s linear;
+    animation: none
+}
+
+.chess__dialog-button:hover:before {
+    opacity: 1
+}
+
+[dir] .chess__dialog-button:hover:before {
+    transition: opacity .5s linear
+}
+
+.chess__dialog-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0
+}
+
+[dir] .chess__dialog-button:after {
+    background-color: #f2f3f3;
+    border-radius: 3px;
+    background-image: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1333333333);
+    transition: opacity .3s linear
+}
+
+[dir=ltr] .chess__dialog-button:after {
+    left: 0
+}
+
+[dir=rtl] .chess__dialog-button:after {
+    right: 0
+}
+
+[dir] .chess__dialog-button:active {
+    border-color: #adadad;
+    transition: border-color .3s linear;
+    animation: none
+}
+
+.chess__dialog-button:active:after {
+    opacity: 1
+}
+
+[dir] .chess__dialog-button:active:after {
+    transition: opacity .3s linear
+}
+
+.chess__dialog-buttonicon {
+    filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, .2))
+}
+
+@keyframes animPulsingBorder {
+    0% {
+        border-color: #c5f4ff
+    }
+    50% {
+        border-color: #73e3ff
+    }
+    to {
+        border-color: #c5f4ff
+    }
+}
+
+[dir] .chess__stats-levels {
+    border: 1px solid #828790
+}
+
+.chess__stats-level.is-selected {
+    color: #fff
+}
+
+[dir] .chess__stats-level.is-selected {
+    background: #39f
+}
+
+.chess__tips-wrapper {
+    min-width: 300px;
+    max-width: 350px;
+    z-index: 10
+}
+
+[dir] .chess__tips-wrapper {
+    border: 1px solid rgba(0, 0, 0, .5333333333);
+    transition: height .3s linear
+}
+
+[dir=ltr] .chess__tips-wrapper {
+    box-shadow: inset 0 0 0 1px #fff, 3px 3px 3px rgba(0, 0, 0, .2);
+    background-image: linear-gradient(transparent, #dacdbb), radial-gradient(ellipse at bottom right, transparent 58%, #f5f5f5 60%)
+}
+
+[dir=rtl] .chess__tips-wrapper {
+    box-shadow: inset 0 0 0 1px #fff, -3px 3px 3px rgba(0, 0, 0, .2);
+    background-image: linear-gradient(transparent, #dacdbb), radial-gradient(ellipse at bottom left, transparent 58%, #f5f5f5 60%)
+}
+
+.chess__tips-close {
+    color: #5e7184
+}
+
+[dir] .chess__tips-close {
+    border: 1px solid #caced1
+}
+
+.chess__tips-close:hover {
+    color: #658ab2
+}
+
+[dir] .chess__tips-close:hover {
+    border-color: #839fba;
+    box-shadow: 0 0 0 2px #a3caf1
+}
+
+.chess__tips-title {
+    color: #014d9c
+}
+
+.chess__tips-description,
+.chess__tips-hint {
+    color: #494a4d
+}
+
+.chess__splash-text {
+    color: #aec1f3
+}
