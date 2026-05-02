@@ -85,28 +85,50 @@
     const base = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
     const originalFetch = window.fetch;
     window.fetch = function(url, options) {
-        let finalUrl = url;
-        if (typeof url === 'string') {
-            // Block googleapis calls and other trackers
-            if (url.includes('googleapis.com') || url.includes('google-analytics.com') || url.includes('googletagmanager.com') || url.includes('app-measurement.com')) {
-                return Promise.resolve(new Response(JSON.stringify({}), { 
-                    status: 200, 
-                    headers: {'Content-Type': 'application/json'} 
-                }));
-            }
-            // Handle root-relative paths for local assets
-            if (url.startsWith('/') && !url.startsWith('//')) {
-                finalUrl = base + url.substring(1);
-            }
+        let urlStr = typeof url === 'string' ? url : (url instanceof URL ? url.href : '');
+        
+        // Mock Firebase Installations / Analytics responses
+        if (urlStr.includes('firebaseinstallations.googleapis.com') || urlStr.includes('firebase.googleapis.com')) {
+            const mockResponse = {
+                fid: "offline-fid",
+                refreshToken: "offline-ref-token",
+                authToken: {
+                    token: "offline-auth-token",
+                    expiresIn: "3600s"
+                },
+                measurementId: "G-OFFLINE"
+            };
+            return Promise.resolve(new Response(JSON.stringify(mockResponse), { 
+                status: 200, 
+                headers: {'Content-Type': 'application/json'} 
+            }));
         }
+
+        // Block other trackers
+        if (urlStr.includes('google-analytics.com') || urlStr.includes('googletagmanager.com') || urlStr.includes('app-measurement.com') || urlStr.includes('gamedistribution.com')) {
+            return Promise.resolve(new Response(JSON.stringify({}), { status: 200 }));
+        }
+
+        let finalUrl = url;
+        if (urlStr.startsWith('/') && !urlStr.startsWith('//')) {
+            finalUrl = base + urlStr.substring(1);
+        } else if (urlStr.startsWith('file:///C:/draco/')) {
+            // Fix hardcoded draco root paths
+            finalUrl = base + 'draco/' + urlStr.substring(17);
+        }
+
         return originalFetch(finalUrl, options);
     };
 
     const originalOpen = XMLHttpRequest.prototype.open;
     XMLHttpRequest.prototype.open = function(method, url, ...args) {
         let finalUrl = url;
-        if (typeof url === 'string' && url.startsWith('/') && !url.startsWith('//')) {
-            finalUrl = base + url.substring(1);
+        if (typeof url === 'string') {
+            if (url.startsWith('/') && !url.startsWith('//')) {
+                finalUrl = base + url.substring(1);
+            } else if (url.startsWith('file:///C:/draco/')) {
+                finalUrl = base + 'draco/' + url.substring(17);
+            }
         }
         return originalOpen.call(this, method, finalUrl, ...args);
     };
