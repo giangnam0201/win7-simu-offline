@@ -16,7 +16,7 @@
                 }),
                 installations: () => ({ 
                     getId: () => Promise.resolve("offline-id"), 
-                    getToken: () => Promise.resolve("offline-token"),
+                    getToken: () => Promise.resolve({ token: "offline-token" }),
                     delete: promiseNoop
                 }),
                 auth: () => ({ 
@@ -82,6 +82,7 @@
     };
 
     // 6. Patch fetch and XHR to handle root-relative paths and block external APIs
+    const base = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
     const originalFetch = window.fetch;
     window.fetch = function(url, options) {
         let finalUrl = url;
@@ -95,7 +96,7 @@
             }
             // Handle root-relative paths for local assets
             if (url.startsWith('/') && !url.startsWith('//')) {
-                finalUrl = url.substring(1);
+                finalUrl = base + url.substring(1);
             }
         }
         return originalFetch(finalUrl, options);
@@ -105,7 +106,7 @@
     XMLHttpRequest.prototype.open = function(method, url, ...args) {
         let finalUrl = url;
         if (typeof url === 'string' && url.startsWith('/') && !url.startsWith('//')) {
-            finalUrl = url.substring(1);
+            finalUrl = base + url.substring(1);
         }
         return originalOpen.call(this, method, finalUrl, ...args);
     };
@@ -120,6 +121,7 @@
             const proxy = new Proxy({}, {
                 get: (target, prop) => {
                     if (prop === 'addListener') return () => ({ remove: noop });
+                    if (prop === 'getToken') return () => Promise.resolve({ token: "offline-token" });
                     return () => Promise.resolve({});
                 }
             });
