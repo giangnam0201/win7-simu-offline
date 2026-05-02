@@ -1,0 +1,118 @@
+[dir] [data-resize-wrapper] {
+    border: 1px solid transparent
+}
+
+[data-resize-wrapper] img {
+    display: block
+}
+
+[dir] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] {
+    border-color: #000
+}
+
+[data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle] {
+    width: 36px;
+    height: 36px
+}
+
+[dir] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle] {
+    background: none;
+    border: 0
+}
+
+[data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle]:after {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: calc(50% - 2px);
+    content: ""
+}
+
+[dir] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle]:after {
+    background: #fff;
+    border: 1px solid #000
+}
+
+[dir=ltr] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle]:after {
+    left: calc(50% - 2px)
+}
+
+[dir=rtl] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle]:after {
+    right: calc(50% - 2px)
+}
+
+[dir=ltr] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle=bottom],
+[dir=ltr] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle=top] {
+    left: calc(50% - 18px) !important;
+    right: unset !important
+}
+
+[dir=rtl] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle=bottom],
+[dir=rtl] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle=top] {
+    right: calc(50% - 18px) !important;
+    left: unset !important
+}
+
+[data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle=left],
+[data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle=right] {
+    top: calc(50% - 18px) !important;
+    bottom: unset !important
+}
+
+[data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle*=top] {
+    top: -18px !important
+}
+
+[data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle*=bottom] {
+    bottom: -18px !important
+}
+
+[dir=ltr] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle*=left] {
+    left: -18px !important
+}
+
+[dir=ltr] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle*=right],
+[dir=rtl] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle*=left] {
+    right: -18px !important
+}
+
+[dir=rtl] [data-node=image].ProseMirror-selectednode [data-resize-wrapper] [data-resize-handle*=right] {
+    left: -18px !important
+}
+
+.ribbon__item-menu.is-list .ribbon__item-button {
+    width: auto
+}
+
+.ribbon__item-menu.has-colors {
+    min-width: auto
+}
+
+[dir] .ribbon__item-menu.has-colors .ribbon__item>.ribbon__item-button,
+[dir] .window__wrapper.is-wordpad .window__body {
+    padding: 0
+}
+
+.wordpad__editor {
+    max-width: 816px;
+    min-height: 100%
+}
+
+[dir] .wordpad__editor {
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    margin: auto;
+    padding: 12px 16px
+}
+
+.wordpad__editor:focus-visible {
+    outline: none
+}
+
+[dir=ltr] .wordpad__editor-list {
+    padding-left: 32px
+}
+
+[dir=rtl] .wordpad__editor-list {
+    padding-right: 32px
+}

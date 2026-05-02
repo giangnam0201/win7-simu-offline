@@ -1,0 +1,149 @@
+[dir] .listview__item:hover {
+    background-color: rgba(0, 0, 0, .1333333333)
+}
+
+[dir] .listview__item.is-active,
+[dir] .listview__item:focus {
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.listview__item-icon {
+    width: 100%;
+    height: 100%
+}
+
+.listview__view.has-icons.is-small .listview__item {
+    display: flex;
+    align-items: center;
+    min-width: 160px;
+    width: 30%
+}
+
+[dir] .listview__view.has-icons.is-small .listview__item {
+    padding: 2px
+}
+
+.listview__view.has-icons.is-small .listview__item-iconbox {
+    width: 16px;
+    height: 16px
+}
+
+[dir] .listview__view.has-icons.is-small .listview__item-info {
+    padding: 0 2px
+}
+
+.listview__view.has-icons.is-medium .listview__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 96px
+}
+
+[dir] .listview__view.has-icons.is-medium .listview__item {
+    padding: 2px 4px 4px
+}
+
+.listview__view.has-icons.is-medium .listview__item-iconbox {
+    width: 88px;
+    height: 88px
+}
+
+[dir] .listview__view.has-icons.is-medium .listview__item-info {
+    padding: 0 4px
+}
+
+.listview__view.has-icons.is-medium .listview__item-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal
+}
+
+[dir] .listview__view.has-icons.is-medium .listview__item-label {
+    text-align: center
+}
+
+.listview__view.has-icons.is-large .listview__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 144px
+}
+
+[dir] .listview__view.has-icons.is-large .listview__item {
+    padding: 2px 8px 8px
+}
+
+.listview__view.has-icons.is-large .listview__item-iconbox {
+    width: 128px;
+    height: 128px
+}
+
+[dir] .listview__view.has-icons.is-large .listview__item-info {
+    padding: 0 4px
+}
+
+.listview__view.has-icons.is-large .listview__item-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal
+}
+
+[dir] .listview__view.has-icons.is-large .listview__item-label {
+    text-align: center
+}
+
+.listview__view.has-icons.is-extra .listview__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 212px
+}
+
+[dir] .listview__view.has-icons.is-extra .listview__item {
+    padding: 2px 8px 8px
+}
+
+.listview__view.has-icons.is-extra .listview__item-iconbox {
+    width: 196px;
+    height: 196px
+}
+
+[dir] .listview__view.has-icons.is-extra .listview__item-info {
+    padding: 0 4px
+}
+
+.listview__view.has-icons.is-extra .listview__item-label {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal
+}
+
+[dir] .listview__view.has-icons.is-extra .listview__item-label {
+    text-align: center
+}
+
+.game-container table {
+    width: 100%
+}
+
+[dir] .game-container table {
+    text-align: center
+}
+
+.game-container.centered {
+    min-width: 230px
+}
+
+[dir=ltr] .game-container.centered>.titlebar>.title {
+    padding-left: 5px
+}
+
+[dir=rtl] .game-container.centered>.titlebar>.title {
+    padding-right: 5px
+}

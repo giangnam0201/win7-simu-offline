@@ -1,0 +1,7 @@
+.window__wrapper.is-camera .window__body {
+    flex-direction: row
+}
+
+[dir] .window__wrapper.is-camera .window__body {
+    background: #222
+}

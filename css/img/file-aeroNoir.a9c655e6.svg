@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>empty</title>
+<desc>Created with Sketch.</desc>
+<defs>
+<linearGradient id="a" x1="50%" x2="50%" y1=".94821%" y2="99.038%">
+<stop stop-color="#DADEF0" offset="0"/>
+<stop stop-color="#F5F5FA" offset="1"/>
+</linearGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(8 5)">
+<image width="48" height="58" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA6CAYAAAD2mdrhAAAABGdBTUEAA1teXP8meAAAAbpJREFUaAXtmutOwzAMhSk3IQHv/6pcBsNf1lP5B6MNo9iRbMmyl6bxOceRVimZrk42zZHgcze8W3p0K/vcDZ9PASvA13OuqPHzb1/2BLDyT8txrIuECAD6Zn750LuIzb/E7u1lcHyYQ0KkLF03gGMscGf+3+Cp/Wau+t3d1wvEW/Ou9tn8v7IXW4jaiChMkFo1JmNMZgtF2q9IeAKbGO/MsJuECOyMq2v5LhIZCcB2M4msBDaTyExgE4nsBFZJjEDgRxKjEPiOBGPTSAQ8Cf50G/bRCIiEPjlOLBgdzPhu48thuC0kndk57dNnxC0EiaY+yagEwN6sCEiJqFgdiFJedasDUiIqVgeilFfd6oCUiIrVgSjlVbc6ICWiYnUgSnnVrQ5IiahYHYhSXnWrA1IiKlYHopRX3eqAlIiK1YEo5VW3OiAlomJ1IEp51VUHdEsqw40VYTsXwSi8ywkNA1z5ejIXKUvTGeAfzcEK5uWWFnfVuG72YP5szjHmcg5leQYD47v5qzm3Wdr9Oo4rMdjwEIMIB8nZtpN2CfjA2jrgVWbr8FsxIwFA62YjcVHZg/U5c7JZU34GdfwCNsxKg6edvMcAAAAASUVORK5CYII="/>
+<path d="m43.5 54h-39c-1 0-1.5-0.5-1.5-1.5v-49c0-1 0.5-1.5 1.5-1.5h27.5l13 13v37.5c0 1.5-1.5 1.5-1.5 1.5z" fill="url(#a)"/>
+<path d="m33.239 15.037c-0.736 0-1.2387-0.63467-1.2387-1.3707v-11.667l13 13.037h-11.761z" fill="#fff"/>
+</g>
+</g>
+</svg>

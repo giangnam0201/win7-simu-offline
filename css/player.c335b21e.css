@@ -1,0 +1,72 @@
+.media__control-item:disabled {
+    opacity: .4
+}
+
+[dir] .media__control-list.is-dark {
+    border-color: hsla(0, 0%, 100%, .4)
+}
+
+.media__control-list.is-dark .media__control-item {
+    color: #fff
+}
+
+.media__control-item.is-volume-slider input::-webkit-slider-thumb,
+.player__progress::-webkit-slider-thumb {
+    appearance: none;
+    width: var(--slider-thumb-width);
+    height: var(--slider-thumb-height)
+}
+
+[dir] .media__control-item.is-volume-slider input::-webkit-slider-thumb,
+[dir] .player__progress::-webkit-slider-thumb {
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+    transform: translateY(calc(-50% + var(--slider-height)/2))
+}
+
+[dir] .media__control-item.is-volume-slider input::-webkit-slider-thumb:hover,
+[dir] .player__progress::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, .4)
+}
+
+.media__control-item.is-volume-slider input::-moz-range-thumb,
+.player__progress::-moz-range-thumb {
+    appearance: none;
+    width: var(--slider-thumb-width);
+    height: var(--slider-thumb-height)
+}
+
+[dir] .media__control-item.is-volume-slider input::-moz-range-thumb,
+[dir] .player__progress::-moz-range-thumb {
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .4)
+}
+
+[dir] .media__control-item.is-volume-slider input::-moz-range-thumb:hover,
+[dir] .player__progress::-moz-range-thumb:hover {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, .4)
+}
+
+.media__control-item.is-volume-slider {
+    width: auto
+}
+
+.window__wrapper.is-player.is-playing .window__addressbar,
+.window__wrapper.is-player.is-playing .window__menubar {
+    display: none
+}
+
+[dir] .window__wrapper.is-player.is-playing .window__body,
+[dir] .window__wrapper.is-player.is-playing .window__footer {
+    background: #000
+}
+
+[dir] .media__control-item.is-volume-slider .window__wrapper.is-player.is-playing input,
+[dir] .window__wrapper.is-player.is-playing .media__control-item.is-volume-slider input,
+[dir] .window__wrapper.is-player.is-playing .player__progress {
+    border-color: hsla(0, 0%, 100%, .4)
+}

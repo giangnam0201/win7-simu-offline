@@ -1,0 +1,346 @@
+[dir] .boot__main.is-aeroNoir .logo {
+    background-size: 250% 100%;
+    animation: aeroNoir__anim-shining 2s linear infinite
+}
+
+[dir=ltr] .boot__main.is-aeroNoir .logo {
+    background-image: linear-gradient(-45deg, transparent 1%, #fff 6% 10%, transparent 15%)
+}
+
+[dir=rtl] .boot__main.is-aeroNoir .logo {
+    background-image: linear-gradient(45deg, transparent 1%, #fff 6% 10%, transparent 15%)
+}
+
+@keyframes aeroNoir__anim-shining {
+    0% {
+        background-position: 250% 50%
+    }
+    to {
+        background-position: 0 50%
+    }
+}
+
+[dir] .boot__main.is-kubuntu .logo {
+    animation: kubuntu__anim-pulse 1s infinite alternate
+}
+
+@keyframes kubuntu__anim-pulse {
+    0% {
+        filter: drop-shadow(0 0 0 #000)
+    }
+    to {
+        filter: drop-shadow(0 0 7px #71deff) drop-shadow(0 0 10px #71deff)
+    }
+}
+
+.winui-progress.is-macos {
+    width: 256px;
+    height: 4px
+}
+
+[dir] .winui-progress.is-macos {
+    background-color: #424242
+}
+
+[dir] .winui-progress.is-macos>div {
+    background-color: #f5f5f5;
+    transition: width 1s linear
+}
+
+.boot__main.is-onebit {
+    color: #e6d4bf;
+    font-family: ms-sans-serif, sans-serif
+}
+
+[dir] .boot__main.is-onebit {
+    background: #352b30
+}
+
+.boot__main.is-onebit .logo {
+    width: 4px;
+    height: 4px
+}
+
+[dir] .boot__main.is-onebit .logo {
+    animation: onebit__anim-house 3s infinite
+}
+
+@keyframes onebit__anim-house {
+    0%,
+    25% {
+        box-shadow: 12px 36px 0 0 #e6d4bf, 16px 36px 0 0 #e6d4bf, 20px 36px 0 0 #e6d4bf, 24px 36px 0 0 #e6d4bf, 28px 36px 0 0 #e6d4bf, 32px 36px 0 0 #e6d4bf, 36px 36px 0 0 #e6d4bf, 40px 36px 0 0 #e6d4bf, 44px 36px 0 0 #e6d4bf, 48px 36px 0 0 #e6d4bf, 52px 36px 0 0 #e6d4bf, 56px 36px 0 0 #e6d4bf, 12px 40px 0 0 #e6d4bf, 56px 40px 0 0 #e6d4bf, 12px 44px 0 0 #e6d4bf, 56px 44px 0 0 #e6d4bf, 12px 48px 0 0 #e6d4bf, 56px 48px 0 0 #e6d4bf, 12px 52px 0 0 #e6d4bf, 56px 52px 0 0 #e6d4bf, 12px 56px 0 0 #e6d4bf, 56px 56px 0 0 #e6d4bf, 12px 60px 0 0 #e6d4bf, 56px 60px 0 0 #e6d4bf, 12px 64px 0 0 #e6d4bf, 16px 64px 0 0 #e6d4bf, 20px 64px 0 0 #e6d4bf, 24px 64px 0 0 #e6d4bf, 28px 64px 0 0 #e6d4bf, 32px 64px 0 0 #e6d4bf, 36px 64px 0 0 #e6d4bf, 40px 64px 0 0 #e6d4bf, 44px 64px 0 0 #e6d4bf, 48px 64px 0 0 #e6d4bf, 52px 64px 0 0 #e6d4bf, 56px 64px 0 0 #e6d4bf
+    }
+    25.01%,
+    50% {
+        box-shadow: 32px 20px 0 0 #e6d4bf, 36px 20px 0 0 #e6d4bf, 28px 24px 0 0 #e6d4bf, 40px 24px 0 0 #e6d4bf, 24px 28px 0 0 #e6d4bf, 44px 28px 0 0 #e6d4bf, 20px 32px 0 0 #e6d4bf, 48px 32px 0 0 #e6d4bf, 16px 36px 0 0 #e6d4bf, 52px 36px 0 0 #e6d4bf, 12px 40px 0 0 #e6d4bf, 56px 40px 0 0 #e6d4bf, 12px 44px 0 0 #e6d4bf, 56px 44px 0 0 #e6d4bf, 12px 48px 0 0 #e6d4bf, 56px 48px 0 0 #e6d4bf, 12px 52px 0 0 #e6d4bf, 56px 52px 0 0 #e6d4bf, 12px 56px 0 0 #e6d4bf, 56px 56px 0 0 #e6d4bf, 12px 60px 0 0 #e6d4bf, 56px 60px 0 0 #e6d4bf, 12px 64px 0 0 #e6d4bf, 16px 64px 0 0 #e6d4bf, 20px 64px 0 0 #e6d4bf, 24px 64px 0 0 #e6d4bf, 28px 64px 0 0 #e6d4bf, 32px 64px 0 0 #e6d4bf, 36px 64px 0 0 #e6d4bf, 40px 64px 0 0 #e6d4bf, 44px 64px 0 0 #e6d4bf, 48px 64px 0 0 #e6d4bf, 52px 64px 0 0 #e6d4bf, 56px 64px 0 0 #e6d4bf
+    }
+    50.01%,
+    75% {
+        box-shadow: 32px 4px 0 0 #e6d4bf, 36px 4px 0 0 #e6d4bf, 28px 8px 0 0 #e6d4bf, 32px 8px 0 0 #e6d4bf, 36px 8px 0 0 #e6d4bf, 40px 8px 0 0 #e6d4bf, 24px 12px 0 0 #e6d4bf, 28px 12px 0 0 #e6d4bf, 40px 12px 0 0 #e6d4bf, 44px 12px 0 0 #e6d4bf, 20px 16px 0 0 #e6d4bf, 24px 16px 0 0 #e6d4bf, 44px 16px 0 0 #e6d4bf, 48px 16px 0 0 #e6d4bf, 16px 20px 0 0 #e6d4bf, 20px 20px 0 0 #e6d4bf, 32px 20px 0 0 #e6d4bf, 36px 20px 0 0 #e6d4bf, 48px 20px 0 0 #e6d4bf, 52px 20px 0 0 #e6d4bf, 12px 24px 0 0 #e6d4bf, 16px 24px 0 0 #e6d4bf, 28px 24px 0 0 #e6d4bf, 40px 24px 0 0 #e6d4bf, 52px 24px 0 0 #e6d4bf, 56px 24px 0 0 #e6d4bf, 8px 28px 0 0 #e6d4bf, 12px 28px 0 0 #e6d4bf, 24px 28px 0 0 #e6d4bf, 44px 28px 0 0 #e6d4bf, 56px 28px 0 0 #e6d4bf, 60px 28px 0 0 #e6d4bf, 4px 32px 0 0 #e6d4bf, 8px 32px 0 0 #e6d4bf, 20px 32px 0 0 #e6d4bf, 48px 32px 0 0 #e6d4bf, 60px 32px 0 0 #e6d4bf, 64px 32px 0 0 #e6d4bf, 16px 36px 0 0 #e6d4bf, 52px 36px 0 0 #e6d4bf, 12px 40px 0 0 #e6d4bf, 56px 40px 0 0 #e6d4bf, 12px 44px 0 0 #e6d4bf, 56px 44px 0 0 #e6d4bf, 12px 48px 0 0 #e6d4bf, 56px 48px 0 0 #e6d4bf, 12px 52px 0 0 #e6d4bf, 56px 52px 0 0 #e6d4bf, 12px 56px 0 0 #e6d4bf, 56px 56px 0 0 #e6d4bf, 12px 60px 0 0 #e6d4bf, 56px 60px 0 0 #e6d4bf, 12px 64px 0 0 #e6d4bf, 16px 64px 0 0 #e6d4bf, 20px 64px 0 0 #e6d4bf, 24px 64px 0 0 #e6d4bf, 28px 64px 0 0 #e6d4bf, 32px 64px 0 0 #e6d4bf, 36px 64px 0 0 #e6d4bf, 40px 64px 0 0 #e6d4bf, 44px 64px 0 0 #e6d4bf, 48px 64px 0 0 #e6d4bf, 52px 64px 0 0 #e6d4bf, 56px 64px 0 0 #e6d4bf
+    }
+    75.01%,
+    to {
+        box-shadow: 32px 4px 0 0 #e6d4bf, 36px 4px 0 0 #e6d4bf, 28px 8px 0 0 #e6d4bf, 32px 8px 0 0 #e6d4bf, 36px 8px 0 0 #e6d4bf, 40px 8px 0 0 #e6d4bf, 24px 12px 0 0 #e6d4bf, 28px 12px 0 0 #e6d4bf, 40px 12px 0 0 #e6d4bf, 44px 12px 0 0 #e6d4bf, 20px 16px 0 0 #e6d4bf, 24px 16px 0 0 #e6d4bf, 44px 16px 0 0 #e6d4bf, 48px 16px 0 0 #e6d4bf, 16px 20px 0 0 #e6d4bf, 20px 20px 0 0 #e6d4bf, 32px 20px 0 0 #e6d4bf, 36px 20px 0 0 #e6d4bf, 48px 20px 0 0 #e6d4bf, 52px 20px 0 0 #e6d4bf, 12px 24px 0 0 #e6d4bf, 16px 24px 0 0 #e6d4bf, 28px 24px 0 0 #e6d4bf, 40px 24px 0 0 #e6d4bf, 52px 24px 0 0 #e6d4bf, 56px 24px 0 0 #e6d4bf, 8px 28px 0 0 #e6d4bf, 12px 28px 0 0 #e6d4bf, 24px 28px 0 0 #e6d4bf, 44px 28px 0 0 #e6d4bf, 56px 28px 0 0 #e6d4bf, 60px 28px 0 0 #e6d4bf, 4px 32px 0 0 #e6d4bf, 8px 32px 0 0 #e6d4bf, 20px 32px 0 0 #e6d4bf, 48px 32px 0 0 #e6d4bf, 60px 32px 0 0 #e6d4bf, 64px 32px 0 0 #e6d4bf, 16px 36px 0 0 #e6d4bf, 52px 36px 0 0 #e6d4bf, 12px 40px 0 0 #e6d4bf, 56px 40px 0 0 #e6d4bf, 12px 44px 0 0 #e6d4bf, 32px 44px 0 0 #e6d4bf, 36px 44px 0 0 #e6d4bf, 56px 44px 0 0 #e6d4bf, 12px 48px 0 0 #e6d4bf, 28px 48px 0 0 #e6d4bf, 40px 48px 0 0 #e6d4bf, 56px 48px 0 0 #e6d4bf, 12px 52px 0 0 #e6d4bf, 28px 52px 0 0 #e6d4bf, 40px 52px 0 0 #e6d4bf, 56px 52px 0 0 #e6d4bf, 12px 56px 0 0 #e6d4bf, 28px 56px 0 0 #e6d4bf, 40px 56px 0 0 #e6d4bf, 56px 56px 0 0 #e6d4bf, 12px 60px 0 0 #e6d4bf, 28px 60px 0 0 #e6d4bf, 40px 60px 0 0 #e6d4bf, 56px 60px 0 0 #e6d4bf, 12px 64px 0 0 #e6d4bf, 16px 64px 0 0 #e6d4bf, 20px 64px 0 0 #e6d4bf, 24px 64px 0 0 #e6d4bf, 28px 64px 0 0 #e6d4bf, 40px 64px 0 0 #e6d4bf, 44px 64px 0 0 #e6d4bf, 48px 64px 0 0 #e6d4bf, 52px 64px 0 0 #e6d4bf, 56px 64px 0 0 #e6d4bf
+    }
+}
+
+[dir] .boot__main.is-oxygen .logo {
+    animation: oxygen-spin 8s infinite, oxygen-glow 2s ease-in-out infinite alternate;
+    transform-origin: center
+}
+
+@keyframes oxygen-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    75% {
+        transform: rotate(180deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes oxygen-glow {
+    0% {
+        filter: drop-shadow(0 0 0 #1bb89b)
+    }
+    to {
+        filter: drop-shadow(0 0 20px #1bb89b)
+    }
+}
+
+.boot__main.is-oxygen .particle {
+    position: absolute;
+    top: 50%
+}
+
+[dir] .boot__main.is-oxygen .particle {
+    background-color: #1bb89b;
+    animation: oxygen-fall 8s infinite
+}
+
+[dir=ltr] .boot__main.is-oxygen .particle {
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+[dir=rtl] .boot__main.is-oxygen .particle {
+    right: 50%;
+    transform: translate(50%, -50%)
+}
+
+[dir] .boot__main.is-oxygen .particle:nth-child(2) {
+    animation-delay: .2s
+}
+
+[dir=ltr] .boot__main.is-oxygen .particle:nth-child(2) {
+    left: 49%
+}
+
+[dir=rtl] .boot__main.is-oxygen .particle:nth-child(2) {
+    right: 49%
+}
+
+[dir] .boot__main.is-oxygen .particle:nth-child(3) {
+    animation-delay: .4s
+}
+
+[dir=ltr] .boot__main.is-oxygen .particle:nth-child(3) {
+    left: 51%
+}
+
+[dir=rtl] .boot__main.is-oxygen .particle:nth-child(3) {
+    right: 51%
+}
+
+[dir] .boot__main.is-oxygen .particle:nth-child(4) {
+    animation-delay: .6s
+}
+
+[dir=ltr] .boot__main.is-oxygen .particle:nth-child(4) {
+    left: 48.5%
+}
+
+[dir=rtl] .boot__main.is-oxygen .particle:nth-child(4) {
+    right: 48.5%
+}
+
+[dir] .boot__main.is-oxygen .particle:nth-child(5) {
+    animation-delay: .8s
+}
+
+[dir=ltr] .boot__main.is-oxygen .particle:nth-child(5) {
+    left: 50.5%
+}
+
+[dir=rtl] .boot__main.is-oxygen .particle:nth-child(5) {
+    right: 50.5%
+}
+
+[dir] .boot__main.is-oxygen .particle:nth-child(6) {
+    animation-delay: 1s
+}
+
+[dir=ltr] .boot__main.is-oxygen .particle:nth-child(6) {
+    left: 49.3%
+}
+
+[dir=rtl] .boot__main.is-oxygen .particle:nth-child(6) {
+    right: 49.3%
+}
+
+[dir] .boot__main.is-oxygen .particle:nth-child(7) {
+    animation-delay: 1.2s
+}
+
+[dir=ltr] .boot__main.is-oxygen .particle:nth-child(7) {
+    left: 50.7%
+}
+
+[dir=rtl] .boot__main.is-oxygen .particle:nth-child(7) {
+    right: 50.7%
+}
+
+[dir] .boot__main.is-oxygen .particle:nth-child(8) {
+    animation-delay: 1.4s
+}
+
+[dir=ltr] .boot__main.is-oxygen .particle:nth-child(8) {
+    left: 48.7%
+}
+
+[dir=rtl] .boot__main.is-oxygen .particle:nth-child(8) {
+    right: 48.7%
+}
+
+@keyframes oxygen-fall {
+    0% {
+        transform: translate(-50%) scale(1);
+        opacity: 1
+    }
+    25% {
+        transform: translateX(-50%) translateY(3000%) scale(.5);
+        opacity: 0
+    }
+}
+
+.spinner[data-v-41df070a] {
+    --spinner-size: 50px;
+    --ball-size: calc(var(--spinner-size)/9);
+    width: var(--spinner-size);
+    height: var(--spinner-size)
+}
+
+.spinner-ball[data-v-41df070a] {
+    width: calc(var(--spinner-size) - var(--ball-size));
+    height: calc(var(--spinner-size) - var(--ball-size))
+}
+
+[dir] .spinner-ball[data-v-41df070a] {
+    animation: orbit-data-v-41df070a 4.4s infinite
+}
+
+[dir=ltr] .spinner-ball[data-v-41df070a] {
+    transform: rotate(225deg)
+}
+
+[dir=rtl] .spinner-ball[data-v-41df070a] {
+    transform: rotate(-225deg)
+}
+
+.spinner-ball>span[data-v-41df070a] {
+    width: var(--ball-size);
+    height: var(--ball-size)
+}
+
+[dir] .spinner-ball[data-v-41df070a]:first-child {
+    animation-delay: .96s
+}
+
+[dir] .spinner-ball[data-v-41df070a]:nth-child(2) {
+    animation-delay: .19s
+}
+
+[dir] .spinner-ball[data-v-41df070a]:nth-child(3) {
+    animation-delay: .38s
+}
+
+[dir] .spinner-ball[data-v-41df070a]:nth-child(4) {
+    animation-delay: .58s
+}
+
+[dir] .spinner-ball[data-v-41df070a]:nth-child(5) {
+    animation-delay: .77s
+}
+
+@keyframes orbit-data-v-41df070a {
+    0% {
+        opacity: 1;
+        z-index: 99;
+        transform: rotate(180deg);
+        animation-timing-function: ease-out
+    }
+    7% {
+        opacity: 1;
+        transform: rotate(300deg);
+        animation-timing-function: linear;
+        origin: 0
+    }
+    30% {
+        opacity: 1;
+        transform: rotate(410deg);
+        animation-timing-function: ease-in-out;
+        origin: 7%
+    }
+    39% {
+        opacity: 1;
+        transform: rotate(645deg);
+        animation-timing-function: linear;
+        origin: 30%
+    }
+    70% {
+        opacity: 1;
+        transform: rotate(770deg);
+        animation-timing-function: ease-out;
+        origin: 39%
+    }
+    75% {
+        opacity: 1;
+        transform: rotate(900deg);
+        animation-timing-function: ease-out;
+        origin: 70%
+    }
+    76% {
+        opacity: 0;
+        transform: rotate(900deg)
+    }
+    to {
+        opacity: 0;
+        transform: rotate(900deg)
+    }
+}
+
+.bootinfo {
+    font-family: dos-vga, lucidacons, monospace, sans-serif
+}
+
+.bootinfo button,
+.bootinfo pre {
+    font-family: inherit;
+    font-size: inherit
+}
+
+.bootinfo button:hover {
+    color: inherit
+}
+
+.bootinfo button:focus {
+    outline: 2px solid currentColor
+}
