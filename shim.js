@@ -121,6 +121,9 @@
         } else if (urlStr.startsWith('file:///C:/draco/')) {
             // Fix hardcoded draco root paths
             finalUrl = base + 'draco/' + urlStr.substring(17);
+        } else if (urlStr.endsWith('297f276f116cda1ea6303d70fda91f2c.glb')) {
+            // Redirect GLB to assets folder
+            finalUrl = base + 'assets/297f276f116cda1ea6303d70fda91f2c.glb';
         }
 
         return originalFetch(finalUrl, options);
@@ -134,6 +137,8 @@
                 finalUrl = base + url.substring(1);
             } else if (url.startsWith('file:///C:/draco/')) {
                 finalUrl = base + 'draco/' + url.substring(17);
+            } else if (url.endsWith('297f276f116cda1ea6303d70fda91f2c.glb')) {
+                finalUrl = base + 'assets/297f276f116cda1ea6303d70fda91f2c.glb';
             }
         }
         return originalOpen.call(this, method, finalUrl, ...args);
