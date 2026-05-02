@@ -3,7 +3,7 @@
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
     "devPath": "http://localhost:8080",
-    "distDir": ".."
+    "distDir": "../dist"
   },
   "package": {
     "productName": "Win7Simu",

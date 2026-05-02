@@ -1,6 +1,6 @@
 {
   "appId": "com.giangnam0201.win7simu",
   "appName": "Win7Simu",
-  "webDir": "www",
+  "webDir": "dist",
   "bundledWebRuntime": false
 }
