@@ -15,7 +15,7 @@
     },
     "bundle": {
       "active": true,
-      "category": "Simulation",
+      "category": "Simulation Game",
       "copyright": "",
       "deb": {
         "depends": []
