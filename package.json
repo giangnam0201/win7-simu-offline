@@ -1,0 +1,11 @@
+{
+  "name": "win7-simu-offline",
+  "version": "1.0.0",
+  "description": "Windows 7 Simulator Offline",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "giangnam0201",
+  "license": "MIT"
+}

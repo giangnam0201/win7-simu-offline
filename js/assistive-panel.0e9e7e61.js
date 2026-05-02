@@ -188,20 +188,7 @@
                                 icon: "fa:" + t.icon
                             }
                         })], 1), s("span", [e._v(e._s(t.text))])])
-                    })), 0)]), s("fieldset", {
-                        staticClass: "mb-6 border-0"
-                    }, [s("legend", {
-                        staticClass: "mb-6 font-medium text-2xl"
-                    }, [e._v("Share this website")]), s("div", {
-                        staticClass: "flex justify-center gap-2"
-                    }, e._l(e.shareNetworks, (function(e) {
-                        return s("assistive-share", {
-                            key: e,
-                            attrs: {
-                                network: e
-                            }
-                        })
-                    })), 1)])])]) : e._e()])
+                    })), 0)])])]) : e._e()])
                 },
                 i = [],
                 a = function() {
@@ -269,23 +256,15 @@
                                 click: () => this.pwaInstall.install(),
                                 disabled: () => !this.pwaInstall.isInstallAvailable
                             }, {
-                                text: "Manage billing",
-                                icon: "credit-card",
-                                click: () => this.openLink("https://store.visnalize.com/billing")
+                                text: "Download app",
+                                icon: "github",
+                                click: () => this.openLink("https://github.com/giangnam0201/win7-simu-offline/releases")
                             }, {
-                                text: "Android app",
-                                icon: "android",
-                                click: () => this.openLink("https://play.google.com/store/apps/details?id=com.visnalize.win7simu")
-                            }, {
-                                text: "Visit homepage",
-                                icon: "home",
-                                click: () => this.openLink("https://visnalize.com")
-                            }, {
-                                text: "Give feedback",
-                                icon: "commenting",
-                                click: () => this.openLink("https://github.com/Visnalize/win7-simu")
+                                text: "Project Source",
+                                icon: "code",
+                                click: () => this.openLink("https://github.com/giangnam0201/win7-simu-offline")
                             }],
-                            shareNetworks: ["facebook", "twitter", "telegram", "linkedin", "hackernews", "weibo"]
+                            shareNetworks: []
                         }
                     },
                     async mounted() {

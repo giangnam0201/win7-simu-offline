@@ -3,3 +3,10 @@ Thumbs.db
 *.py
 *.tmp
 .gemini/
+node_modules/
+dist/
+src-tauri/target/
+android/
+Win7Simu_Offline.apk
+release_assets/
+package-lock.json
