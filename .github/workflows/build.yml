@@ -22,7 +22,7 @@ jobs:
       - name: setup rust
         uses: dtolnay/rust-toolchain@stable
       - name: build tauri
-        run: npx tauri build
+        run: npm run tauri build
       - name: Rename and Move Assets
         run: |
           mkdir release_assets
@@ -52,6 +52,9 @@ jobs:
           java-version: '17'
       - name: build android
         run: |
+          mkdir www
+          # Copy all static assets to www for Capacitor
+          cp -r assets bsod.html css draco favicon.ico fonts global.css icon-192.png img index.html js media pdfjs service-worker.js shim.js solitaire workbox-sw.js www/
           npx cap add android
           npx cap copy android
           cd android && ./gradlew assembleDebug
