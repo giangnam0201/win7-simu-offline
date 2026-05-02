@@ -82,7 +82,13 @@
     };
 
     // 6. Patch fetch and XHR to handle root-relative paths and block external APIs
-    const base = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
+    const base = (function() {
+        let p = window.location.pathname;
+        if (!p.endsWith('/')) p = p.substring(0, p.lastIndexOf('/') + 1);
+        if (!p.endsWith('/')) p += '/';
+        return window.location.origin + p;
+    })();
+    
     const originalFetch = window.fetch;
     window.fetch = function(url, options) {
         let urlStr = typeof url === 'string' ? url : (url instanceof URL ? url.href : '');
