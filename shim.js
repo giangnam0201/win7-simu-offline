@@ -215,20 +215,17 @@
                 visibility: hidden !important;
                 pointer-events: none !important;
             }
-            [data-test-main-screen], #desktop, .desktop__wrapper { 
+            [data-test-main-screen] { 
                 height: 100dvh !important; 
                 width: 100vw !important; 
-                overflow: hidden !important; 
                 position: fixed !important;
                 top: 0 !important;
                 left: 0 !important;
+                overflow: hidden !important;
             }
             body, html { 
                 overflow: hidden !important; 
                 overscroll-behavior: none !important;
-                position: fixed;
-                width: 100%;
-                height: 100%;
             }
         `;
         document.head.appendChild(style);
