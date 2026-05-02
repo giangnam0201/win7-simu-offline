@@ -24,7 +24,7 @@ jobs:
       - name: build tauri
         run: |
           mkdir dist
-          cp -r assets bsod.html css draco favicon.ico fonts global.css icon-192.png img index.html js media pdfjs service-worker.js shim.js solitaire workbox-sw.js dist/
+          "assets", "bsod.html", "css", "draco", "favicon.ico", "fonts", "global.css", "icon-192.png", "img", "index.html", "js", "media", "pdfjs", "service-worker.js", "shim.js", "solitaire", "workbox-sw.js" | ForEach-Object { if (Test-Path $_) { Copy-Item -Path $_ -Destination dist -Recurse -Force } }
           npm run tauri build
       - name: Rename and Move Assets
         run: |
