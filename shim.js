@@ -91,17 +91,22 @@
     
     const originalFetch = window.fetch;
     window.fetch = function(url, options) {
-        let urlStr = typeof url === 'string' ? url : (url instanceof URL ? url.href : '');
+        let urlStr = '';
+        if (typeof url === 'string') urlStr = url;
+        else if (url instanceof URL) urlStr = url.href;
+        else if (url instanceof Request) urlStr = url.url;
         
         // Mock Firebase Installations / Analytics responses
         if (urlStr.includes('firebaseinstallations.googleapis.com') || urlStr.includes('firebase.googleapis.com')) {
             const mockResponse = {
                 fid: "offline-fid",
                 refreshToken: "offline-ref-token",
+                token: "offline-auth-token", // For authTokens:generate
                 authToken: {
                     token: "offline-auth-token",
                     expiresIn: "3600s"
                 },
+                expiresIn: "3600s", // For authTokens:generate
                 measurementId: "G-OFFLINE"
             };
             return Promise.resolve(new Response(JSON.stringify(mockResponse), { 
@@ -110,12 +115,13 @@
             }));
         }
 
-        // Block other trackers
-        if (urlStr.includes('google-analytics.com') || urlStr.includes('googletagmanager.com') || urlStr.includes('app-measurement.com') || urlStr.includes('gamedistribution.com')) {
-            return Promise.resolve(new Response(JSON.stringify({}), { status: 200 }));
+        // Block Ad networks and trackers
+        if (urlStr.includes('google-analytics.com') || urlStr.includes('googletagmanager.com') || 
+            urlStr.includes('ads') || urlStr.includes('analytics') || urlStr.includes('doubleclick')) {
+            return Promise.resolve(new Response('', { status: 200 }));
         }
 
-        let finalUrl = url;
+        let finalUrl = urlStr;
         if (urlStr.startsWith('/') && !urlStr.startsWith('//')) {
             finalUrl = base + urlStr.substring(1);
         } else if (urlStr.startsWith(window.location.origin + '/') && !urlStr.startsWith(base)) {
@@ -129,20 +135,30 @@
             finalUrl = base + 'assets/297f276f116cda1ea6303d70fda91f2c.glb';
         }
 
-        return originalFetch(finalUrl, options);
+        if (finalUrl !== urlStr) {
+            if (url instanceof Request) {
+                return originalFetch(new Request(finalUrl, url), options);
+            }
+            return originalFetch(finalUrl, options);
+        }
+        return originalFetch(url, options);
     };
 
     const originalOpen = XMLHttpRequest.prototype.open;
     XMLHttpRequest.prototype.open = function(method, url, ...args) {
+        let urlStr = '';
+        if (typeof url === 'string') urlStr = url;
+        else if (url instanceof URL) urlStr = url.href;
+
         let finalUrl = url;
-        if (typeof url === 'string') {
-            if (url.startsWith('/') && !url.startsWith('//')) {
-                finalUrl = base + url.substring(1);
-            } else if (url.startsWith(window.location.origin + '/') && !url.startsWith(base)) {
-                finalUrl = base + url.substring(window.location.origin.length + 1);
-            } else if (url.startsWith('file:///C:/draco/')) {
-                finalUrl = base + 'draco/' + url.substring(17);
-            } else if (url.endsWith('297f276f116cda1ea6303d70fda91f2c.glb')) {
+        if (urlStr) {
+            if (urlStr.startsWith('/') && !urlStr.startsWith('//')) {
+                finalUrl = base + urlStr.substring(1);
+            } else if (urlStr.startsWith(window.location.origin + '/') && !urlStr.startsWith(base)) {
+                finalUrl = base + urlStr.substring(window.location.origin.length + 1);
+            } else if (urlStr.startsWith('file:///C:/draco/')) {
+                finalUrl = base + 'draco/' + urlStr.substring(17);
+            } else if (urlStr.endsWith('297f276f116cda1ea6303d70fda91f2c.glb')) {
                 finalUrl = base + 'assets/297f276f116cda1ea6303d70fda91f2c.glb';
             }
         }
