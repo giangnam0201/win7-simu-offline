@@ -11,16 +11,14 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("precache-manifest.54e4bd24444374cd6f9ce537b229da49.js", "workbox-sw.js");
+importScripts("precache-manifest.682608dd4f2b3cc8b3cbf6c0ce48b307.js", "workbox-sw.js");
 
-workbox.core.setCacheNameDetails({
-    prefix: "win7-simu"
-});
+workbox.core.setCacheNameDetails({prefix: "win7-simu"});
 
 self.addEventListener('message', (event) => {
-    if (event.data && event.data.type === 'SKIP_WAITING') {
-        self.skipWaiting();
-    }
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 /**
