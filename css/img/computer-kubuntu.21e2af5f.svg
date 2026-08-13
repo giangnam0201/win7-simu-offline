@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style type="text/css">.ColorScheme-Text {
+        color:#232629;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }</style>
+</defs>
+<path d="m4 6v5 9h-1v1 36 1h1 56 1v-1-36-5h-1v-5-1h-28l-4-4h-24z" fill="#4183d7"/>
+<path d="m4 6v5 9h18l4-4h34v-5-1h-28l-4-4h-24z" fill-opacity=".33"/>
+<path d="m28 6 3 5h2 27v-1h-27-1l-4-4zm-2 10-4 4h-19v1h20l3-5z" fill="#fff" fill-opacity=".2"/>
+<path class="ColorScheme-Text" d="m26 16-6 3h-16v1h18l4-4zm-23 41v1h1 56 1v-1h-1-56-1z" fill-opacity=".2" fill-rule="evenodd"/>
+</svg>

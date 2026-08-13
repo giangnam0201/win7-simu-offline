@@ -1,0 +1,1 @@
+.cursor{contain:layout paint;will-change:transform}[dir] .cursor{background:var(--image) 50% no-repeat}.cursor,.cursor-wrapper{width:64px;height:64px}.cursor.has-shadow{filter:drop-shadow(3px 1px 1px rgba(0,0,0,.5))}[dir] .cursor.has-highlight{background-color:rgba(225,255,0,.4);border-radius:50%}
