@@ -18,7 +18,7 @@ const path = require('node:path');
         console.log('Guest clicked');
         await page.waitForSelector('[data-test-main-screen]', { timeout: 60000 });
         await page.getByText('Recycle Bin', { exact: true }).first().waitFor({ timeout: 60000 });
-        await page.waitForTimeout(2000);
+        await page.locator('.logon__loading').waitFor({ state: 'hidden', timeout: 60000 });
         const state = await page.evaluate(() => {
             const store = document.querySelector('[data-test-main-screen]').__vue__.$store;
             return { ads: store.state.showAds, themes: store.state.unlockedThemes, desktop: store.state.desktopPath };
@@ -37,6 +37,7 @@ const path = require('node:path');
             await page.reload({ waitUntil: 'domcontentloaded' });
             await page.locator('[data-test-avatar="win7"]').click({ timeout: 60000 });
             await page.getByText('Recycle Bin', { exact: true }).first().waitFor({ timeout: 60000 });
+            await page.locator('.logon__loading').waitFor({ state: 'hidden', timeout: 60000 });
             console.log('Packaged subpath reloaded offline from service worker');
             await page.context().setOffline(false);
         }

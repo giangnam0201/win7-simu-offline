@@ -91,7 +91,7 @@ def main():
     # Git and the Linux release runner use LF. Hash those same bytes locally.
     for name in names | extras | {'shim.js'}:
         path = ROOT / name
-        if path.suffix in {'.js', '.mjs', '.css', '.html', '.svg', '.json', '.webmanifest', '.txt'}:
+        if path.suffix in {'.js', '.mjs', '.css', '.html', '.svg', '.json', '.webmanifest', '.txt', '.md', '.ftl'} or path.name.startswith('LICENSE'):
             raw = path.read_bytes()
             normalized = raw.replace(b'\r\n', b'\n')
             if normalized != raw:
