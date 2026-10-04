@@ -10,3 +10,5 @@ android/
 Win7Simu_Offline.apk
 release_assets/
 package-lock.json
+.upstream/
+!scripts/*.py

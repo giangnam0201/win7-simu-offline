@@ -1,0 +1,2 @@
+# Keep text asset checksums consistent across Windows and release runners.
+* text=auto eol=lf
