@@ -1,0 +1,1 @@
+[dir] .battery-meter{background:var(--sprites) no-repeat;background-position-x:var(--x)}[dir] .battery-plug{background:var(--sprites) no-repeat;background-position-x:-960px}.taskbar-popup.is-battery{min-width:210px}.battery-icon.has-shadow{filter:drop-shadow(0 0 1px #000)}

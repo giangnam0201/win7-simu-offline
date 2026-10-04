@@ -23,8 +23,8 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
       - name: build tauri
         run: |
-          mkdir dist
-          "assets", "bsod.html", "css", "draco", "favicon.ico", "fonts", "global.css", "icon-192.png", "img", "index.html", "js", "media", "pdfjs", "service-worker.js", "shim.js", "solitaire", "workbox-sw.js" | ForEach-Object { if (Test-Path $_) { Copy-Item -Path $_ -Destination dist -Recurse -Force } }
+          npm test
+          npm run build
           npm run tauri build
       - name: Rename and Move Assets
         run: |
@@ -55,9 +55,8 @@ jobs:
           java-version: '17'
       - name: build android
         run: |
-          mkdir -p dist
-          # Copy all static assets to dist for Capacitor
-          cp -r assets bsod.html css draco favicon.ico fonts global.css icon-192.png img index.html js media pdfjs service-worker.js shim.js solitaire workbox-sw.js dist/
+          npm test
+          npm run build
           
           # Prepare assets for Capacitor - Ensure directory exists and has all required source files
           mkdir -p resources
@@ -87,12 +86,14 @@ jobs:
         with:
           node-version: lts/*
       - name: build (dummy step since it's already static)
-        run: echo "Static site ready"
+        run: |
+          npm test
+          npm run build
       - name: deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: dist
           force_orphan: true
 
   release:

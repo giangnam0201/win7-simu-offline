@@ -1,5 +1,25 @@
 # Win7 Simu Offline - AI Upgrade & Maintenance Guide
 
+## Current build: 4.7.0
+
+The update scripts supersede the older manual instructions below for 4.7.0.
+The upstream filesystem now creates and migrates its own system and user folders;
+do not restore the 4.5.0 archive-based initialization patch.
+
+1. Obtain the current precache-manifest URL from the upstream service-worker.js.
+2. Run `python scripts/download-upstream.py MANIFEST_URL` to stage changed assets.
+3. Run `python scripts/integrate-upstream.py` to apply offline compatibility patches,
+   refresh embedded workers, update versions, and regenerate local cache checksums.
+4. Run `npm test` and `npm run build`. All platform workflows package this same dist directory.
+5. With `python -m http.server 8080` running, run `node scripts/smoke-browser.cjs`
+   with Playwright installed (or set PLAYWRIGHT_MODULE to its package path).
+   It verifies HTTP and file startup with external requests blocked.
+
+Review new chunk structures when upgrading: these scripts target the current compiled
+build and are not a substitute for browser testing. Preserve existing IndexedDB user data.
+The local service worker caches the patched app, PDF viewer, and standalone Solitaire
+without a remote Workbox dependency. `upstream-version.json` records the source snapshot.
+
 This document is a comprehensive guide for future AI agents or developer assistants to upgrade and patch new versions of the Windows 7 Simulator (`win7simu.visnalize.com`) to run locally, offline, and with all premium features unlocked on the `file://` protocol.
 
 ---
