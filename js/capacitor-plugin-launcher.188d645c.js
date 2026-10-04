@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["capacitor-plugin-launcher"],{"9f6b":function(n,a,c){"use strict";c.r(a),c.d(a,"LauncherWeb",(function(){return s}));var e=c("1547");class s extends e["b"]{async launchPackage(n){}async launchPackageSetting(n){}async launchMiscellaneous(n){}}}}]);

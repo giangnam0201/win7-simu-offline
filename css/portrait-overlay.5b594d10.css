@@ -1,0 +1,1 @@
+.portrait__overlay-icon--rotate{font-size:128px}[dir] .portrait__overlay-icon--rotate{animation:portrait__icon-rotate 3s ease-in-out infinite}@keyframes portrait__icon-rotate{0%{transform:rotate(0deg)}25%{transform:rotate(90deg)}75%{transform:rotate(90deg)}to{transform:rotate(0deg)}}.portrait__overlay-text{font-size:24px;line-height:32px}

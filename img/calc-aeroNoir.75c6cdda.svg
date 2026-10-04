@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" version="1.1" viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs>
+<linearGradient id="e" x1="1267.6" x2="1267.6" y1="347.18" y2="414.94" gradientTransform="matrix(.19638 0 0 .19638 -242.03 -66.324)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#01f8bb" offset="0"/>
+<stop stop-color="#1570f5" offset="1"/>
+</linearGradient>
+<radialGradient id="a" cx="595.25" cy="180.84" r="10.553" gradientTransform="matrix(.80437 0 0 .80437 711.86 237.92)" gradientUnits="userSpaceOnUse" xlink:href="#c"/>
+<linearGradient id="c">
+<stop offset="0"/>
+<stop stop-opacity=".9098" offset=".5677"/>
+<stop stop-opacity=".77647" offset=".67417"/>
+<stop stop-opacity=".63137" offset=".77027"/>
+<stop stop-opacity=".55294" offset=".81048"/>
+<stop stop-opacity=".3098" offset=".89873"/>
+<stop stop-opacity=".015686" offset=".98601"/>
+<stop stop-opacity="0" offset="1"/>
+</linearGradient>
+<linearGradient id="b" x1="1192.4" x2="1189.7" y1="387.9" y2="377.7" gradientUnits="userSpaceOnUse" xlink:href="#d"/>
+<linearGradient id="d">
+<stop stop-color="#e7e1f5" offset="0"/>
+<stop stop-color="#faf7ff" offset="1"/>
+</linearGradient>
+</defs>
+<rect x="1.6771" y=".89957" width="13.58" height="15.56" rx="2.7572" ry="2.7572" fill="url(#e)"/>
+<rect x="3.6236" y="2.1886" width="9.8741" height="3.0704" rx="1.5352" ry="1.5352" fill="#31546d" fill-opacity=".55132"/>
+<g transform="matrix(.19638 0 0 .19638 -228.31 -66.567)">
+<circle cx="1190.7" cy="383.38" r="8.4882" fill="url(#a)" opacity=".54244"/>
+<circle cx="1190.6" cy="382.4" r="7.7624" fill="url(#b)"/>
+</g>
+<g transform="matrix(.19638 0 0 .19638 -222.26 -66.567)">
+<circle cx="1190.7" cy="383.38" r="8.4882" fill="url(#a)" opacity=".54244"/>
+<circle cx="1190.6" cy="382.4" r="7.7624" fill="url(#b)"/>
+</g>
+<g transform="matrix(.19638 0 0 .19638 -222.26 -62.182)">
+<circle cx="1190.7" cy="383.38" r="8.4882" fill="url(#a)" opacity=".54244"/>
+<circle cx="1190.6" cy="382.4" r="7.7624" fill="url(#b)"/>
+</g>
+<g transform="matrix(.19638 0 0 .19638 -228.38 -62.182)">
+<circle cx="1190.7" cy="383.38" r="8.4882" fill="url(#a)" opacity=".54244"/>
+<circle cx="1190.6" cy="382.4" r="7.7624" fill="url(#b)"/>
+</g>
+</svg>

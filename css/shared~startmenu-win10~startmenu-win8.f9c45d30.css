@@ -1,0 +1,1 @@
+.grid__item{height:120px}.grid__item-button{color:inherit;font-family:inherit}[dir] .grid__item-button:focus,[dir] .grid__item-button:hover{box-shadow:inset 0 0 0 1px #fff}.grid__item-icon{width:60%;height:60%}[dir] .grid__item-icon{margin:auto}[dir] .grid__item-text{margin-top:auto}[dir=ltr] .grid__item-text{text-align:left}[dir=rtl] .grid__item-text{text-align:right}
