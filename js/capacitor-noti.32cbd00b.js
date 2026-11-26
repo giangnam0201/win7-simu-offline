@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["capacitor-noti"],{"6ac3":function(i,n,o){"use strict";o.r(n),o.d(n,"PushNotifications",(function(){return c}));var t=o("1547");const c=Object(t["d"])("PushNotifications",{})}}]);

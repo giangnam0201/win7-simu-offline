@@ -7,6 +7,11 @@ node_modules/
 dist/
 src-tauri/target/
 android/
+/resources/icon.png
+/resources/icon-only.png
+/resources/icon-foreground.png
+/resources/splash.png
+/resources/splash-dark.png
 Win7Simu_Offline.apk
 release_assets/
 package-lock.json

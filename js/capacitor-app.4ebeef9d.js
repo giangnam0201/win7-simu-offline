@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["capacitor-app"],{"2ad9":function(n,p,e){"use strict";e.r(p),e.d(p,"App",(function(){return t}));var c=e("1547");const t=Object(c["d"])("App",{web:()=>e.e("chunk-2d208e4e").then(e.bind(null,"a779")).then(n=>new n.AppWeb)})}}]);

@@ -4,7 +4,9 @@ const { pathToFileURL } = require('node:url');
 const path = require('node:path');
 (async () => {
     const browser = await chromium.launch({ channel: process.env.BROWSER_CHANNEL || 'msedge', headless: true });
-    for (const url of ['http://localhost:8080', pathToFileURL(path.resolve('index.html')).href, 'http://localhost:8080/dist/']) {
+    const urls = ['http://localhost:8080', pathToFileURL(path.resolve('index.html')).href, 'http://localhost:8080/dist/'];
+    for (const url of urls) {
+        if (process.argv.includes('--http-only') && url.startsWith('file:')) continue;
         const page = await browser.newPage();
         const errors = [];
         page.on('pageerror', e => errors.push(e.message));
@@ -41,7 +43,8 @@ const path = require('node:path');
             console.log('Packaged subpath reloaded offline from service worker');
             await page.context().setOffline(false);
         }
-        await page.screenshot({ path: '.upstream/' + (url.startsWith('file') ? 'file' : 'web') + '-desktop.png' });
+        const screenshot = url.startsWith('file:') ? 'file' : url.endsWith('/dist/') ? 'dist' : 'web';
+        await page.screenshot({ path: `.upstream/${screenshot}-desktop.png` });
         await page.close();
     }
     await browser.close();

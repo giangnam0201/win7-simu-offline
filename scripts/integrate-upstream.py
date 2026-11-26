@@ -62,15 +62,20 @@ def main():
             start = text.index(',{text:"Manage billing"')
             end = text.index('],shareNetworks:', start)
             text = text[:start] + ',{text:"Download app",icon:"github",click:()=>this.openLink("https://github.com/giangnam0201/win7-simu-offline/releases")},{text:"Project Source",icon:"code",click:()=>this.openLink("https://github.com/giangnam0201/win7-simu-offline")}' + text[end:]
-            start = text.index(',s("fieldset",{staticClass:"mb-6 border-0"}')
+            share_section = re.search(r',\w+\("fieldset",\{staticClass:"mb-6 border-0"\}', text)
+            if not share_section:
+                raise RuntimeError(f'Could not locate the share section in {name}')
+            start = share_section.start()
             end = text.index('])]):e._e()', start)
             text = text[:start] + text[end:]
         path.write_text(text, encoding='utf-8')
     if not version:
         raise RuntimeError('Could not identify upstream version')
-    entry = next(n for n in names if re.fullmatch(r'js/app\.[a-f0-9]+\.js', n))
     index = (ROOT / 'index.html').read_text(encoding='utf-8')
-    index = re.sub(r'js/app\.[a-f0-9]+\.js', entry, index)
+    for bundle in ('app', 'chunk-vendors'):
+        pattern = rf'js/{bundle}\.[a-f0-9]+\.js'
+        entry = next(n for n in names if re.fullmatch(pattern, n))
+        index = re.sub(pattern, entry, index)
     (ROOT / 'index.html').write_text(index, encoding='utf-8')
     shim = (ROOT / 'shim.js').read_text(encoding='utf-8')
     for kind in ['chess', 'compression', 'conversion']:

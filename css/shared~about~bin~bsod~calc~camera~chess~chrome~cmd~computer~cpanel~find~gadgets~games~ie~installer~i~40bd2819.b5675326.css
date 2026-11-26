@@ -1,0 +1,1 @@
+.window__control-touch{display:none}@media(pointer:coarse){:where(:root:not(.has-touchpad)) .window__control-touch{position:absolute;top:0;display:block;width:100%;height:max(100%,40px)}:where([dir=ltr]:root:not(.has-touchpad)) .window__control-touch{left:0}:where([dir=rtl]:root:not(.has-touchpad)) .window__control-touch{right:0}}

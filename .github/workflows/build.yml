@@ -58,13 +58,7 @@ jobs:
           npm test
           npm run build
           
-          # Prepare assets for Capacitor - Ensure directory exists and has all required source files
-          mkdir -p resources
-          cp icon-192.png resources/icon.png
-          cp icon-192.png resources/icon-only.png
-          cp icon-192.png resources/icon-foreground.png
-          cp icon-192.png resources/splash.png
-          cp icon-192.png resources/splash-dark.png
+          npm run prepare:android
           
           npx cap add android || true
           npx @capacitor/assets generate --android

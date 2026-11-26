@@ -241,7 +241,7 @@
     const workerScripts = {
         'chess.85db73e9.worker.js': chessWorkerBase64,
         'compression.09f4c104.worker.js': compressionWorkerBase64,
-        'conversion.18c75e0f.worker.js': conversionWorkerBase64
+        'conversion.f329a8c4.worker.js': conversionWorkerBase64
     };
     
     class PatchedWorker extends OriginalWorker {

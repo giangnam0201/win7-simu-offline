@@ -1,5 +1,5 @@
 /* Cache the complete local build without a remote Workbox runtime. */
-importScripts('precache-manifest.b5b48117674274f7bb8a9af0e69c7fdf.js');
+importScripts('precache-manifest.5d31fb7a9e3fa65ac8ff8c5fa59bd994.js');
 const CACHE = 'win7-simu-offline-' + self.__offlineBuildRevision;
 const localURL = path => new URL(path, self.registration.scope).href;
 self.addEventListener('install', event => {
