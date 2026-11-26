@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" version="1.1" viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs>
+<radialGradient id="a" cx="8.6238" cy=".63873" r="7.4242" gradientTransform="matrix(3.9234 0 0 1.6672 -25.211 1.2518)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6be5e6" offset="0"/>
+<stop stop-color="#0a55c4" offset="1"/>
+</radialGradient>
+<linearGradient id="b" x1="8.9132" x2="8.9132" y1="12.195" y2="10.663" gradientUnits="userSpaceOnUse">
+<stop stop-color="#bbd4f0" offset="0"/>
+<stop stop-color="#c0ddf6" offset="1"/>
+</linearGradient>
+</defs>
+<path d="m3.9217 1.1317c-1.9703 0-3.5563 1.5863-3.5563 3.5567v5.6546c0 1.9703 1.5859 3.5567 3.5563 3.5567h2.6869v1.297h-0.93128c-0.22471 0-0.40571 0.18061-0.40571 0.40532s0.181 0.40572 0.40571 0.40572h5.0797c0.22471 0 0.40573-0.181 0.40573-0.40572s-0.18102-0.40532-0.40573-0.40532h-0.65243v-1.297h3.0143c1.9703 0 3.5567-1.5863 3.5567-3.5567v-5.6546c0-1.9703-1.5863-3.5567-3.5567-3.5567z" fill="#e2e4f8"/>
+<rect x="1.1995" y="1.9195" width="14.848" height="11.237" rx="2.7828" ry="2.7828" fill="url(#a)"/>
+<rect x="3.4247" y="10.644" width="10.398" height="1.6787" rx=".83933" ry=".83933" fill="url(#b)" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".99216" stroke-width=".1852"/>
+<g transform="translate(.35431 .043933)" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".99216" stroke-width=".1852">
+<circle cx="4.8242" cy="11.44" r=".58115" fill="#a4f087"/>
+<circle cx="7.121" cy="11.44" r=".58115" fill="#f0a987"/>
+<circle cx="9.4179" cy="11.44" r=".58115" fill="#d187f0"/>
+<circle cx="11.715" cy="11.44" r=".58115" fill="#e6f069"/>
+</g>
+</svg>

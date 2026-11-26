@@ -1,0 +1,1 @@
+[dir=ltr] .taskbar-popup.is-centered{left:50%}[dir=rtl] .taskbar-popup.is-centered{right:50%}[dir=ltr] .is-analog .clock-pivot{transform:translateX(-50%) translateY(-50%)}[dir=rtl] .is-analog .clock-pivot{transform:translateX(50%) translateY(-50%)}.taskbar-popup.is-datetime{flex-direction:column;width:400px}[dir] .taskbar-popup.is-datetime{text-align:center}

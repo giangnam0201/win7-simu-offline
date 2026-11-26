@@ -1,0 +1,34 @@
+html {
+  background: #000;
+}
+
+@font-face {
+  font-family: "lucidacons";
+  src: url("fonts/lucidacons.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "segoepr";
+  src: url("fonts/segoepr.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "dos-vga";
+  src: url("fonts/dos-vga.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ms-sans-serif";
+  src: url("fonts/ms-sans-serif.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ms-sans-serif";
+  font-weight: bold;
+  src: url("fonts/ms-sans-serif-bold.ttf");
+  font-display: swap;
+}

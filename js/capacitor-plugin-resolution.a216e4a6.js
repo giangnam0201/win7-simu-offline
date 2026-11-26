@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["capacitor-plugin-resolution"],{"8b7c":function(n,o,s){"use strict";s.r(o),s.d(o,"ResolutionWeb",(function(){return t}));var e=s("1547");class t extends e["b"]{async setResolution(n){}}}}]);

@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["vue-i18n"],{f2c7:function(n,i,t){"use strict";t.d(i,"b",(function(){return c})),t.d(i,"a",(function(){return e})),t.d(i,"c",(function(){return s}));const u="https://cdn.jsdelivr.net/gh",c="Visnalize/win7-simu",e="Visnalize/win7-simu-locales";function s(n,i,t="main"){return`${u}/${n}@${t}/${i}`}}}]);

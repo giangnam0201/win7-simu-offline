@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["plugin-eventbus"],{"0404":function(n,t,e){"use strict";e.r(t),e.d(t,"bus",(function(){return s}));var u=e("2b0e");const s=new u["default"],o={install(n){n.prototype.$bus=s}};t["default"]=o}}]);

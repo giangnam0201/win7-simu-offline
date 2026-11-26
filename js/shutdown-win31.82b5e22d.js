@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["shutdown-win31"],{a63c:function(n,t,a){"use strict";a.r(t);var e=function(){var n=this,t=n.$createElement,a=n._self._c||t;return a("main",{staticClass:"bg-black"})},s=[],c=a("2877"),l={},u=Object(c["a"])(l,e,s,!1,null,null,null);t["default"]=u.exports}}]);
